@@ -10,6 +10,7 @@
 
 .header-divider {
   position: relative;
+  margin-top: 0;
   border: none;
   height: 3px;
   width: 400px;

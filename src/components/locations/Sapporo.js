@@ -8,8 +8,9 @@ export default function Sapporo() {
   return (
     <div>
       <LocationHeader location='Sapporo' dates='Oct 17 - Oct 20' />
-      <Page location='Sapporo' />
-      <Image source={sapp1} size='md' caption='Sapporo: outside my hostel. This was the first picture I took in Japan with my camera.'/>
+      <Page location='Sapporo'>
+        <Image source={sapp1} caption='Sapporo: outside my hostel. This was the first picture I took in Japan with my camera.'/>
+      </Page>
     </div>
   );
 }

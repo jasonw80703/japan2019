@@ -4,13 +4,13 @@ import './TextBlock.css';
 
 export default class TextBlock extends Component {
   render() {
-    const { file } = this.props;
+    const { text } = this.props;
     return (
-      <p className='text-block'>{file.text}</p>
+      <p className='text-block'>{text}</p>
     );
   }
 };
 
 TextBlock.propTypes = {
-  file: PropTypes.object.isRequired,
+  text: PropTypes.object.isRequired,
 };
