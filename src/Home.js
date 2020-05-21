@@ -36,8 +36,10 @@ export default class Home extends Component {
   }
 
   handleToggleModal() {
+    const { showModal } = this.state;
+
     this.setState({
-      showModal: !this.state.showModal,
+      showModal: !showModal,
     });
   }
 
