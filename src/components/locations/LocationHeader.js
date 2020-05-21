@@ -59,7 +59,7 @@ export default class LocationHeader extends Component {
 
   render() {
     const { showModal } = this.state;
-    const { location, dates } = this.props;
+    const { dates, location } = this.props;
 
     const source = this.getLocationSource();
 
@@ -91,6 +91,6 @@ export default class LocationHeader extends Component {
 };
 
 LocationHeader.propTypes = {
-  location: PropTypes.string.isRequired,
   dates: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
 };
