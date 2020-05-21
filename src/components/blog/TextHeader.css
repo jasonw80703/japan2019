@@ -1,0 +1,14 @@
+.text-header {
+  text-align: center;
+  color: gray;
+}
+
+.text-header-divider {
+  position: relative;
+  margin-top: 0;
+  border: none;
+  height: 1.5px;
+  width: 300px;
+  background: gray;
+  margin-bottom: 20px;
+}

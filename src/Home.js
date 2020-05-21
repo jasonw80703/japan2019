@@ -69,6 +69,7 @@ export default class Home extends Component {
             </Modal.Header>
             <Modal.Body>{homeText.modal.about}</Modal.Body>
             <Modal.Body>{homeText.modal.camera}</Modal.Body>
+            <Modal.Body>{homeText.modal.howTo}</Modal.Body>
           </Modal>
         )}
         {showLucy && (
