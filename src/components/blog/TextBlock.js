@@ -12,5 +12,5 @@ export default class TextBlock extends Component {
 };
 
 TextBlock.propTypes = {
-  text: PropTypes.object.isRequired,
+  text: PropTypes.string.isRequired,
 };

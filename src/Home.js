@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {
   Dropdown,
-  DropdownButton, // https://react-bootstrap.github.io/components/dropdowns/
+  DropdownButton,
 } from 'react-bootstrap';
-import Modal from 'react-bootstrap/Modal'; // https://react-bootstrap.netlify.app/components/modal/
+import Modal from 'react-bootstrap/Modal';
 import { LOCATIONS } from './constants/locations';
 import lowerCaseRemoveSpaces from './helpers/lowerCaseRemoveSpaces';
 import './Home.css';
@@ -18,7 +18,7 @@ export function LocationDropdown() {
   return (
     <DropdownButton id="location-dropdown" variant="dark" title="Location" size="lg">
       {
-        LOCATIONS.map((location) => (
+        Object.values(LOCATIONS).map((location) => (
           <Dropdown.Item href={lowerCaseRemoveSpaces(location)} key={location}>{location}</Dropdown.Item>
         ))
       }
@@ -72,7 +72,7 @@ export default class Home extends Component {
           </Modal>
         )}
         {showLucy && (
-          <img className="lucy-img" src={lucy} />
+          <img className="lucy-img" src={lucy} alt="lucy" />
         )}
       </div>
     );

@@ -15,7 +15,7 @@ function LocationNavDropdown() {
   return (
     <NavDropdown title="Location" id="location-dropdown">
       {
-        LOCATIONS.map((location) => (
+        Object.values(LOCATIONS).map((location) => (
           <NavDropdown.Item href={lowerCaseRemoveSpaces(location)} key={location}>{location}</NavDropdown.Item>
         ))
       }
@@ -48,7 +48,13 @@ export default class LocationHeader extends Component {
   getLocationSource() {
     const { location } = this.props;
 
-    return require(`../../assets/map/${lowerCaseRemoveSpaces(location)}.jpg`);
+    let file;
+    try {
+      file = require(`../../assets/map/${lowerCaseRemoveSpaces(location)}.jpg`);
+    } catch (error) {
+      console.error(error);
+    }
+    return file;
   }
 
   render() {
@@ -71,12 +77,14 @@ export default class LocationHeader extends Component {
             </Navbar.Collapse>
           </Navbar>
         </div>
-        <MapModal
-          handleToggleModal={this.handleToggleModal}
-          location={location}
-          showModal={showModal}
-          source={source}
-        />
+        {source && (
+          <MapModal
+            handleToggleModal={this.handleToggleModal}
+            location={location}
+            showModal={showModal}
+            source={source}
+          />
+        )}
       </div>
     );
   }

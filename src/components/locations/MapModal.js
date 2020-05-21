@@ -24,5 +24,8 @@ export default class MapModal extends Component {
 }
 
 MapModal.propTypes = {
-
+  handleToggleModal: PropTypes.func.isRequired,
+  location: PropTypes.string.isRequired,
+  showModal: PropTypes.bool.isRequired,
+  source: PropTypes.node.isRequired,
 }
