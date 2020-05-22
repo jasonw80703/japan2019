@@ -15,11 +15,12 @@ import sanFranciscoText from '../../assets/texts/sanFrancisco.json';
 
 const SAN_FRANCISCO = LOCATIONS.SAN_FRANCISCO;
 const SAN_FRANCISCO_JP = LOCATIONS_JP.SAN_FRANCISCO;
+const NEXT_LOCATION = LOCATIONS.SAPPORO;
 
 export default function SanFrancisco() {
   return (
     <div>
-      <LocationHeader location={SAN_FRANCISCO} dates='Oct 16' />
+      <LocationHeader dates='Oct 16' location={SAN_FRANCISCO} nextLocation={NEXT_LOCATION} />
       <Page location={SAN_FRANCISCO} locationJp={SAN_FRANCISCO_JP}>
         <Image source={sf1Image} caption={captions.sf1} location={SAN_FRANCISCO} />
         <TextBlock text={sanFranciscoText.para_1} />

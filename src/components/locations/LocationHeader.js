@@ -59,7 +59,7 @@ export default class LocationHeader extends Component {
 
   render() {
     const { showModal } = this.state;
-    const { dates, location } = this.props;
+    const { dates, location, nextLocation } = this.props;
 
     const source = this.getLocationSource();
 
@@ -70,9 +70,10 @@ export default class LocationHeader extends Component {
             <Navbar.Brand onClick={this.handleToggleModal}>{location}</Navbar.Brand>
             <Navbar.Text>{dates}</Navbar.Text>
             <Navbar.Collapse className="justify-content-end">
-              <Nav className="container-fluid mr-auto">
+              <Nav>
                 <LocationNavDropdown />
-                <Nav.Link href="/">Home</Nav.Link>
+                {nextLocation && <Nav.Link href={`/${nextLocation}`}>Next</Nav.Link>}
+                <Nav.Link href='/' id="home-link">Home</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
@@ -93,4 +94,5 @@ export default class LocationHeader extends Component {
 LocationHeader.propTypes = {
   dates: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
+  nextLocation: PropTypes.string,
 };
