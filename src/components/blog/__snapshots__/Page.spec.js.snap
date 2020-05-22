@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Page /> renders as expected 1`] = `
+<div
+  className="main-page-div"
+>
+  <h1
+    className="main-page-header"
+  >
+    Test Location
+     
+    <span
+      className="header-jp"
+    >
+      テストロケーション
+    </span>
+  </h1>
+  <hr
+    className="header-divider"
+  />
+</div>
+`;

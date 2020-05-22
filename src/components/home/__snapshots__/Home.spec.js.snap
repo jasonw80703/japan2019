@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home /> renders as expected 1`] = `
+<div>
+  <button
+    className="lucy"
+    onClick={[Function]}
+    type="button"
+  />
+  <div
+    className="home"
+  >
+    <h1
+      className="header"
+      onClick={[Function]}
+    >
+      日本 2019
+    </h1>
+    <div
+      className="dropdown"
+      onKeyDown={[Function]}
+    >
+      <button
+        aria-expanded={false}
+        aria-haspopup={true}
+        className="dropdown-toggle btn btn-dark btn-lg"
+        disabled={false}
+        id="location-dropdown"
+        onClick={[Function]}
+        type="button"
+      >
+        Location
+      </button>
+    </div>
+  </div>
+</div>
+`;

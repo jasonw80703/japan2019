@@ -4,12 +4,12 @@ import {
   DropdownButton,
 } from 'react-bootstrap';
 import Modal from 'react-bootstrap/Modal';
-import { LOCATIONS } from './constants/locations';
-import lowerCaseRemoveSpaces from './helpers/lowerCaseRemoveSpaces';
+import { LOCATIONS } from '../../constants/locations';
+import lowerCaseRemoveSpaces from '../../helpers/lowerCaseRemoveSpaces';
 import './Home.css';
 
-import homeText from './assets/texts/home.json';
-import lucy from './assets/images/home/lucy.jpg';
+import homeText from '../../assets/texts/home.json';
+import lucy from '../../assets/images/home/lucy.jpg';
 
 /**
  * Map locations constant to Dropdown with an Item for each location
@@ -47,8 +47,10 @@ export default class Home extends Component {
   }
 
   handleToggleLucy() {
+    const { showLucy } = this.state;
+
     this.setState({
-      showLucy: !this.state.showLucy,
+      showLucy: !showLucy,
     })
   }
 

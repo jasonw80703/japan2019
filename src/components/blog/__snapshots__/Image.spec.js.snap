@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Image /> renders as expected 1`] = `
+<div>
+  <img
+    alt="pic"
+    className="md pic"
+    onClick={[Function]}
+    src="/static/media/sf11111.jpg"
+  />
+  <p
+    className="caption"
+  >
+    caption caption caption
+  </p>
+</div>
+`;
