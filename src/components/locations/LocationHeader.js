@@ -23,9 +23,6 @@ function LocationNavDropdown() {
   );
 };
 
-// TODO:
-// * add next button to go to next city
-// * brand can be dropdown that shows current location
 export default class LocationHeader extends Component {
   constructor(props) {
     super(props);
