@@ -5,7 +5,6 @@ import {
 } from 'react-bootstrap';
 import Modal from 'react-bootstrap/Modal';
 import { LOCATIONS } from '../../constants/locations';
-import lowerCaseRemoveSpaces from '../../helpers/lowerCaseRemoveSpaces';
 import './Home.css';
 
 import homeText from '../../assets/texts/home.json';
@@ -19,7 +18,7 @@ export function LocationDropdown() {
     <DropdownButton id="location-dropdown" variant="dark" title="Location" size="lg">
       {
         Object.values(LOCATIONS).map((location) => (
-          <Dropdown.Item href={lowerCaseRemoveSpaces(location)} key={location}>{location}</Dropdown.Item>
+          <Dropdown.Item href={location['href']} key={location['en']}>{location['en']}</Dropdown.Item>
         ))
       }
     </DropdownButton>

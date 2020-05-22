@@ -16,7 +16,7 @@ function LocationNavDropdown() {
     <NavDropdown title="Location" id="location-dropdown">
       {
         Object.values(LOCATIONS).map((location) => (
-          <NavDropdown.Item href={lowerCaseRemoveSpaces(location)} key={location}>{location}</NavDropdown.Item>
+          <NavDropdown.Item href={location['href']} key={location['en']}>{location['en']}</NavDropdown.Item>
         ))
       }
     </NavDropdown>
@@ -52,7 +52,7 @@ export default class LocationHeader extends Component {
     try {
       file = require(`../../assets/map/${lowerCaseRemoveSpaces(location)}.jpg`);
     } catch (error) {
-      console.error(error);
+      console.log('Missing image');
     }
     return file;
   }
