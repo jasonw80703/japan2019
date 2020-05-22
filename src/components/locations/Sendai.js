@@ -10,6 +10,9 @@ const LOCATION = LOCATIONS.SENDAI;
 
 export default function Sendai() {
   return (
-    <div><LocationHeader dates={LOCATION['dates']} location={LOCATION['en']} nextLocation={LOCATION['next_location']} /></div>
+    <div>
+      <LocationHeader dates={LOCATION['dates']} location={LOCATION['en']} nextLocation={LOCATION['next_location']} />
+      <h2 style={{ 'text-align': 'center' }}>Under Construction</h2>
+    </div>
   )
 }
