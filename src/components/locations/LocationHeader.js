@@ -48,9 +48,14 @@ export default class LocationHeader extends Component {
   getLocationSource() {
     const { location } = this.props;
 
+    let sourceLocation = location;
+    if (sourceLocation === 'Tokyo (Round 2)') {
+      sourceLocation = 'Tokyo';
+    }
+    
     let file;
     try {
-      file = require(`../../assets/map/${lowerCaseRemoveSpaces(location)}.jpg`);
+      file = require(`../../assets/map/${lowerCaseRemoveSpaces(sourceLocation)}.jpg`);
     } catch (error) {
       console.log('Missing image');
     }

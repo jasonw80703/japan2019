@@ -103,7 +103,7 @@ export const LOCATIONS = {
     'href': 'busan',
     'dates': 'Nov 29 - Dec 1',
     'next_location': 'nara',
-  }, // KOREA
+  },
   NARA: {
     'en': 'Nara',
     'jp': '奈良',

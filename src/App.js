@@ -21,7 +21,7 @@ import Kobe from './components/locations/Kobe.js';
 import Hiroshima from './components/locations/Hiroshima.js';
 import Busan from './components/locations/Busan.js';
 import Nara from './components/locations/Nara.js';
-import Osaka from './components/locations/Nara.js';
+import Osaka from './components/locations/Osaka.js';
 import TokyoTwo from './components/locations/TokyoTwo.js';
 
 export default function App() {

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Modal from 'react-bootstrap/Modal';
 import './MapModal.css';
 
+// TODO: add a little fact about the location
 export default class MapModal extends Component {
   render() {
     const {
