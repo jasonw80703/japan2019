@@ -1,31 +1,29 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
-import Home from './Home';
- 
-describe('<Home />', () => {
+import LocationHeader from './LocationHeader';
+
+describe('<LocationHeader />', () => {
   let wrapper;
+
+  const defaultProps = {
+    dates: 'Sep 15 - Jun 15',
+    location: 'San Francisco',
+    nextLocation: 'Sapporo',
+  };
 
   it('renders as expected', () => {
     const tree = renderer
-      .create(<Home />)
+      .create(<LocationHeader {...defaultProps} />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   describe('when handleToggleModal() is called', () => {
-    wrapper = shallow(<Home />);
+    wrapper = shallow(<LocationHeader {...defaultProps} />);
     wrapper.instance().handleToggleModal();
     expect(wrapper.state('showModal')).toEqual(true);
     wrapper.instance().handleToggleModal();
     expect(wrapper.state('showModal')).toEqual(false);
-  });
-
-  describe('when handleToggleLucy() is called', () => {
-    wrapper = shallow(<Home />);
-    wrapper.instance().handleToggleLucy();
-    expect(wrapper.state('showLucy')).toEqual(true);
-    wrapper.instance().handleToggleLucy();
-    expect(wrapper.state('showLucy')).toEqual(false);
   });
 });

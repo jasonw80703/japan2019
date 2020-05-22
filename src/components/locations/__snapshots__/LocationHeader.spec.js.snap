@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LocationHeader /> renders as expected 1`] = `
+<div>
+  <div
+    className="location-header-div"
+  >
+    <nav
+      className="navbar navbar-expand navbar-dark bg-dark"
+    >
+      <span
+        className="navbar-brand"
+        onClick={[Function]}
+      >
+        San Francisco
+      </span>
+      <span
+        className="navbar-text"
+      >
+        Sep 15 - Jun 15
+      </span>
+      <div
+        aria-expanded={null}
+        className="justify-content-end navbar-collapse collapse"
+      >
+        <div
+          className="navbar-nav"
+          onKeyDown={[Function]}
+        >
+          <div
+            className="dropdown nav-item"
+            onKeyDown={[Function]}
+          >
+            <a
+              aria-expanded={false}
+              aria-haspopup={true}
+              className="dropdown-toggle nav-link"
+              data-rb-event-key={null}
+              href="#"
+              id="location-dropdown"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              role="button"
+            >
+              Location
+            </a>
+          </div>
+          <a
+            className="nav-link"
+            data-rb-event-key="/Sapporo"
+            href="/Sapporo"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            Next
+          </a>
+          <a
+            className="nav-link"
+            data-rb-event-key="/"
+            href="/"
+            id="home-link"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            Home
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+`;

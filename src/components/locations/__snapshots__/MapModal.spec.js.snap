@@ -1,0 +1,487 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MapModal /> renders as expected 1`] = `
+<MapModal
+  handleToggleModal={[Function]}
+  location="San Francisco"
+  showModal={true}
+  source="/static/media/sf11111.jpg"
+>
+  <Bootstrap(Modal)
+    className="map-modal"
+    onHide={[Function]}
+    show={true}
+    size="lg"
+  >
+    <Modal
+      animation={true}
+      autoFocus={true}
+      backdrop={true}
+      bsPrefix="modal"
+      className="map-modal"
+      dialogAs={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "displayName": "ModalDialog",
+          "render": [Function],
+        }
+      }
+      enforceFocus={true}
+      keyboard={true}
+      onHide={[Function]}
+      restoreFocus={true}
+      show={true}
+      size="lg"
+    >
+      <Modal
+        autoFocus={true}
+        backdrop={true}
+        backdropTransition={[Function]}
+        className="map-modal modal"
+        containerClassName="modal-open"
+        enforceFocus={true}
+        keyboard={true}
+        manager={
+          BootstrapModalManager {
+            "adjustAndStore": [Function],
+            "containers": Array [
+              <body
+                class="modal-open"
+                style="padding-right: 0px;"
+              >
+                <div
+                  class="fade modal-backdrop show"
+                />
+                <div
+                  aria-modal="true"
+                  class="fade map-modal modal show"
+                  role="dialog"
+                  style="display: block;"
+                  tabindex="-1"
+                >
+                  <div
+                    class="modal-dialog modal-lg"
+                    role="document"
+                  >
+                    <div
+                      class="modal-content"
+                    >
+                      <div
+                        class="modal-header"
+                      >
+                        <div
+                          class="modal-title h4"
+                        >
+                          San Francisco
+                        </div>
+                        <button
+                          class="close"
+                          type="button"
+                        >
+                          <span
+                            aria-hidden="true"
+                          >
+                            ×
+                          </span>
+                          <span
+                            class="sr-only"
+                          >
+                            Close
+                          </span>
+                        </button>
+                      </div>
+                      <div
+                        class="modal-body"
+                      >
+                        <img
+                          alt="pic"
+                          class="map"
+                          src="/static/media/sf11111.jpg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </body>,
+            ],
+            "data": Array [
+              Object {
+                "classes": Array [
+                  "modal-open",
+                ],
+                "modals": Array [
+                  Object {
+                    "add": [Function],
+                    "backdrop": <div
+                      class="fade modal-backdrop show"
+                    />,
+                    "dialog": <div
+                      aria-modal="true"
+                      class="fade map-modal modal show"
+                      role="dialog"
+                      style="display: block;"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="modal-dialog modal-lg"
+                        role="document"
+                      >
+                        <div
+                          class="modal-content"
+                        >
+                          <div
+                            class="modal-header"
+                          >
+                            <div
+                              class="modal-title h4"
+                            >
+                              San Francisco
+                            </div>
+                            <button
+                              class="close"
+                              type="button"
+                            >
+                              <span
+                                aria-hidden="true"
+                              >
+                                ×
+                              </span>
+                              <span
+                                class="sr-only"
+                              >
+                                Close
+                              </span>
+                            </button>
+                          </div>
+                          <div
+                            class="modal-body"
+                          >
+                            <img
+                              alt="pic"
+                              class="map"
+                              src="/static/media/sf11111.jpg"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>,
+                    "isTopModal": [Function],
+                    "remove": [Function],
+                    "setBackdropRef": [Function],
+                    "setDialogRef": [Function],
+                  },
+                ],
+                "overflowing": true,
+                "style": Object {
+                  "overflow": "",
+                  "paddingRight": "",
+                },
+              },
+            ],
+            "handleContainerOverflow": true,
+            "hideSiblingNodes": true,
+            "modals": Array [
+              Object {
+                "add": [Function],
+                "backdrop": <div
+                  class="fade modal-backdrop show"
+                />,
+                "dialog": <div
+                  aria-modal="true"
+                  class="fade map-modal modal show"
+                  role="dialog"
+                  style="display: block;"
+                  tabindex="-1"
+                >
+                  <div
+                    class="modal-dialog modal-lg"
+                    role="document"
+                  >
+                    <div
+                      class="modal-content"
+                    >
+                      <div
+                        class="modal-header"
+                      >
+                        <div
+                          class="modal-title h4"
+                        >
+                          San Francisco
+                        </div>
+                        <button
+                          class="close"
+                          type="button"
+                        >
+                          <span
+                            aria-hidden="true"
+                          >
+                            ×
+                          </span>
+                          <span
+                            class="sr-only"
+                          >
+                            Close
+                          </span>
+                        </button>
+                      </div>
+                      <div
+                        class="modal-body"
+                      >
+                        <img
+                          alt="pic"
+                          class="map"
+                          src="/static/media/sf11111.jpg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>,
+                "isTopModal": [Function],
+                "remove": [Function],
+                "setBackdropRef": [Function],
+                "setDialogRef": [Function],
+              },
+            ],
+            "restore": [Function],
+            "scrollbarSize": 0,
+          }
+        }
+        onClick={[Function]}
+        onEnter={[Function]}
+        onEntering={[Function]}
+        onExited={[Function]}
+        onHide={[Function]}
+        onMouseUp={[Function]}
+        renderBackdrop={[Function]}
+        restoreFocus={true}
+        show={true}
+        style={
+          Object {
+            "paddingLeft": undefined,
+            "paddingRight": undefined,
+          }
+        }
+        transition={[Function]}
+      >
+        <Portal
+          containerInfo={
+            <body
+              class="modal-open"
+              style="padding-right: 0px;"
+            >
+              <div
+                class="fade modal-backdrop show"
+              />
+              <div
+                aria-modal="true"
+                class="fade map-modal modal show"
+                role="dialog"
+                style="display: block;"
+                tabindex="-1"
+              >
+                <div
+                  class="modal-dialog modal-lg"
+                  role="document"
+                >
+                  <div
+                    class="modal-content"
+                  >
+                    <div
+                      class="modal-header"
+                    >
+                      <div
+                        class="modal-title h4"
+                      >
+                        San Francisco
+                      </div>
+                      <button
+                        class="close"
+                        type="button"
+                      >
+                        <span
+                          aria-hidden="true"
+                        >
+                          ×
+                        </span>
+                        <span
+                          class="sr-only"
+                        >
+                          Close
+                        </span>
+                      </button>
+                    </div>
+                    <div
+                      class="modal-body"
+                    >
+                      <img
+                        alt="pic"
+                        class="map"
+                        src="/static/media/sf11111.jpg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </body>
+          }
+        >
+          <BackdropTransition
+            appear={true}
+            in={true}
+          >
+            <Fade
+              appear={true}
+              in={true}
+              mountOnEnter={false}
+              timeout={300}
+              unmountOnExit={false}
+            >
+              <Transition
+                addEndListener={[Function]}
+                appear={true}
+                enter={true}
+                exit={true}
+                in={true}
+                mountOnEnter={false}
+                onEnter={[Function]}
+                onEntered={[Function]}
+                onEntering={[Function]}
+                onExit={[Function]}
+                onExited={[Function]}
+                onExiting={[Function]}
+                timeout={300}
+                unmountOnExit={false}
+              >
+                <div
+                  className="fade modal-backdrop show"
+                  onClick={[Function]}
+                />
+              </Transition>
+            </Fade>
+          </BackdropTransition>
+          <DialogTransition
+            appear={true}
+            in={true}
+            onEnter={[Function]}
+            onEntering={[Function]}
+            onExited={[Function]}
+            unmountOnExit={true}
+          >
+            <Fade
+              appear={true}
+              in={true}
+              mountOnEnter={false}
+              onEnter={[Function]}
+              onEntering={[Function]}
+              onExited={[Function]}
+              timeout={300}
+              unmountOnExit={true}
+            >
+              <Transition
+                addEndListener={[Function]}
+                appear={true}
+                enter={true}
+                exit={true}
+                in={true}
+                mountOnEnter={false}
+                onEnter={[Function]}
+                onEntered={[Function]}
+                onEntering={[Function]}
+                onExit={[Function]}
+                onExited={[Function]}
+                onExiting={[Function]}
+                timeout={300}
+                unmountOnExit={true}
+              >
+                <div
+                  aria-modal={true}
+                  className="fade map-modal modal show"
+                  onClick={[Function]}
+                  onMouseUp={[Function]}
+                  role="dialog"
+                  style={
+                    Object {
+                      "paddingLeft": undefined,
+                      "paddingRight": undefined,
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <ModalDialog
+                    onMouseDown={[Function]}
+                    role="document"
+                    size="lg"
+                  >
+                    <div
+                      className="modal-dialog modal-lg"
+                      onMouseDown={[Function]}
+                      role="document"
+                    >
+                      <div
+                        className="modal-content"
+                      >
+                        <ModalHeader
+                          closeButton={true}
+                          closeLabel="Close"
+                        >
+                          <div
+                            className="modal-header"
+                          >
+                            <ModalTitle>
+                              <ForwardRef
+                                className="modal-title"
+                              >
+                                <div
+                                  className="modal-title h4"
+                                >
+                                  San Francisco
+                                </div>
+                              </ForwardRef>
+                            </ModalTitle>
+                            <CloseButton
+                              label="Close"
+                              onClick={[Function]}
+                            >
+                              <button
+                                className="close"
+                                onClick={[Function]}
+                                type="button"
+                              >
+                                <span
+                                  aria-hidden="true"
+                                >
+                                  ×
+                                </span>
+                                <span
+                                  className="sr-only"
+                                >
+                                  Close
+                                </span>
+                              </button>
+                            </CloseButton>
+                          </div>
+                        </ModalHeader>
+                        <ModalBody>
+                          <div
+                            className="modal-body"
+                          >
+                            <img
+                              alt="pic"
+                              className="map"
+                              src="/static/media/sf11111.jpg"
+                            />
+                          </div>
+                        </ModalBody>
+                      </div>
+                    </div>
+                  </ModalDialog>
+                </div>
+              </Transition>
+            </Fade>
+          </DialogTransition>
+        </Portal>
+      </Modal>
+    </Modal>
+  </Bootstrap(Modal)>
+</MapModal>
+`;
