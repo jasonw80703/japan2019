@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 import Modal from 'react-bootstrap/Modal';
 import './MapModal.css';
 
-// TODO: add a little fact about the location
 export default class MapModal extends Component {
   render() {
     const {
       handleToggleModal,
       location,
       showModal,
-      source
+      source,
+      text,
     } = this.props;
 
     return (
@@ -18,7 +18,12 @@ export default class MapModal extends Component {
         <Modal.Header closeButton>
           <Modal.Title>{location}</Modal.Title>
         </Modal.Header>
-        <Modal.Body><img src={source} className='map' alt='pic'/></Modal.Body>
+        <Modal.Body>
+          <div>
+            <img src={source} className='map' alt='pic'/>
+            {text && <p className='map-text'>{text}</p>}
+          </div>
+        </Modal.Body>
       </Modal>
     );
   }
@@ -29,4 +34,5 @@ MapModal.propTypes = {
   location: PropTypes.string.isRequired,
   showModal: PropTypes.bool.isRequired,
   source: PropTypes.node.isRequired,
+  text: PropTypes.string,
 }

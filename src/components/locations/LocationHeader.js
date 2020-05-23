@@ -32,6 +32,7 @@ export default class LocationHeader extends Component {
 
     this.handleToggleModal = this.handleToggleModal.bind(this);
     this.getLocationSource = this.getLocationSource.bind(this);
+    this.getMapModalText = this.getMapModalText.bind(this);
   }
 
   handleToggleModal() {
@@ -55,8 +56,27 @@ export default class LocationHeader extends Component {
       file = require(`../../assets/map/${lowerCaseRemoveSpaces(sourceLocation)}.jpg`);
     } catch (error) {
       console.log('Missing image');
+      return;
     }
     return file;
+  }
+
+  getMapModalText() {
+    const { location } = this.props;
+
+    let sourceLocation = location;
+    if (sourceLocation === 'Tokyo (Round 2)') {
+      sourceLocation = 'Tokyo';
+    }
+
+    let file;
+    try {
+      file = require(`../../assets/map/${lowerCaseRemoveSpaces(sourceLocation)}.json`);
+    } catch (error) {
+      console.log('Missing map modal text');
+      return;
+    }
+    return file.text;
   }
 
   render() {
@@ -64,6 +84,7 @@ export default class LocationHeader extends Component {
     const { dates, location, nextLocation } = this.props;
 
     const source = this.getLocationSource();
+    const mapModalText = this.getMapModalText();
 
     return (
       <div>
@@ -86,6 +107,7 @@ export default class LocationHeader extends Component {
             location={location}
             showModal={showModal}
             source={source}
+            text={mapModalText}
           />
         )}
       </div>

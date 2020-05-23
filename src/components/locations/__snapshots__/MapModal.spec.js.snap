@@ -93,11 +93,13 @@ exports[`<MapModal /> renders as expected 1`] = `
                       <div
                         class="modal-body"
                       >
-                        <img
-                          alt="pic"
-                          class="map"
-                          src="/static/media/sf11111.jpg"
-                        />
+                        <div>
+                          <img
+                            alt="pic"
+                            class="map"
+                            src="/static/media/sf11111.jpg"
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -156,11 +158,13 @@ exports[`<MapModal /> renders as expected 1`] = `
                           <div
                             class="modal-body"
                           >
-                            <img
-                              alt="pic"
-                              class="map"
-                              src="/static/media/sf11111.jpg"
-                            />
+                            <div>
+                              <img
+                                alt="pic"
+                                class="map"
+                                src="/static/media/sf11111.jpg"
+                              />
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -227,11 +231,13 @@ exports[`<MapModal /> renders as expected 1`] = `
                       <div
                         class="modal-body"
                       >
-                        <img
-                          alt="pic"
-                          class="map"
-                          src="/static/media/sf11111.jpg"
-                        />
+                        <div>
+                          <img
+                            alt="pic"
+                            class="map"
+                            src="/static/media/sf11111.jpg"
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -313,11 +319,13 @@ exports[`<MapModal /> renders as expected 1`] = `
                     <div
                       class="modal-body"
                     >
-                      <img
-                        alt="pic"
-                        class="map"
-                        src="/static/media/sf11111.jpg"
-                      />
+                      <div>
+                        <img
+                          alt="pic"
+                          class="map"
+                          src="/static/media/sf11111.jpg"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -465,11 +473,13 @@ exports[`<MapModal /> renders as expected 1`] = `
                           <div
                             className="modal-body"
                           >
-                            <img
-                              alt="pic"
-                              className="map"
-                              src="/static/media/sf11111.jpg"
-                            />
+                            <div>
+                              <img
+                                alt="pic"
+                                className="map"
+                                src="/static/media/sf11111.jpg"
+                              />
+                            </div>
                           </div>
                         </ModalBody>
                       </div>
