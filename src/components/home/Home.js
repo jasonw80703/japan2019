@@ -9,6 +9,7 @@ import './Home.css';
 
 import homeText from '../../assets/texts/home.json';
 import lucy from '../../assets/images/home/lucy.jpg';
+import portrait from '../../assets/images/home/portrait.jpg';
 
 /**
  * Map locations constant to Dropdown with an Item for each location
@@ -68,6 +69,7 @@ export default class Home extends Component {
             <Modal.Header closeButton>
               <Modal.Title>About</Modal.Title>
             </Modal.Header>
+            <Modal.Body><img src={portrait} className="portrait-img" alt="portrait"/></Modal.Body>
             <Modal.Body>{homeText.modal.about}</Modal.Body>
             <Modal.Body>{homeText.modal.camera}</Modal.Body>
             <Modal.Body>{homeText.modal.howTo}</Modal.Body>
