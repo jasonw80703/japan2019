@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import MapModal from './MapModal';
+import LocationDatesModal from './LocationDatesModal';
 import { LOCATIONS } from '../../constants/locations';
 import lowerCaseRemoveSpaces from '../../helpers/lowerCaseRemoveSpaces';
 import './LocationHeader.css';
@@ -27,20 +28,30 @@ export default class LocationHeader extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showModal: false,
+      showMapModal: false,
+      showLocationDatesModal: false,
     };
 
-    this.handleToggleModal = this.handleToggleModal.bind(this);
+    this.handleToggleMapModal = this.handleToggleMapModal.bind(this);
     this.getLocationSource = this.getLocationSource.bind(this);
     this.getMapModalDescription = this.getMapModalDescription.bind(this);
     this.getMapModalRecommendations = this.getMapModalRecommendations.bind(this);
+    this.handleToggleLocationDatesModal = this.handleToggleLocationDatesModal.bind(this);
   }
 
-  handleToggleModal() {
-    const { showModal } = this.state;
+  handleToggleMapModal() {
+    const { showMapModal } = this.state;
 
     this.setState({
-      showModal: !showModal,
+      showMapModal: !showMapModal,
+    });
+  }
+
+  handleToggleLocationDatesModal() {
+    const { showLocationDatesModal } = this.state;
+
+    this.setState({
+      showLocationDatesModal: !showLocationDatesModal,
     });
   }
 
@@ -99,7 +110,7 @@ export default class LocationHeader extends Component {
   }
 
   render() {
-    const { showModal } = this.state;
+    const { showLocationDatesModal, showMapModal } = this.state;
     const { dates, location, nextLocation } = this.props;
 
     const source = this.getLocationSource();
@@ -110,8 +121,8 @@ export default class LocationHeader extends Component {
       <div>
         <div className="location-header-div">
           <Navbar bg="dark" variant="dark">
-            <Navbar.Brand onClick={this.handleToggleModal}>{location}</Navbar.Brand>
-            <Navbar.Text>{dates}</Navbar.Text>
+            <Navbar.Brand onClick={this.handleToggleMapModal}>{location}</Navbar.Brand>
+            <Navbar.Text onClick={this.handleToggleLocationDatesModal}>{dates}</Navbar.Text>
             <Navbar.Collapse className="justify-content-end">
               <Nav>
                 <LocationNavDropdown />
@@ -123,14 +134,18 @@ export default class LocationHeader extends Component {
         </div>
         {source && (
           <MapModal
-            handleToggleModal={this.handleToggleModal}
+            handleToggleModal={this.handleToggleMapModal}
             location={location}
-            showModal={showModal}
+            showModal={showMapModal}
             source={source}
             description={mapModalDescription}
             recommendations={mapModalRecommendations}
           />
         )}
+        <LocationDatesModal
+          handleToggleModal={this.handleToggleLocationDatesModal}
+          showModal={showLocationDatesModal}
+        />
       </div>
     );
   }
