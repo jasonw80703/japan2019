@@ -10,7 +10,8 @@ export default class MapModal extends Component {
       location,
       showModal,
       source,
-      text,
+      description,
+      recommendations,
     } = this.props;
 
     return (
@@ -21,7 +22,8 @@ export default class MapModal extends Component {
         <Modal.Body>
           <div>
             <img src={source} className='map' alt='pic'/>
-            {text && <p className='map-text'>{text}</p>}
+            {description && <p className='map-text'>{description}</p>}
+            {recommendations && <p className='map-text'><b>Recommendations: </b>{recommendations}</p>}
           </div>
         </Modal.Body>
       </Modal>
@@ -34,5 +36,6 @@ MapModal.propTypes = {
   location: PropTypes.string.isRequired,
   showModal: PropTypes.bool.isRequired,
   source: PropTypes.node.isRequired,
-  text: PropTypes.string,
+  description: PropTypes.string,
+  recommendations: PropTypes.string,
 }

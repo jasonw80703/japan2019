@@ -25,7 +25,7 @@ export default function SanFrancisco() {
         <TextBlock text={sanFranciscoText.para_2} />
         <TextBlock text={sanFranciscoText.para_3} />
         <TextBlock text={sanFranciscoText.para_4} />
-        <Image source={sf2Image} size='sm' caption={captions.sf2}  location={LOCATION['en]']} />
+        <Image source={sf2Image} size='sm' caption={captions.sf2} location={LOCATION['en']} />
       </Page>
     </div>
   );

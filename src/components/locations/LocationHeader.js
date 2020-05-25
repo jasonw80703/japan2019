@@ -32,7 +32,8 @@ export default class LocationHeader extends Component {
 
     this.handleToggleModal = this.handleToggleModal.bind(this);
     this.getLocationSource = this.getLocationSource.bind(this);
-    this.getMapModalText = this.getMapModalText.bind(this);
+    this.getMapModalDescription = this.getMapModalDescription.bind(this);
+    this.getMapModalRecommendations = this.getMapModalRecommendations.bind(this);
   }
 
   handleToggleModal() {
@@ -61,7 +62,7 @@ export default class LocationHeader extends Component {
     return file;
   }
 
-  getMapModalText() {
+  getMapModalDescription() {
     const { location } = this.props;
 
     let sourceLocation = location;
@@ -73,10 +74,28 @@ export default class LocationHeader extends Component {
     try {
       file = require(`../../assets/map/${lowerCaseRemoveSpaces(sourceLocation)}.json`);
     } catch (error) {
-      console.log('Missing map modal text');
+      console.log('Missing map modal description');
       return;
     }
-    return file.text;
+    return file.description;
+  }
+
+  getMapModalRecommendations() {
+    const { location } = this.props;
+
+    let sourceLocation = location;
+    if (sourceLocation === 'Tokyo (Round 2)') {
+      sourceLocation = 'Tokyo';
+    }
+
+    let file;
+    try {
+      file = require(`../../assets/map/${lowerCaseRemoveSpaces(sourceLocation)}.json`);
+    } catch (error) {
+      console.log('Missing map modal recommendations');
+      return;
+    }
+    return file.recommendations;
   }
 
   render() {
@@ -84,7 +103,8 @@ export default class LocationHeader extends Component {
     const { dates, location, nextLocation } = this.props;
 
     const source = this.getLocationSource();
-    const mapModalText = this.getMapModalText();
+    const mapModalDescription = this.getMapModalDescription();
+    const mapModalRecommendations = this.getMapModalRecommendations();
 
     return (
       <div>
@@ -107,7 +127,8 @@ export default class LocationHeader extends Component {
             location={location}
             showModal={showModal}
             source={source}
-            text={mapModalText}
+            description={mapModalDescription}
+            recommendations={mapModalRecommendations}
           />
         )}
       </div>
