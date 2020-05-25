@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
   Dropdown,
   DropdownButton,
+  ButtonGroup,
 } from 'react-bootstrap';
 import Modal from 'react-bootstrap/Modal';
 import { LOCATIONS } from '../../constants/locations';
@@ -16,7 +17,7 @@ import portrait from '../../assets/images/home/portrait.jpg';
  */
 export function LocationDropdown() {
   return (
-    <DropdownButton id="location-dropdown" variant="dark" title="Location" size="lg">
+    <DropdownButton id="location-dropdown" variant="dark" title="Location" size="lg" as={ButtonGroup}>
       {
         Object.values(LOCATIONS).map((location) => (
           <Dropdown.Item href={location['href']} key={location['en']}>{location['en']}</Dropdown.Item>
@@ -63,6 +64,14 @@ export default class Home extends Component {
         <div className="home">
           <h1 className="header" onClick={this.handleToggleModal}>{homeText.header}</h1>
           <LocationDropdown />
+          <DropdownButton id="misc-dropdown" variant="light" title="Misc" size="lg" as={ButtonGroup}>
+            <Dropdown.Item>Buildings</Dropdown.Item>
+            <Dropdown.Item>Stamp Collection</Dropdown.Item>
+            <Dropdown.Item>Music</Dropdown.Item>
+            <Dropdown.Item>Coffee Shop Tier List</Dropdown.Item>
+            <Dropdown.Item>Other Pictures</Dropdown.Item>
+            <Dropdown.Item>Japan Travel Tips</Dropdown.Item>
+          </DropdownButton>
         </div>
         {showModal && (
           <Modal show={showModal} onHide={this.handleToggleModal}>
