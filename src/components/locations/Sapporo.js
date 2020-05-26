@@ -11,6 +11,11 @@ import pocketwifi from '../../assets/images/sapporo/pocketwifi.jpg';
 import ticket from '../../assets/images/sapporo/ticket.jpg';
 import hostel from '../../assets/images/sapporo/hostel.jpg';
 import kalbi from '../../assets/images/sapporo/kalbi.jpg';
+import street from '../../assets/images/sapporo/street.jpg';
+import park from '../../assets/images/sapporo/park.jpg';
+import cup from '../../assets/images/sapporo/cup.jpg';
+import tower from '../../assets/images/sapporo/tower.jpg';
+import pages from '../../assets/images/sapporo/pages.jpg';
 import captions from '../../assets/images/sapporo/captions.json';
 
 // Texts
@@ -29,14 +34,34 @@ export default function Sapporo() {
         <TextBlock text={sapporoText.airport} />
         <Image caption={captions.ticket} location={LOCATION['en']} size='xs' source={ticket}/>
         <TextBlock text={sapporoText.survey} />
+        
         <TextHeader header={sapporoText.headers.hostel}/>
         <TextBlock text={sapporoText.hostel} />
         <Image location={LOCATION['en']} size='xs' source={hostel}/>
         <TextBlock text={sapporoText.kalbi} />
         <Image location={LOCATION['en']} size='sm' source={kalbi}/>
+
         <TextHeader header={sapporoText.headers.work}/>
         <TextBlock text={sapporoText.work_1} />
         <TextBlock text={sapporoText.work_2} />
+        <TextBlock text={sapporoText.work_3} />
+
+        <TextHeader header={sapporoText.headers.exploring}/>
+        <TextBlock text={sapporoText.daytwo_1} />
+        <Image caption={captions.street} location={LOCATION['en']} size='md' source={street}/>
+        <TextBlock text={sapporoText.daytwo_2} />
+        <TextBlock text={sapporoText.daytwo_3} />
+
+        <TextHeader header={sapporoText.headers.shiroi_koibito}/>
+        <Image location={LOCATION['en']} size='md' source={park}/>
+        <TextBlock text={sapporoText.shiroi_1} />
+        <Image caption={captions.cup} location={LOCATION['en']} size='sm' source={cup}/>
+        <TextBlock text={sapporoText.shiroi_2} />
+
+        <TextHeader header={sapporoText.headers.clock_tower}/>
+        <Image caption={captions.tower} location={LOCATION['en']} size='md' source={tower}/>
+        <TextBlock text={sapporoText.tower} />
+        <Image caption={captions.pages} location={LOCATION['en']} size='md' source={pages}/>
       </Page>
     </div>
   );

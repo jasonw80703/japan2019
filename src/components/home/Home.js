@@ -69,7 +69,7 @@ export default class Home extends Component {
             <Dropdown.Item>Stamp Collection</Dropdown.Item>
             <Dropdown.Item>Music</Dropdown.Item>
             <Dropdown.Item>Coffee Shop Tier List</Dropdown.Item>
-            <Dropdown.Item>Other Pictures</Dropdown.Item>
+            <Dropdown.Item>Food Pictures</Dropdown.Item>
             <Dropdown.Item>Japan Travel Tips</Dropdown.Item>
           </DropdownButton>
         </div>
