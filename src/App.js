@@ -24,6 +24,8 @@ import Nara from './components/locations/Nara.js';
 import Osaka from './components/locations/Osaka.js';
 import TokyoTwo from './components/locations/TokyoTwo.js';
 
+import MiscImages from './components/misc/MiscImages.js';
+
 export default function App() {
   return (
     <Router>
@@ -81,6 +83,9 @@ export default function App() {
         </Route>
         <Route path="/tokyo_two">
           <TokyoTwo />
+        </Route>
+        <Route path="/misc_images">
+          <MiscImages />
         </Route>
         <Route path="/">
           <Home />

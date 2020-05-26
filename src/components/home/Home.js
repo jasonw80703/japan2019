@@ -65,7 +65,7 @@ export default class Home extends Component {
           <h1 className="header" onClick={this.handleToggleModal}>{homeText.header}</h1>
           <LocationDropdown />
           <DropdownButton id="misc-dropdown" variant="light" title="Misc" size="lg" as={ButtonGroup}>
-            <Dropdown.Item>Buildings</Dropdown.Item>
+            <Dropdown.Item href="/misc_images" key="misc_images">Drawings</Dropdown.Item>
             <Dropdown.Item>Stamp Collection</Dropdown.Item>
             <Dropdown.Item>Music</Dropdown.Item>
             <Dropdown.Item>Coffee Shop Tier List</Dropdown.Item>

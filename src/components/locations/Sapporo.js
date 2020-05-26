@@ -16,6 +16,8 @@ import park from '../../assets/images/sapporo/park.jpg';
 import cup from '../../assets/images/sapporo/cup.jpg';
 import tower from '../../assets/images/sapporo/tower.jpg';
 import pages from '../../assets/images/sapporo/pages.jpg';
+import entrance from '../../assets/images/sapporo/entrance.jpg';
+import ads from '../../assets/images/sapporo/ads.jpg';
 import captions from '../../assets/images/sapporo/captions.json';
 
 // Texts
@@ -62,6 +64,11 @@ export default function Sapporo() {
         <Image caption={captions.tower} location={LOCATION['en']} size='md' source={tower}/>
         <TextBlock text={sapporoText.tower} />
         <Image caption={captions.pages} location={LOCATION['en']} size='md' source={pages}/>
+
+        <TextHeader header={sapporoText.headers.beer_factory}/>
+        <Image location={LOCATION['en']} size='md' source={entrance}/>
+        <TextBlock text={sapporoText.tower} />
+        <Image caption={captions.ads} location={LOCATION['en']} size='md' source={ads}/>
       </Page>
     </div>
   );
