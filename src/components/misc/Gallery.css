@@ -1,4 +1,4 @@
-.misc-images-title {
+.gallery-images-title {
   text-align: center;
   margin: 50px 150px 15px 150px;
 }
@@ -12,7 +12,7 @@
   padding: 15px;
 }
 
-.misc-image {
+.gallery-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
