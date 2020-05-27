@@ -1,0 +1,78 @@
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image';
+import Col from 'react-bootstrap/Col';
+import Modal from 'react-bootstrap/Modal';
+import Row from 'react-bootstrap/Row';
+
+import './MultiImage.css';
+
+export default class MultiImage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showImageModal: false,
+      modalImage: '',
+    };
+
+    this.handleOpenModal = this.handleOpenModal.bind(this);
+    this.handleCloseModal = this.handleCloseModal.bind(this);
+  }
+
+  handleOpenModal(image) {
+    this.setState({
+      showImageModal: true,
+      modalImage: image,
+    });
+  }
+
+  handleCloseModal(e) {
+    this.setState({
+      showImageModal: false,
+    })
+  }
+
+  render() {
+    const {
+      caption,
+      img1,
+      img2,
+      img3,
+      img4,
+      location
+    } = this.props;
+    const { showImageModal, modalImage } = this.state;
+
+    return (
+      <div>
+        <Container>
+          <Row noGutters>
+            <Col><Image src={img1} className="multi-pic" id="img1" onClick={() => this.handleOpenModal(img1)} /></Col>
+            <Col><Image src={img2} className="multi-pic" id="img2" onClick={() => this.handleOpenModal(img2)} /></Col>
+          </Row>
+          <Row noGutters>
+            <Col><Image src={img3} className="multi-pic" id="img3" onClick={() => this.handleOpenModal(img3)} /></Col>
+            <Col><Image src={img4} className="multi-pic" id="img4" onClick={() => this.handleOpenModal(img4)} /></Col>
+          </Row>
+        </Container>
+        {caption && <p className='caption'>{caption}</p>}
+        <Modal show={showImageModal} onHide={this.handleCloseModal} size='lg' className='map-modal'>
+          <Modal.Header closeButton>
+            <Modal.Title>{location}</Modal.Title>
+          </Modal.Header>
+          <Modal.Body><img src={modalImage} className='modal-img' alt='pic'/></Modal.Body>
+        </Modal>
+      </div>
+    );
+  }
+};
+
+MultiImage.propTypes = {
+  caption: PropTypes.string,
+  img1: PropTypes.node.isRequired,
+  img2: PropTypes.node.isRequired,
+  img3: PropTypes.node.isRequired,
+  img4: PropTypes.node.isRequired,
+  location: PropTypes.string.isRequired,
+};

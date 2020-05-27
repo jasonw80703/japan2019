@@ -18,7 +18,7 @@ export default function MapModal({
       </Modal.Header>
       <Modal.Body>
         <div>
-          <img src={source} className='map' alt='pic'/>
+          <img src={source} id='map' alt='pic'/>
           {description && <p className='map-text'>{description}</p>}
           {recommendations && <p className='map-text'><b>Recommendations: </b>{recommendations}</p>}
         </div>

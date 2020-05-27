@@ -33,7 +33,7 @@ export default class Image extends Component {
           <Modal.Header closeButton>
             <Modal.Title>{location}</Modal.Title>
           </Modal.Header>
-          <Modal.Body><img src={source} className='map' alt='pic'/></Modal.Body>
+          <Modal.Body><img src={source} className='modal-img' alt='pic'/></Modal.Body>
           {caption && <Modal.Footer><p className='modal-caption'>{caption}</p></Modal.Footer>}
         </Modal>
       </div>
