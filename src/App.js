@@ -25,6 +25,7 @@ import Osaka from './components/locations/Osaka.js';
 import TokyoTwo from './components/locations/TokyoTwo.js';
 
 import Drawings from './components/misc/Drawings.js';
+import Stamps from './components/misc/Stamps.js';
 
 export default function App() {
   return (
@@ -86,6 +87,9 @@ export default function App() {
         </Route>
         <Route path="/drawings">
           <Drawings />
+        </Route>
+        <Route path="/stamps">
+          <Stamps />
         </Route>
         <Route path="/">
           <Home />

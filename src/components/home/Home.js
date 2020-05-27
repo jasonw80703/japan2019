@@ -66,7 +66,7 @@ export default class Home extends Component {
           <LocationDropdown />
           <DropdownButton id="misc-dropdown" variant="light" title="Misc" size="lg" as={ButtonGroup}>
             <Dropdown.Item href="/drawings" key="drawings">Drawings</Dropdown.Item>
-            <Dropdown.Item>Stamp Collection</Dropdown.Item>
+            <Dropdown.Item href="/stamps" key="stamps">Stamp Collection</Dropdown.Item>
             <Dropdown.Item>Music</Dropdown.Item>
             <Dropdown.Item>Coffee Shop Tier List</Dropdown.Item>
             <Dropdown.Item>Food Pictures</Dropdown.Item>
