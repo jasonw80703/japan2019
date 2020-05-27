@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Modal from 'react-bootstrap/Modal';
+import ImageModal from './ImageModal';
 import './Image.css';
 
 export default class Image extends Component {
@@ -29,13 +29,13 @@ export default class Image extends Component {
       <div>
         <img src={source} className={`${size} pic`} alt='pic' onClick={this.handleToggleImageModal} />
         {caption && <p className='caption'>{caption}</p>}
-        <Modal show={showImageModal} onHide={this.handleToggleImageModal} size='lg' className='map-modal'>
-          <Modal.Header closeButton>
-            <Modal.Title>{location}</Modal.Title>
-          </Modal.Header>
-          <Modal.Body><img src={source} className='modal-img' alt='pic'/></Modal.Body>
-          {caption && <Modal.Footer><p className='modal-caption'>{caption}</p></Modal.Footer>}
-        </Modal>
+        <ImageModal
+          caption={caption}
+          handleCloseModal={this.handleToggleImageModal}
+          location={location}
+          modalImage={source}
+          showImageModal={showImageModal}
+        />
       </div>
     );
   }

@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Col from 'react-bootstrap/Col';
-import Modal from 'react-bootstrap/Modal';
 import Row from 'react-bootstrap/Row';
+import ImageModal from './ImageModal';
 
 import './MultiImage.css';
 
@@ -57,12 +57,12 @@ export default class MultiImage extends Component {
           </Row>
         </Container>
         {caption && <p className='caption'>{caption}</p>}
-        <Modal show={showImageModal} onHide={this.handleCloseModal} size='lg' className='map-modal'>
-          <Modal.Header closeButton>
-            <Modal.Title>{location}</Modal.Title>
-          </Modal.Header>
-          <Modal.Body><img src={modalImage} className='modal-img' alt='pic'/></Modal.Body>
-        </Modal>
+        <ImageModal
+          handleCloseModal={this.handleCloseModal}
+          location={location}
+          modalImage={modalImage}
+          showImageModal={showImageModal}
+        />
       </div>
     );
   }

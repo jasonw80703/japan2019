@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Col from 'react-bootstrap/Col';
-import Modal from 'react-bootstrap/Modal';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
+import ImageModal from './ImageModal';
 import './ImageSlide.css';
 
 export default class ImageSlide extends Component {
@@ -72,12 +72,12 @@ export default class ImageSlide extends Component {
             <Col align="center" className="slide-btn" onClick={this.nextImage}><Button variant="dark">{'>'}</Button></Col>
           </Row>
         </Container>
-        <Modal show={showImageModal} onHide={this.handleToggleImageModal} size='lg' className='map-modal'>
-          <Modal.Header closeButton>
-            <Modal.Title>{location}</Modal.Title>
-          </Modal.Header>
-          <Modal.Body><img src={currentImage} className='modal-img' alt='pic'/></Modal.Body>
-        </Modal>
+        <ImageModal
+          handleCloseModal={this.handleToggleImageModal}
+          location={location}
+          modalImage={currentImage}
+          showImageModal={showImageModal}
+        />
       </div>
     )
   }
