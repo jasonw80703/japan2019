@@ -19,11 +19,11 @@ describe('<LocationHeader />', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  describe('when handleToggleModal() is called', () => {
+  describe('when handleToggleMapModal() is called', () => {
     wrapper = shallow(<LocationHeader {...defaultProps} />);
-    wrapper.instance().handleToggleModal();
-    expect(wrapper.state('showModal')).toEqual(true);
-    wrapper.instance().handleToggleModal();
-    expect(wrapper.state('showModal')).toEqual(false);
+    wrapper.instance().handleToggleMapModal();
+    expect(wrapper.state('showMapModal')).toEqual(true);
+    wrapper.instance().handleToggleMapModal();
+    expect(wrapper.state('showMapModal')).toEqual(false);
   });
 });

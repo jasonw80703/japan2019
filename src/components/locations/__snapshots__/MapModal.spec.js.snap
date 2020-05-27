@@ -96,7 +96,7 @@ exports[`<MapModal /> renders as expected 1`] = `
                         <div>
                           <img
                             alt="pic"
-                            class="map"
+                            id="map"
                             src="/static/media/sf11111.jpg"
                           />
                         </div>
@@ -161,7 +161,7 @@ exports[`<MapModal /> renders as expected 1`] = `
                             <div>
                               <img
                                 alt="pic"
-                                class="map"
+                                id="map"
                                 src="/static/media/sf11111.jpg"
                               />
                             </div>
@@ -234,7 +234,7 @@ exports[`<MapModal /> renders as expected 1`] = `
                         <div>
                           <img
                             alt="pic"
-                            class="map"
+                            id="map"
                             src="/static/media/sf11111.jpg"
                           />
                         </div>
@@ -322,7 +322,7 @@ exports[`<MapModal /> renders as expected 1`] = `
                       <div>
                         <img
                           alt="pic"
-                          class="map"
+                          id="map"
                           src="/static/media/sf11111.jpg"
                         />
                       </div>
@@ -476,7 +476,7 @@ exports[`<MapModal /> renders as expected 1`] = `
                             <div>
                               <img
                                 alt="pic"
-                                className="map"
+                                id="map"
                                 src="/static/media/sf11111.jpg"
                               />
                             </div>

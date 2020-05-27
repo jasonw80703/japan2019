@@ -16,6 +16,7 @@ exports[`<LocationHeader /> renders as expected 1`] = `
       </span>
       <span
         className="navbar-text"
+        onClick={[Function]}
       >
         Sep 15 - Jun 15
       </span>

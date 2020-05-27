@@ -17,8 +17,9 @@ exports[`<Home /> renders as expected 1`] = `
       日本 2019
     </h1>
     <div
-      className="dropdown"
+      className="dropdown btn-group"
       onKeyDown={[Function]}
+      role="group"
     >
       <button
         aria-expanded={false}
@@ -30,6 +31,23 @@ exports[`<Home /> renders as expected 1`] = `
         type="button"
       >
         Location
+      </button>
+    </div>
+    <div
+      className="dropdown btn-group"
+      onKeyDown={[Function]}
+      role="group"
+    >
+      <button
+        aria-expanded={false}
+        aria-haspopup={true}
+        className="dropdown-toggle btn btn-light btn-lg"
+        disabled={false}
+        id="misc-dropdown"
+        onClick={[Function]}
+        type="button"
+      >
+        Misc
       </button>
     </div>
   </div>
