@@ -2,6 +2,7 @@ import React from 'react';
 import LocationHeader from './LocationHeader';
 import Page from '../blog/Page';
 import Image from '../blog/Image';
+import ImageSlide from '../blog/ImageSlide';
 import TextBlock from '../blog/TextBlock';
 import TextHeader from '../blog/TextHeader';
 import { LOCATIONS } from '../../constants/locations';
@@ -17,11 +18,15 @@ import cup from '../../assets/images/sapporo/cup.jpg';
 import tower from '../../assets/images/sapporo/tower.jpg';
 import pages from '../../assets/images/sapporo/pages.jpg';
 import entrance from '../../assets/images/sapporo/entrance.jpg';
-import ads from '../../assets/images/sapporo/ads.jpg';
-import captions from '../../assets/images/sapporo/captions.json';
+import sapp1 from '../../assets/images/sapporo/sapp1.jpg';
+import sapp2 from '../../assets/images/sapporo/sapp2.jpg';
+import sapp3 from '../../assets/images/sapporo/sapp3.jpg';
+import sapp4 from '../../assets/images/sapporo/sapp4.jpg';
+import sapp5 from '../../assets/images/sapporo/sapp5.jpg';
 
 // Texts
 import sapporoText from '../../assets/texts/sapporo.json';
+import captions from '../../assets/images/sapporo/captions.json';
 
 const LOCATION = LOCATIONS.SAPPORO;
 
@@ -67,8 +72,8 @@ export default function Sapporo() {
 
         <TextHeader header={sapporoText.headers.beer_factory} />
         <Image location={LOCATION['en']} size='md' source={entrance} />
-        <TextBlock text={sapporoText.tower} />
-        <Image caption={captions.ads} location={LOCATION['en']} size='md' source={ads} />
+        <TextBlock text={sapporoText.beer_factory_1} />
+        <ImageSlide images={[sapp1, sapp2, sapp3, sapp4, sapp5]} location={LOCATION['en']} />
       </Page>
     </div>
   );
