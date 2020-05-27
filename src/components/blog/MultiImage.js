@@ -27,7 +27,7 @@ export default class MultiImage extends Component {
     });
   }
 
-  handleCloseModal(e) {
+  handleCloseModal() {
     this.setState({
       showImageModal: false,
     })
@@ -48,12 +48,12 @@ export default class MultiImage extends Component {
       <div>
         <Container>
           <Row noGutters>
-            <Col><Image src={img1} className="multi-pic" id="img1" onClick={() => this.handleOpenModal(img1)} /></Col>
-            <Col><Image src={img2} className="multi-pic" id="img2" onClick={() => this.handleOpenModal(img2)} /></Col>
+            <Col><Image src={img1} className="multi-pic" onClick={() => this.handleOpenModal(img1)} /></Col>
+            <Col><Image src={img2} className="multi-pic" onClick={() => this.handleOpenModal(img2)} /></Col>
           </Row>
           <Row noGutters>
-            <Col><Image src={img3} className="multi-pic" id="img3" onClick={() => this.handleOpenModal(img3)} /></Col>
-            <Col><Image src={img4} className="multi-pic" id="img4" onClick={() => this.handleOpenModal(img4)} /></Col>
+            <Col><Image src={img3} className="multi-pic" onClick={() => this.handleOpenModal(img3)} /></Col>
+            <Col><Image src={img4} className="multi-pic" onClick={() => this.handleOpenModal(img4)} /></Col>
           </Row>
         </Container>
         {caption && <p className='caption'>{caption}</p>}
