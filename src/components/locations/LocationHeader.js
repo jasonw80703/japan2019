@@ -34,8 +34,7 @@ export default class LocationHeader extends Component {
 
     this.handleToggleMapModal = this.handleToggleMapModal.bind(this);
     this.getLocationSource = this.getLocationSource.bind(this);
-    this.getMapModalDescription = this.getMapModalDescription.bind(this);
-    this.getMapModalRecommendations = this.getMapModalRecommendations.bind(this);
+    this.getMapModalDetails = this.getMapModalDetails.bind(this);
     this.handleToggleLocationDatesModal = this.handleToggleLocationDatesModal.bind(this);
   }
 
@@ -62,7 +61,7 @@ export default class LocationHeader extends Component {
     if (sourceLocation === 'Tokyo (Round 2)') {
       sourceLocation = 'Tokyo';
     }
-    
+
     let file;
     try {
       file = require(`../../assets/map/${lowerCaseRemoveSpaces(sourceLocation)}.jpg`);
@@ -73,7 +72,7 @@ export default class LocationHeader extends Component {
     return file;
   }
 
-  getMapModalDescription() {
+  getMapModalDetails() {
     const { location } = this.props;
 
     let sourceLocation = location;
@@ -88,25 +87,7 @@ export default class LocationHeader extends Component {
       console.log('Missing map modal description');
       return;
     }
-    return file.description;
-  }
-
-  getMapModalRecommendations() {
-    const { location } = this.props;
-
-    let sourceLocation = location;
-    if (sourceLocation === 'Tokyo (Round 2)') {
-      sourceLocation = 'Tokyo';
-    }
-
-    let file;
-    try {
-      file = require(`../../assets/map/${lowerCaseRemoveSpaces(sourceLocation)}.json`);
-    } catch (error) {
-      console.log('Missing map modal recommendations');
-      return;
-    }
-    return file.recommendations;
+    return file;
   }
 
   render() {
@@ -114,8 +95,7 @@ export default class LocationHeader extends Component {
     const { dates, location, nextLocation } = this.props;
 
     const source = this.getLocationSource();
-    const mapModalDescription = this.getMapModalDescription();
-    const mapModalRecommendations = this.getMapModalRecommendations();
+    const mapModalDetails = this.getMapModalDetails();
 
     return (
       <div>
@@ -138,8 +118,9 @@ export default class LocationHeader extends Component {
             location={location}
             showModal={showMapModal}
             source={source}
-            description={mapModalDescription}
-            recommendations={mapModalRecommendations}
+            description={mapModalDetails.description}
+            locations={mapModalDetails.locations}
+            foods={mapModalDetails.foods}
           />
         )}
         <LocationDatesModal

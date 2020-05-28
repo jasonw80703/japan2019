@@ -9,7 +9,8 @@ export default function MapModal({
   showModal,
   source,
   description,
-  recommendations,
+  locations,
+  foods,
 }) {
   return (
     <Modal show={showModal} onHide={handleToggleModal} size='lg' className='map-modal'>
@@ -20,7 +21,13 @@ export default function MapModal({
         <div>
           <img src={source} id='map' alt='pic'/>
           {description && <p className='map-text'>{description}</p>}
-          {recommendations && <p className='map-text'><b>Recommendations: </b>{recommendations}</p>}
+          {(locations || foods) && (
+            <div>
+              <h3>Recommendations:</h3>
+              {locations && <p className='map-text'><b>Locations: </b>{locations}</p>}
+              {foods && <p><b>Foods: </b>{foods}</p>}
+            </div>
+          )}
         </div>
       </Modal.Body>
     </Modal>
@@ -33,5 +40,6 @@ MapModal.propTypes = {
   showModal: PropTypes.bool.isRequired,
   source: PropTypes.node.isRequired,
   description: PropTypes.string,
-  recommendations: PropTypes.string,
-}
+  locations: PropTypes.string,
+  foods: PropTypes.string,
+};
