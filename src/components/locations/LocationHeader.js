@@ -84,7 +84,7 @@ export default class LocationHeader extends Component {
     try {
       file = require(`../../assets/map/${lowerCaseRemoveSpaces(sourceLocation)}.json`);
     } catch (error) {
-      console.log('Missing map modal description');
+      console.log('Missing map modal details');
       return;
     }
     return file;
@@ -112,7 +112,7 @@ export default class LocationHeader extends Component {
             </Navbar.Collapse>
           </Navbar>
         </div>
-        {source && (
+        {source && mapModalDetails && (
           <MapModal
             handleToggleModal={this.handleToggleMapModal}
             location={location}
