@@ -2,7 +2,7 @@
   text-align: left;
   color: gray;
   margin-top: 40px;
-  margin-left: 100px;
+  margin-left: 10%;
 }
 
 .text-header-divider {
@@ -10,7 +10,7 @@
   margin-top: 0;
   border: none;
   height: 2px;
-  width: 880px;
+  width: 80%;
   background: gray;
   margin-bottom: 20px;
 }
