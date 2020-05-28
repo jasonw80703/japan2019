@@ -23,6 +23,7 @@ import sapp2 from '../../assets/images/sapporo/sapp2.jpg';
 import sapp3 from '../../assets/images/sapporo/sapp3.jpg';
 import sapp4 from '../../assets/images/sapporo/sapp4.jpg';
 import sapp5 from '../../assets/images/sapporo/sapp5.jpg';
+import city from '../../assets/images/sapporo/city.jpg';
 
 // Texts
 import sapporoText from '../../assets/texts/sapporo.json';
@@ -41,7 +42,7 @@ export default function Sapporo() {
         <TextBlock text={sapporoText.airport} />
         <Image caption={captions.ticket} location={LOCATION['en']} size='xs' source={ticket} />
         <TextBlock text={sapporoText.survey} />
-        
+
         <TextHeader header={sapporoText.headers.hostel} />
         <TextBlock text={sapporoText.hostel} />
         <Image location={LOCATION['en']} size='xs' source={hostel} />
@@ -74,6 +75,11 @@ export default function Sapporo() {
         <Image location={LOCATION['en']} size='md' source={entrance} />
         <TextBlock text={sapporoText.beer_factory_1} />
         <ImageSlide images={[sapp1, sapp2, sapp3, sapp4, sapp5]} location={LOCATION['en']} />
+
+        <TextHeader header={sapporoText.headers.mona} />
+        <TextBlock text={sapporoText.mona_1} />
+        <TextBlock text={sapporoText.mona_2} />
+        <Image caption={captions.city} location={LOCATION['en']} size='lg' source={city} />
       </Page>
     </div>
   );
