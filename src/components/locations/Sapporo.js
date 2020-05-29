@@ -43,6 +43,7 @@ export default function Sapporo() {
         location={LOCATION['en']}
         map={map}
         mapModalDetails={mapModalDetails}
+        prevLocation={LOCATION['prev_location']}
         nextLocation={LOCATION['next_location']}
       />
       <Page location={LOCATION['en']} locationJp={LOCATION['jp']}>

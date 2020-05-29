@@ -11,7 +11,11 @@ const LOCATION = LOCATIONS.TOKYO_TWO;
 export default function TokyoTwo() {
   return (
     <div>
-      <LocationHeader dates={LOCATION['dates']} location={LOCATION['en']} nextLocation={LOCATION['next_location']} />
+      <LocationHeader
+        dates={LOCATION['dates']}
+        location={LOCATION['en']}
+        prevLocation={LOCATION['prev_location']}
+      />
       <Page location={LOCATION['en']} locationJp={LOCATION['jp']}></Page>
     </div>
   )

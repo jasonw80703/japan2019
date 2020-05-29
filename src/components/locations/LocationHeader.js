@@ -58,6 +58,7 @@ export default class LocationHeader extends Component {
       location,
       map,
       mapModalDetails,
+      prevLocation,
       nextLocation
     } = this.props;
 
@@ -70,6 +71,7 @@ export default class LocationHeader extends Component {
             <Navbar.Collapse className="justify-content-end">
               <Nav>
                 <LocationNavDropdown />
+                {prevLocation && <Nav.Link href={`/${prevLocation}`}>Prev</Nav.Link>}
                 {nextLocation && <Nav.Link href={`/${nextLocation}`}>Next</Nav.Link>}
                 <Nav.Link href='/' id="home-link">Home</Nav.Link>
               </Nav>
@@ -101,5 +103,6 @@ LocationHeader.propTypes = {
   location: PropTypes.string.isRequired,
   map: PropTypes.node,
   mapModalDetails: PropTypes.object,
+  prevLocation: PropTypes.string,
   nextLocation: PropTypes.string,
 };

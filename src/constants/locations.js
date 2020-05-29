@@ -11,6 +11,7 @@ export const LOCATIONS = {
     'jp': '札幌',
     'href': 'sapporo',
     'dates': 'Oct 17 - Oct 20',
+    'prev_location': 'sanfrancisco',
     'next_location': 'hakodate',
   },
   HAKODATE: {
@@ -18,6 +19,7 @@ export const LOCATIONS = {
     'jp': '函館',
     'href': 'hakodate',
     'dates': 'Oct 20 - Oct 22',
+    'prev_location': 'sapporo',
     'next_location': 'aomori',
   },
   AOMORI: {
@@ -25,6 +27,7 @@ export const LOCATIONS = {
     'jp': '青森',
     'href': 'aomori',
     'dates': 'Oct 22 - Oct 24',
+    'prev_location': 'hakodate',
     'next_location': 'morioka',
   },
   MORIOKA: {
@@ -32,6 +35,7 @@ export const LOCATIONS = {
     'jp': '盛岡',
     'href': 'morioka',
     'dates': 'Oct 24 - Oct 26',
+    'prev_location': 'aomori',
     'next_location': 'ishinomaki',
   },
   ISHINOMAKI: {
@@ -39,6 +43,7 @@ export const LOCATIONS = {
     'jp': '石巻',
     'href': 'ishinomaki',
     'dates': 'Oct 26 - Oct 28',
+    'prev_location': 'morioka',
     'next_location': 'sendai',
   },
   SENDAI: {
@@ -46,6 +51,7 @@ export const LOCATIONS = {
     'jp': '仙台',
     'href': 'sendai',
     'dates': 'Oct 28 - Nov 2',
+    'prev_location': 'ishinomaki',
     'next_location': 'tokyo',
   },
   TOKYO: {
@@ -53,6 +59,7 @@ export const LOCATIONS = {
     'jp': '東京',
     'href': 'tokyo',
     'dates': 'Nov 2 - Nov 7',
+    'prev_location': 'sendai',
     'next_location': 'yokohama',
   },
   YOKOHAMA: {
@@ -60,6 +67,7 @@ export const LOCATIONS = {
     'jp': '横浜',
     'href': 'yokohama',
     'dates': 'Nov 7 - Nov 10',
+    'prev_location': 'tokyo',
     'next_location': 'shizuoka',
   },
   SHIZUOKA: {
@@ -67,6 +75,7 @@ export const LOCATIONS = {
     'jp': '静岡',
     'href': 'shizuoka',
     'dates': 'Nov 10 - Nov 12',
+    'prev_location': 'yokohama',
     'next_location': 'nagoya',
   },
   NAGOYA: {
@@ -74,6 +83,7 @@ export const LOCATIONS = {
     'jp': '名古屋',
     'href': 'nagoya',
     'dates': 'Nov 12 - Nov 15',
+    'prev_location': 'shizuoka',
     'next_location': 'kyoto',
   },
   KYOTO: {
@@ -81,6 +91,7 @@ export const LOCATIONS = {
     'jp': '京都',
     'href': 'kyoto',
     'dates': 'Nov 15 - Nov 20',
+    'prev_location': 'nagoya',
     'next_location': 'kobe',
   },
   KOBE: {
@@ -88,6 +99,7 @@ export const LOCATIONS = {
     'jp': '神戸',
     'href': 'kobe',
     'dates': 'Nov 20 - Nov 24',
+    'prev_location': 'kyoto',
     'next_location': 'hiroshima',
   },
   HIROSHIMA: {
@@ -95,6 +107,7 @@ export const LOCATIONS = {
     'jp': '広島',
     'href': 'hiroshima',
     'dates': 'Nov 24 - Nov 29',
+    'prev_location': 'kobe',
     'next_location': 'busan',
   },
   BUSAN: {
@@ -102,6 +115,7 @@ export const LOCATIONS = {
     'jp': '부산',
     'href': 'busan',
     'dates': 'Nov 29 - Dec 1',
+    'prev_location': 'hiroshima',
     'next_location': 'nara',
   },
   NARA: {
@@ -109,6 +123,7 @@ export const LOCATIONS = {
     'jp': '奈良',
     'href': 'nara',
     'dates': 'Dec 1 - Dec 4',
+    'prev_location': 'busan',
     'next_location': 'osaka',
   },
   OSAKA: {
@@ -116,12 +131,14 @@ export const LOCATIONS = {
     'jp': '大阪',
     'href': 'osaka',
     'dates': 'Dec 4 - Dec 11',
+    'prev_location': 'nara',
     'next_location': 'tokyo_two',
   },
   TOKYO_TWO: {
     'en': 'Tokyo (Round 2)',
     'jp': '東京',
     'href': 'tokyo_two',
+    'prev_location': 'osaka',
     'dates': 'Dec 11 - Dec 19',
   },
 };
