@@ -23,7 +23,8 @@ function HostelImageCarousel({
     >
       {
         images.map((imgName) => {
-          const source = require(`assets/images/hostels/${lowerCaseRemoveSpaces(city)}/${imgName}.jpg`);
+          const folder = lowerCaseRemoveSpaces(city);
+          const source = require(`assets/images/hostels/${folder}/${imgName}.jpg`);
 
           return (
             <Carousel.Item key={imgName}>
