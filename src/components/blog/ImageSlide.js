@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Carousel from 'react-bootstrap/Carousel';
 import ImageModal from 'components/blog/ImageModal';
-import './ImageSlide.css';
 
 export default class ImageSlide extends Component {
   constructor(props) {
