@@ -3,119 +3,119 @@
     "city": "Sapporo",
     "name": "Untapped Hostel",
     "link": "http://untappedhostel.com/eng/about.php",
-    "rating": 5,
+    "rating": 4,
     "images": ["bed", "feet", "garden", "living_room", "outside"],
     "description": "This hostel is decently close to Sapporo Station, the main train station in Sapporo. It's a bit small but was very homey, with a nice common area and living space. The bed bunk had enough height for me and the width was decent as well. Some downsides include that there was no free security box and the showers were limited. Other than that, the hostel is located in a very peaceful and quiet area and the staff that I met were very nice and welcoming."
   },
   "hakodate": {
     "city": "Hakodate",
-    "name": "tbd",
-    "link": "tbd",
+    "name": "Tune Hakodate Hostel",
+    "link": "https://tune-hakodate.com/",
     "rating": 0,
     "description": "tbd"
   },
   "aomori": {
     "city": "Aomori",
-    "name": "tbd",
-    "link": "tbd",
+    "name": "Art Hotel Color Aomori",
+    "link": "https://www.booking.com/hotel/jp/art-color-aomori.html",
     "rating": 0,
     "description": "tbd"
   },
   "morioka": {
     "city": "Morioka",
-    "name": "tbd",
-    "link": "tbd",
+    "name": "UNIZO INN Express",
+    "link": "https://www.unizo-hotel.co.jp/en/express-morioka/",
     "rating": 0,
     "description": "tbd"
   },
   "ishinomaki": {
     "city": "Ishinomaki",
-    "name": "tbd",
-    "link": "tbd",
+    "name": "Active Life -YADO-",
+    "link": "https://www.agoda.com/en-ca/active-life-yado/hotel/ishinomaki-jp.html?cid=1844104",
     "rating": 0,
     "description": "tbd"
   },
   "sendai": {
     "city": "Sendai",
-    "name": "tbd",
-    "link": "tbd",
+    "name": "ORIT Hostel & Cafe Bar Lounge",
+    "link": "https://orit-sendai.jp/en",
     "rating": 0,
     "description": "tbd"
   },
   "tokyo": {
     "city": "Tokyo",
-    "name": "tbd",
-    "link": "tbd",
+    "name": "Unplan Kagurazaka Tokyo",
+    "link": "https://unplan.jp/kagurazaka",
     "rating": 0,
     "description": "tbd"
   },
   "yokohama": {
     "city": "Yokohama",
-    "name": "tbd",
-    "link": "tbd",
+    "name": "Yokohama Central Hostel",
+    "link": "https://ychostel.com/en/",
     "rating": 0,
     "description": "tbd"
   },
   "shizuoka": {
     "city": "Shizuoka",
-    "name": "tbd",
-    "link": "tbd",
+    "name": "Hotel Mystays Shimizu",
+    "link": "https://www.mystays.com/en-us/hotel-mystays-shimizu-shizuoka/",
     "rating": 0,
     "description": "tbd"
   },
   "nagoya": {
     "city": "Nagoya",
-    "name": "tbd",
-    "link": "tbd",
+    "name": "Glocal Nagoya Backpackers Hostel",
+    "link": "https://www.booking.com/hotel/jp/glocal-nagoya-hostel.html",
     "rating": 0,
     "description": "tbd"
   },
   "kyoto": {
     "city": "Kyoto",
-    "name": "tbd",
-    "link": "tbd",
+    "name": "PBP Hostel Kyoto",
+    "link": "https://pbphostel.com/",
     "rating": 0,
     "description": "tbd"
   },
   "kobe": {
     "city": "Kobe",
-    "name": "tbd",
-    "link": "tbd",
+    "name": "Capsule Hotel Kobe Sannomiya",
+    "link": "https://www.booking.com/hotel/jp/capsule-kobe-sannomiya.html",
     "rating": 0,
     "description": "tbd"
   },
   "hiroshima": {
     "city": "Hiroshima",
-    "name": "tbd",
-    "link": "tbd",
+    "name": "Santiago Guesthouse Hiroshima",
+    "link": "https://santiago-guesthouse-hiroshima-jp.book.direct/en-us",
     "rating": 0,
     "description": "tbd"
   },
   "busan": {
     "city": "Busan",
-    "name": "tbd",
-    "link": "tbd",
+    "name": "Best Louis Hamilton Hotel",
+    "link": "https://www.bestlouishamiltonhaeundae.com/en-us",
     "rating": 0,
     "description": "tbd"
   },
   "nara": {
     "city": "Nara",
-    "name": "tbd",
-    "link": "tbd",
+    "name": "Super Hotel Lohas JR Nara Eki",
+    "link": "https://www.superhoteljapan.com/en/s-hotels/lohasnara/",
     "rating": 0,
     "description": "tbd"
   },
   "osaka": {
     "city": "Osaka",
-    "name": "tbd",
-    "link": "tbd",
+    "name": "Airbnb - Dotonbori",
+    "link": "https://www.airbnb.com/",
     "rating": 0,
     "description": "tbd"
   },
   "tokyo_two": {
     "city": "Tokyo (Round 2)",
-    "name": "tbd",
-    "link": "tbd",
+    "name": "Airbnb - Sumida City",
+    "link": "https://www.airbnb.com/",
     "rating": 0,
     "description": "tbd"
   }
