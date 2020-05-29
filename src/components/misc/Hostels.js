@@ -1,5 +1,6 @@
 import React from 'react';
 import MiscHeader from 'components/misc/MiscHeader';
+import MiscTitle from 'components/misc/MiscTitle';
 import {
   Tab,
   Row,
@@ -74,9 +75,11 @@ export default function Hostels() {
   return (
     <div>
       <MiscHeader currentMisc='Hostels' />
-      <h2 className='misc-title'>{'Hostels'}</h2>
-      <p id='hostels-description'>A list of the hostels I stayed at by city.</p>
-      <hr id='hostels-divider'/>
+      <MiscTitle
+        header={'Hostels'}
+        headerJp={'ホステル'}
+        description={'A list of the hostels I stayed at by city.'}
+      />
       <div id="hostels-container">
         <Tab.Container defaultActiveKey="sapporo">
           <Row>

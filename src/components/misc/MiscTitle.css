@@ -1,0 +1,18 @@
+.misc-title {
+  text-align: center;
+  margin: 3% 10% 1% 10%;
+}
+
+.misc-description {
+  text-align: center;
+}
+
+.misc-divider {
+  position: relative;
+  margin-top: 0;
+  border: none;
+  height: 1px;
+  width: 90%;
+  background: gray;
+  margin-bottom: 1.5%;
+}

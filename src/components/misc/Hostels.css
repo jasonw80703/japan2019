@@ -1,17 +1,3 @@
-#hostels-description {
-  text-align: center;
-}
-
-#hostels-divider {
-  position: relative;
-  margin-top: 0;
-  border: none;
-  height: 1px;
-  width: 90%;
-  background: gray;
-  margin-bottom: 1.5%;
-}
-
 #hostels-container {
   margin-left: 5%;
   margin-right: 5%;
