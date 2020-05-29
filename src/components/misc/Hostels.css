@@ -16,3 +16,41 @@
   margin-left: 5%;
   margin-right: 5%;
 }
+
+.nav-pills .nav-link {
+  color: black;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background-color: gray;
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: gray;
+}
+
+.checked {
+  color: orange;
+}
+
+.carousel-container {
+  margin-bottom: 5%;
+}
+
+.carousel-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 500px;
+  max-height: 500px;
+}
+
+.arrow-icon {
+  color: darkgray;
+}
+
+.house-icon {
+  margin: 0.5%;
+  vertical-align: text-bottom;
+}

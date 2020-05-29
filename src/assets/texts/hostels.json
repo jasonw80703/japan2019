@@ -1,0 +1,122 @@
+{
+  "sapporo": {
+    "city": "Sapporo",
+    "name": "Untapped Hostel",
+    "link": "http://untappedhostel.com/eng/about.php",
+    "rating": 5,
+    "images": ["bed", "feet", "garden", "living_room", "outside"],
+    "description": "This hostel is decently close to Sapporo Station, the main train station in Sapporo. It's a bit small but was very homey, with a nice common area and living space. The bed bunk had enough height for me and the width was decent as well. Some downsides include that there was no free security box and the showers were limited. Other than that, the hostel is located in a very peaceful and quiet area and the staff that I met were very nice and welcoming."
+  },
+  "hakodate": {
+    "city": "Hakodate",
+    "name": "tbd",
+    "link": "tbd",
+    "rating": 0,
+    "description": "tbd"
+  },
+  "aomori": {
+    "city": "Aomori",
+    "name": "tbd",
+    "link": "tbd",
+    "rating": 0,
+    "description": "tbd"
+  },
+  "morioka": {
+    "city": "Morioka",
+    "name": "tbd",
+    "link": "tbd",
+    "rating": 0,
+    "description": "tbd"
+  },
+  "ishinomaki": {
+    "city": "Ishinomaki",
+    "name": "tbd",
+    "link": "tbd",
+    "rating": 0,
+    "description": "tbd"
+  },
+  "sendai": {
+    "city": "Sendai",
+    "name": "tbd",
+    "link": "tbd",
+    "rating": 0,
+    "description": "tbd"
+  },
+  "tokyo": {
+    "city": "Tokyo",
+    "name": "tbd",
+    "link": "tbd",
+    "rating": 0,
+    "description": "tbd"
+  },
+  "yokohama": {
+    "city": "Yokohama",
+    "name": "tbd",
+    "link": "tbd",
+    "rating": 0,
+    "description": "tbd"
+  },
+  "shizuoka": {
+    "city": "Shizuoka",
+    "name": "tbd",
+    "link": "tbd",
+    "rating": 0,
+    "description": "tbd"
+  },
+  "nagoya": {
+    "city": "Nagoya",
+    "name": "tbd",
+    "link": "tbd",
+    "rating": 0,
+    "description": "tbd"
+  },
+  "kyoto": {
+    "city": "Kyoto",
+    "name": "tbd",
+    "link": "tbd",
+    "rating": 0,
+    "description": "tbd"
+  },
+  "kobe": {
+    "city": "Kobe",
+    "name": "tbd",
+    "link": "tbd",
+    "rating": 0,
+    "description": "tbd"
+  },
+  "hiroshima": {
+    "city": "Hiroshima",
+    "name": "tbd",
+    "link": "tbd",
+    "rating": 0,
+    "description": "tbd"
+  },
+  "busan": {
+    "city": "Busan",
+    "name": "tbd",
+    "link": "tbd",
+    "rating": 0,
+    "description": "tbd"
+  },
+  "nara": {
+    "city": "Nara",
+    "name": "tbd",
+    "link": "tbd",
+    "rating": 0,
+    "description": "tbd"
+  },
+  "osaka": {
+    "city": "Osaka",
+    "name": "tbd",
+    "link": "tbd",
+    "rating": 0,
+    "description": "tbd"
+  },
+  "tokyo_two": {
+    "city": "Tokyo (Round 2)",
+    "name": "tbd",
+    "link": "tbd",
+    "rating": 0,
+    "description": "tbd"
+  }
+}
