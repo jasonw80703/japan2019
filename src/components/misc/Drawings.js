@@ -8,7 +8,8 @@ export default function Drawings() {
   return (
     <div>
       <MiscHeader currentMisc='Drawings' />
-      <Gallery galleryName='Drawings' imageCount={DRAWINGS_IMAGES_COUNT} folder='drawings' />
+      <h2 className='misc-title'>{'Drawings'}</h2>
+      <Gallery imageCount={DRAWINGS_IMAGES_COUNT} folder='drawings' />
     </div>
   );
 }

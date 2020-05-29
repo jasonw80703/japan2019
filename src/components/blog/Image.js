@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import ImageModal from 'components/blog/ImageModal';
-import 'components/blog/Image.css';
+import './Image.css';
 
 export default class Image extends Component {
   constructor(props) {

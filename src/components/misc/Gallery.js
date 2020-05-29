@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Button from 'react-bootstrap/Button';
-import 'components/misc/Gallery.css';
+import './Gallery.css';
 
 export default class Gallery extends Component {
   constructor(props) {
@@ -50,14 +50,13 @@ export default class Gallery extends Component {
   }
 
   render() {
-    const { galleryName, imageCount } = this.props;
+    const { imageCount } = this.props;
     const { currentImage } = this.state;
 
     const imageSource = this.getImageSource(currentImage);
 
     return (
       <div>
-        <h2 className='gallery-images-title'>{galleryName}</h2>
         <div id='image-container'>
           {imageSource ?
             <img src={imageSource} alt='pic' className='gallery-image' /> :
@@ -75,6 +74,5 @@ export default class Gallery extends Component {
 
 Gallery.propTypes = {
   folder: PropTypes.string.isRequired,
-  galleryName: PropTypes.string.isRequired,
   imageCount: PropTypes.number.isRequired,
 };

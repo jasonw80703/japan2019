@@ -5,8 +5,7 @@ import Image from 'react-bootstrap/Image';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import ImageModal from 'components/blog/ImageModal';
-
-import 'components/blog/MultiImage.css';
+import './MultiImage.css';
 
 export default class MultiImage extends Component {
   constructor(props) {

@@ -1,7 +1,7 @@
 .text-header {
   text-align: left;
   color: gray;
-  margin-top: 40px;
+  margin-top: 3%;
   margin-left: 10%;
 }
 
@@ -12,5 +12,5 @@
   height: 2px;
   width: 80%;
   background: gray;
-  margin-bottom: 20px;
+  margin-bottom: 1.5%;
 }

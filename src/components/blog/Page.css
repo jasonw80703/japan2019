@@ -1,7 +1,5 @@
 .main-page-div {
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-bottom: 30px;
+  margin: 0 7% 1% 7%;
 }
 
 .main-page-header {
@@ -19,7 +17,7 @@
   margin-top: 0;
   border: none;
   height: 3px;
-  width: 400px;
+  width: 40%;
   background: gray;
-  margin-bottom: 20px;
+  margin-bottom: 1.5%;
 }

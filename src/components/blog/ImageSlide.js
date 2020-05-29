@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import ImageModal from 'components/blog/ImageModal';
-import 'components/blog/ImageSlide.css';
+import './ImageSlide.css';
 
 export default class ImageSlide extends Component {
   constructor(props) {

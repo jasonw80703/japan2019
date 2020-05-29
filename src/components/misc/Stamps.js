@@ -8,7 +8,8 @@ export default function Stamps() {
   return (
     <div>
       <MiscHeader currentMisc='Stamps' />
-      <Gallery galleryName='Stamps' imageCount={STAMPS_IMAGES_COUNT} folder='stamps' />
+      <h2 className='misc-title'>{'Stamps'}</h2>
+      <Gallery imageCount={STAMPS_IMAGES_COUNT} folder='stamps' />
     </div>
   );
 }

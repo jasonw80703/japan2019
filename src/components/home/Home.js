@@ -6,7 +6,7 @@ import {
 } from 'react-bootstrap';
 import Modal from 'react-bootstrap/Modal';
 import { LOCATIONS } from 'constants/locations';
-import 'components/home/Home.css';
+import './Home.css';
 
 import homeText from 'assets/texts/home.json';
 import lucy from 'assets/images/home/lucy.jpg';
@@ -67,6 +67,7 @@ export default class Home extends Component {
           <DropdownButton id="misc-dropdown" variant="light" title="Misc" size="lg" as={ButtonGroup}>
             <Dropdown.Item href="/drawings" key="drawings">Drawings</Dropdown.Item>
             <Dropdown.Item href="/stamps" key="stamps">Stamp Collection</Dropdown.Item>
+            <Dropdown.Item href="/hostels" key="hostels">Hostels</Dropdown.Item>
             <Dropdown.Item>Music</Dropdown.Item>
             <Dropdown.Item>Coffee Shop Tier List</Dropdown.Item>
             <Dropdown.Item>Food Pictures</Dropdown.Item>
