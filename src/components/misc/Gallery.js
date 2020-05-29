@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Button from 'react-bootstrap/Button';
+import ImageModal from "components/blog/ImageModal";
 import './Gallery.css';
 
 export default class Gallery extends Component {
@@ -8,11 +9,21 @@ export default class Gallery extends Component {
     super(props);
     this.state = {
       currentImage: 1,
+      showImageModal: false,
     };
 
+    this.handleToggleImageModal = this.handleToggleImageModal.bind(this);
     this.getImageSource = this.getImageSource.bind(this);
     this.nextImage = this.nextImage.bind(this);
     this.prevImage = this.prevImage.bind(this);
+  }
+
+  handleToggleImageModal() {
+    const { showImageModal } = this.state;
+
+    this.setState({
+      showImageModal: !showImageModal,
+    });
   }
 
   getImageSource(currentImage) {
@@ -50,8 +61,8 @@ export default class Gallery extends Component {
   }
 
   render() {
-    const { imageCount } = this.props;
-    const { currentImage } = this.state;
+    const { galleryName, imageCount } = this.props;
+    const { currentImage, showImageModal } = this.state;
 
     const imageSource = this.getImageSource(currentImage);
 
@@ -59,7 +70,7 @@ export default class Gallery extends Component {
       <div>
         <div id='image-container'>
           {imageSource ?
-            <img src={imageSource} alt='pic' className='gallery-image' /> :
+            <img src={imageSource} alt='pic' className='gallery-image' onClick={this.handleToggleImageModal}/> :
             <p>Image missing!</p>
           }
         </div>
@@ -67,6 +78,12 @@ export default class Gallery extends Component {
           {currentImage !== 1 && <Button variant='dark' id='prev-btn' onClick={this.prevImage}>Prev</Button>}
           {currentImage !== imageCount && <Button variant='dark' id='next-btn' onClick={this.nextImage}>Next</Button>}
         </div>
+        <ImageModal
+          handleCloseModal={this.handleToggleImageModal}
+          title={galleryName}
+          modalImage={imageSource}
+          showImageModal={showImageModal}
+        />
       </div>
     )
   }
@@ -74,5 +91,6 @@ export default class Gallery extends Component {
 
 Gallery.propTypes = {
   folder: PropTypes.string.isRequired,
+  galleryName: PropTypes.string.isRequired,
   imageCount: PropTypes.number.isRequired,
 };

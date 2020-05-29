@@ -6,14 +6,14 @@ import './ImageModal.css';
 export default function ImageModal({
   caption,
   handleCloseModal,
-  location,
+  title,
   modalImage,
   showImageModal,
 }) {
   return (
     <Modal show={showImageModal} onHide={handleCloseModal} size='lg' className='map-modal'>
       <Modal.Header closeButton>
-        <Modal.Title>{location}</Modal.Title>
+        <Modal.Title>{title}</Modal.Title>
       </Modal.Header>
       <Modal.Body><img src={modalImage} className='modal-img' alt='pic'/></Modal.Body>
       {caption && <Modal.Footer><p className='modal-caption'>{caption}</p></Modal.Footer>}
@@ -24,7 +24,7 @@ export default function ImageModal({
 ImageModal.propTypes = {
   caption: PropTypes.string,
   handleCloseModal: PropTypes.func.isRequired,
-  location: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   modalImage: PropTypes.node.isRequired,
   showImageModal: PropTypes.bool.isRequired,
 };

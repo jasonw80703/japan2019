@@ -32,7 +32,7 @@ export default class Image extends Component {
         <ImageModal
           caption={caption}
           handleCloseModal={this.handleToggleImageModal}
-          location={location}
+          title={location}
           modalImage={source}
           showImageModal={showImageModal}
         />

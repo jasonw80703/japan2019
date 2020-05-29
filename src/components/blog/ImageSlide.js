@@ -74,7 +74,7 @@ export default class ImageSlide extends Component {
         </Container>
         <ImageModal
           handleCloseModal={this.handleToggleImageModal}
-          location={location}
+          title={location}
           modalImage={currentImage}
           showImageModal={showImageModal}
         />

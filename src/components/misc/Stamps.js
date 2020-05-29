@@ -9,7 +9,7 @@ export default function Stamps() {
     <div>
       <MiscHeader currentMisc='Stamps' />
       <h2 className='misc-title'>{'Stamps'}</h2>
-      <Gallery imageCount={STAMPS_IMAGES_COUNT} folder='stamps' />
+      <Gallery imageCount={STAMPS_IMAGES_COUNT} folder='stamps' galleryName='Stamps' />
     </div>
   );
 }

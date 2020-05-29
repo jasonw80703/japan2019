@@ -58,7 +58,7 @@ export default class MultiImage extends Component {
         {caption && <p className='caption'>{caption}</p>}
         <ImageModal
           handleCloseModal={this.handleCloseModal}
-          location={location}
+          title={location}
           modalImage={modalImage}
           showImageModal={showImageModal}
         />
