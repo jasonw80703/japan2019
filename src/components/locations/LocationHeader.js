@@ -6,7 +6,6 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import MapModal from './MapModal';
 import LocationDatesModal from 'components/locations/LocationDatesModal';
 import { LOCATIONS } from 'constants/locations';
-import lowerCaseRemoveSpaces from 'helpers/lowerCaseRemoveSpaces';
 import 'components/locations/LocationHeader.css';
 
 /**
@@ -22,7 +21,7 @@ function LocationNavDropdown() {
       }
     </NavDropdown>
   );
-};
+}
 
 export default class LocationHeader extends Component {
   constructor(props) {
@@ -33,8 +32,6 @@ export default class LocationHeader extends Component {
     };
 
     this.handleToggleMapModal = this.handleToggleMapModal.bind(this);
-    this.getLocationSource = this.getLocationSource.bind(this);
-    this.getMapModalDetails = this.getMapModalDetails.bind(this);
     this.handleToggleLocationDatesModal = this.handleToggleLocationDatesModal.bind(this);
   }
 
@@ -54,48 +51,15 @@ export default class LocationHeader extends Component {
     });
   }
 
-  getLocationSource() {
-    const { location } = this.props;
-
-    let sourceLocation = location;
-    if (sourceLocation === 'Tokyo (Round 2)') {
-      sourceLocation = 'Tokyo';
-    }
-
-    let file;
-    try {
-      file = require(`assets/map/${lowerCaseRemoveSpaces(sourceLocation)}.jpg`);
-    } catch (error) {
-      console.log('Missing image');
-      return;
-    }
-    return file;
-  }
-
-  getMapModalDetails() {
-    const { location } = this.props;
-
-    let sourceLocation = location;
-    if (sourceLocation === 'Tokyo (Round 2)') {
-      sourceLocation = 'Tokyo';
-    }
-
-    let file;
-    try {
-      file = require(`assets/map/${lowerCaseRemoveSpaces(sourceLocation)}.json`);
-    } catch (error) {
-      console.log('Missing map modal details');
-      return;
-    }
-    return file;
-  }
-
   render() {
     const { showLocationDatesModal, showMapModal } = this.state;
-    const { dates, location, nextLocation } = this.props;
-
-    const source = this.getLocationSource();
-    const mapModalDetails = this.getMapModalDetails();
+    const {
+      dates,
+      location,
+      map,
+      mapModalDetails,
+      nextLocation
+    } = this.props;
 
     return (
       <div>
@@ -112,12 +76,12 @@ export default class LocationHeader extends Component {
             </Navbar.Collapse>
           </Navbar>
         </div>
-        {source && mapModalDetails && (
+        {map && mapModalDetails && (
           <MapModal
             handleToggleModal={this.handleToggleMapModal}
             location={location}
             showModal={showMapModal}
-            source={source}
+            source={map}
             description={mapModalDetails.description}
             locations={mapModalDetails.locations}
             foods={mapModalDetails.foods}
@@ -135,5 +99,7 @@ export default class LocationHeader extends Component {
 LocationHeader.propTypes = {
   dates: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
+  map: PropTypes.node,
+  mapModalDetails: PropTypes.object,
   nextLocation: PropTypes.string,
 };

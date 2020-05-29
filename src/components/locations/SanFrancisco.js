@@ -10,6 +10,10 @@ import sf1Image from 'assets/images/san-francisco/sf1.jpg';
 import sf2Image from 'assets/images/san-francisco/sf2.jpg';
 import captions from 'assets/images/san-francisco/captions.json';
 
+// Map
+import map from 'assets/map/sanfrancisco.jpg';
+import mapModalDetails from 'assets/map/sanfrancisco.json';
+
 // Texts
 import sanFranciscoText from 'assets/texts/sanFrancisco.json';
 
@@ -18,7 +22,13 @@ const LOCATION = LOCATIONS.SAN_FRANCISCO;
 export default function SanFrancisco() {
   return (
     <div>
-      <LocationHeader dates={LOCATION['dates']} location={LOCATION['en']} nextLocation={LOCATION['next_location']} />
+      <LocationHeader
+        dates={LOCATION['dates']}
+        location={LOCATION['en']}
+        map={map}
+        mapModalDetails={mapModalDetails}
+        nextLocation={LOCATION['next_location']}
+      />
       <Page location={LOCATION['en']} locationJp={LOCATION['jp']}>
         <Image source={sf1Image} caption={captions.sf1} location={LOCATION['en']} />
         <TextBlock text={sanFranciscoText.para_1} />

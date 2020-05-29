@@ -25,6 +25,10 @@ import sapp4 from 'assets/images/sapporo/sapp4.jpg';
 import sapp5 from 'assets/images/sapporo/sapp5.jpg';
 import city from 'assets/images/sapporo/city.jpg';
 
+// Map
+import map from 'assets/map/sapporo.jpg';
+import mapModalDetails from 'assets/map/sapporo.json';
+
 // Texts
 import sapporoText from 'assets/texts/sapporo.json';
 import captions from 'assets/images/sapporo/captions.json';
@@ -34,7 +38,13 @@ const LOCATION = LOCATIONS.SAPPORO;
 export default function Sapporo() {
   return (
     <div>
-      <LocationHeader location={LOCATION['en']} dates={LOCATION['dates']} nextLocation={LOCATION['next_location']} />
+      <LocationHeader
+        dates={LOCATION['dates']}
+        location={LOCATION['en']}
+        map={map}
+        mapModalDetails={mapModalDetails}
+        nextLocation={LOCATION['next_location']}
+      />
       <Page location={LOCATION['en']} locationJp={LOCATION['jp']}>
         <TextBlock text={sapporoText.intro} />
         <TextHeader header={sapporoText.headers.airport} />
