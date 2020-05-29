@@ -1,0 +1,22 @@
+.scroll-back-btn {
+  position: fixed; 
+  width: 100%;
+  bottom: 25px;
+  right: 25px;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.4;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
