@@ -13,7 +13,7 @@ import './LocationHeader.css';
  */
 function LocationNavDropdown() {
   return (
-    <NavDropdown title="Location" id="location-dropdown">
+    <NavDropdown title="Location">
       {
         Object.values(LOCATIONS).map((location) => (
           <NavDropdown.Item href={location['href']} key={location['en']}>{location['en']}</NavDropdown.Item>

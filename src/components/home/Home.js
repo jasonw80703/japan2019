@@ -17,7 +17,7 @@ import portrait from 'assets/images/home/portrait.jpg';
  */
 export function LocationDropdown() {
   return (
-    <DropdownButton id="location-dropdown" variant="dark" title="Location" size="lg" as={ButtonGroup}>
+    <DropdownButton id="home-location-dropdown" variant="dark" title="Location" size="lg" as={ButtonGroup}>
       {
         Object.values(LOCATIONS).map((location) => (
           <Dropdown.Item href={location['href']} key={location['en']}>{location['en']}</Dropdown.Item>
