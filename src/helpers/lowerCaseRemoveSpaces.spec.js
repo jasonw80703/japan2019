@@ -1,4 +1,4 @@
-import lowerCaseRemoveSpaces from './lowerCaseRemoveSpaces';
+import lowerCaseRemoveSpaces from 'helpers/lowerCaseRemoveSpaces';
 
 describe('lowerCaseRemoveSpaces()', () => {
   it('should lower case and remove spaces', () => {

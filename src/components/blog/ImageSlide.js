@@ -5,8 +5,8 @@ import Image from 'react-bootstrap/Image';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
-import ImageModal from './ImageModal';
-import './ImageSlide.css';
+import ImageModal from 'components/blog/ImageModal';
+import 'components/blog/ImageSlide.css';
 
 export default class ImageSlide extends Component {
   constructor(props) {
@@ -18,7 +18,7 @@ export default class ImageSlide extends Component {
       currentIndex: 0,
       currentImage: images[0],
       showImageModal: false,
-    }
+    };
 
     this.prevImage = this.prevImage.bind(this);
     this.nextImage = this.nextImage.bind(this);

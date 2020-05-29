@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './Page.css';
+import 'components/blog/Page.css';
 
 export default class Page extends Component {
   render() {

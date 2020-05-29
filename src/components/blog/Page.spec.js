@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Page from './Page';
+import Page from 'components/blog/Page';
 
 describe('<Page />', () => {
 

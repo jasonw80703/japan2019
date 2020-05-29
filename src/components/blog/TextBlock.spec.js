@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import TextBlock from './TextBlock';
+import TextBlock from 'components/blog/TextBlock';
 
 describe('<TextBlock />', () => {
   const defaultProps = {

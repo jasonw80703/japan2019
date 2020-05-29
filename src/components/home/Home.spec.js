@@ -1,8 +1,8 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
-import Home from './Home';
- 
+import Home from 'components/home/Home';
+
 describe('<Home />', () => {
   let wrapper;
 

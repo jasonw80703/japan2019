@@ -1,7 +1,7 @@
 import React from 'react';
 import EnzymeToJson from 'enzyme-to-json';
 import { mount } from 'enzyme';
-import MapModal from './MapModal';
+import MapModal from 'components/locations/MapModal';
 
 describe('<MapModal />', () => {
   const defaultProps = {

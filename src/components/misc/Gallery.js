@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Button from 'react-bootstrap/Button';
-import './Gallery.css';
+import 'components/misc/Gallery.css';
 
 export default class Gallery extends Component {
   constructor(props) {
     super(props);
     this.state = {
       currentImage: 1,
-    }
-    
+    };
+
     this.getImageSource = this.getImageSource.bind(this);
     this.nextImage = this.nextImage.bind(this);
     this.prevImage = this.prevImage.bind(this);
@@ -21,7 +21,7 @@ export default class Gallery extends Component {
     let file;
     try {
       // Issue where I cannot pass in full relative pass for string interpolation here
-      file = require(`../../assets/images/${folder}/${currentImage}.jpg`)
+      file = require(`assets/images/${folder}/${currentImage}.jpg`)
     } catch (error) {
       console.log('Missing image');
       return;
@@ -31,7 +31,7 @@ export default class Gallery extends Component {
 
   nextImage() {
     const { currentImage } = this.state;
-    
+
     const newImage = currentImage + 1;
 
     this.setState({
@@ -66,7 +66,7 @@ export default class Gallery extends Component {
         </div>
         <div className='button-group'>
           {currentImage !== 1 && <Button variant='dark' id='prev-btn' onClick={this.prevImage}>Prev</Button>}
-          {currentImage !== imageCount && <Button variant='dark' id='next-btn' onClick={this.nextImage}>Next</Button>} 
+          {currentImage !== imageCount && <Button variant='dark' id='next-btn' onClick={this.nextImage}>Next</Button>}
         </div>
       </div>
     )
@@ -77,4 +77,4 @@ Gallery.propTypes = {
   folder: PropTypes.string.isRequired,
   galleryName: PropTypes.string.isRequired,
   imageCount: PropTypes.number.isRequired,
-}
+};

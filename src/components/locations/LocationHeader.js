@@ -4,10 +4,10 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import MapModal from './MapModal';
-import LocationDatesModal from './LocationDatesModal';
-import { LOCATIONS } from '../../constants/locations';
-import lowerCaseRemoveSpaces from '../../helpers/lowerCaseRemoveSpaces';
-import './LocationHeader.css';
+import LocationDatesModal from 'components/locations/LocationDatesModal';
+import { LOCATIONS } from 'constants/locations';
+import lowerCaseRemoveSpaces from 'helpers/lowerCaseRemoveSpaces';
+import 'components/locations/LocationHeader.css';
 
 /**
  * Map locations constant to NavDropdown with an Item for each location
@@ -64,7 +64,7 @@ export default class LocationHeader extends Component {
 
     let file;
     try {
-      file = require(`../../assets/map/${lowerCaseRemoveSpaces(sourceLocation)}.jpg`);
+      file = require(`assets/map/${lowerCaseRemoveSpaces(sourceLocation)}.jpg`);
     } catch (error) {
       console.log('Missing image');
       return;
@@ -82,7 +82,7 @@ export default class LocationHeader extends Component {
 
     let file;
     try {
-      file = require(`../../assets/map/${lowerCaseRemoveSpaces(sourceLocation)}.json`);
+      file = require(`assets/map/${lowerCaseRemoveSpaces(sourceLocation)}.json`);
     } catch (error) {
       console.log('Missing map modal details');
       return;

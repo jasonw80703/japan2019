@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
-import LocationHeader from './LocationHeader';
+import LocationHeader from 'components/locations/LocationHeader';
 
 describe('<LocationHeader />', () => {
   let wrapper;

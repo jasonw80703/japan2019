@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Modal from 'react-bootstrap/Modal';
-import './ImageModal.css';
+import 'components/blog/ImageModal.css';
 
 export default function ImageModal({
   caption,
@@ -27,4 +27,4 @@ ImageModal.propTypes = {
   location: PropTypes.string.isRequired,
   modalImage: PropTypes.node.isRequired,
   showImageModal: PropTypes.bool.isRequired,
-}
+};

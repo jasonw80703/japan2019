@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import TextHeader from './TextHeader';
+import TextHeader from 'components/blog/TextHeader';
 
 describe('<TextHeader />', () => {
   const defaultProps = {

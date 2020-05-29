@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
-import Image from './Image';
+import Image from 'components/blog/Image';
 
 describe('<Image />', () => {
   let wrapper;

@@ -5,12 +5,12 @@ import {
   ButtonGroup,
 } from 'react-bootstrap';
 import Modal from 'react-bootstrap/Modal';
-import { LOCATIONS } from '../../constants/locations';
-import './Home.css';
+import { LOCATIONS } from 'constants/locations';
+import 'components/home/Home.css';
 
-import homeText from '../../assets/texts/home.json';
-import lucy from '../../assets/images/home/lucy.jpg';
-import portrait from '../../assets/images/home/portrait.jpg';
+import homeText from 'assets/texts/home.json';
+import lucy from 'assets/images/home/lucy.jpg';
+import portrait from 'assets/images/home/portrait.jpg';
 
 /**
  * Map locations constant to Dropdown with an Item for each location
@@ -52,7 +52,7 @@ export default class Home extends Component {
 
     this.setState({
       showLucy: !showLucy,
-    })
+    });
   }
 
   render() {

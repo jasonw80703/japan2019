@@ -1,17 +1,17 @@
 import React from 'react';
-import LocationHeader from './LocationHeader';
-import Page from '../blog/Page';
-import Image from '../blog/Image';
-import TextBlock from '../blog/TextBlock';
-import { LOCATIONS } from '../../constants/locations';
+import LocationHeader from 'components/locations/LocationHeader';
+import Page from 'components/blog/Page';
+import Image from 'components/blog/Image';
+import TextBlock from 'components/blog/TextBlock';
+import { LOCATIONS } from 'constants/locations';
 
 // Images
-import sf1Image from '../../assets/images/san-francisco/sf1.jpg';
-import sf2Image from '../../assets/images/san-francisco/sf2.jpg';
-import captions from '../../assets/images/san-francisco/captions.json';
+import sf1Image from 'assets/images/san-francisco/sf1.jpg';
+import sf2Image from 'assets/images/san-francisco/sf2.jpg';
+import captions from 'assets/images/san-francisco/captions.json';
 
 // Texts
-import sanFranciscoText from '../../assets/texts/sanFrancisco.json';
+import sanFranciscoText from 'assets/texts/sanFrancisco.json';
 
 const LOCATION = LOCATIONS.SAN_FRANCISCO;
 

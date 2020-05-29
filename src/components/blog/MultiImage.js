@@ -4,9 +4,9 @@ import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import ImageModal from './ImageModal';
+import ImageModal from 'components/blog/ImageModal';
 
-import './MultiImage.css';
+import 'components/blog/MultiImage.css';
 
 export default class MultiImage extends Component {
   constructor(props) {

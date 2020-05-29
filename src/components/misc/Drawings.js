@@ -1,6 +1,6 @@
 import React from 'react';
-import MiscHeader from './MiscHeader';
-import Gallery from './Gallery';
+import MiscHeader from 'components/misc/MiscHeader';
+import Gallery from 'components/misc/Gallery';
 
 const DRAWINGS_IMAGES_COUNT = 25;
 

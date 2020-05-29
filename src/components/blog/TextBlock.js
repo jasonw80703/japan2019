@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './TextBlock.css';
+import 'components/blog/TextBlock.css';
 
 export default class TextBlock extends Component {
   render() {

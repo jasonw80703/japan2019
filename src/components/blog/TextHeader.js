@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './TextHeader.css';
+import 'components/blog/TextHeader.css';
 
 export default function TextHeader({ header }) {
   return (

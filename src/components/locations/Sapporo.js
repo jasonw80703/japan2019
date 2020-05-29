@@ -1,33 +1,33 @@
 import React from 'react';
-import LocationHeader from './LocationHeader';
-import Page from '../blog/Page';
-import Image from '../blog/Image';
-import ImageSlide from '../blog/ImageSlide';
-import TextBlock from '../blog/TextBlock';
-import TextHeader from '../blog/TextHeader';
-import { LOCATIONS } from '../../constants/locations';
+import LocationHeader from 'components/locations/LocationHeader';
+import Page from 'components/blog/Page';
+import Image from 'components/blog/Image';
+import ImageSlide from 'components/blog/ImageSlide';
+import TextBlock from 'components/blog/TextBlock';
+import TextHeader from 'components/blog/TextHeader';
+import { LOCATIONS } from 'constants/locations';
 
 // Images
-import pocketwifi from '../../assets/images/sapporo/pocketwifi.jpg';
-import ticket from '../../assets/images/sapporo/ticket.jpg';
-import hostel from '../../assets/images/sapporo/hostel.jpg';
-import kalbi from '../../assets/images/sapporo/kalbi.jpg';
-import street from '../../assets/images/sapporo/street.jpg';
-import park from '../../assets/images/sapporo/park.jpg';
-import cup from '../../assets/images/sapporo/cup.jpg';
-import tower from '../../assets/images/sapporo/tower.jpg';
-import pages from '../../assets/images/sapporo/pages.jpg';
-import entrance from '../../assets/images/sapporo/entrance.jpg';
-import sapp1 from '../../assets/images/sapporo/sapp1.jpg';
-import sapp2 from '../../assets/images/sapporo/sapp2.jpg';
-import sapp3 from '../../assets/images/sapporo/sapp3.jpg';
-import sapp4 from '../../assets/images/sapporo/sapp4.jpg';
-import sapp5 from '../../assets/images/sapporo/sapp5.jpg';
-import city from '../../assets/images/sapporo/city.jpg';
+import pocketwifi from 'assets/images/sapporo/pocketwifi.jpg';
+import ticket from 'assets/images/sapporo/ticket.jpg';
+import hostel from 'assets/images/sapporo/hostel.jpg';
+import kalbi from 'assets/images/sapporo/kalbi.jpg';
+import street from 'assets/images/sapporo/street.jpg';
+import park from 'assets/images/sapporo/park.jpg';
+import cup from 'assets/images/sapporo/cup.jpg';
+import tower from 'assets/images/sapporo/tower.jpg';
+import pages from 'assets/images/sapporo/pages.jpg';
+import entrance from 'assets/images/sapporo/entrance.jpg';
+import sapp1 from 'assets/images/sapporo/sapp1.jpg';
+import sapp2 from 'assets/images/sapporo/sapp2.jpg';
+import sapp3 from 'assets/images/sapporo/sapp3.jpg';
+import sapp4 from 'assets/images/sapporo/sapp4.jpg';
+import sapp5 from 'assets/images/sapporo/sapp5.jpg';
+import city from 'assets/images/sapporo/city.jpg';
 
 // Texts
-import sapporoText from '../../assets/texts/sapporo.json';
-import captions from '../../assets/images/sapporo/captions.json';
+import sapporoText from 'assets/texts/sapporo.json';
+import captions from 'assets/images/sapporo/captions.json';
 
 const LOCATION = LOCATIONS.SAPPORO;
 
