@@ -8,7 +8,9 @@ const STAMPS_IMAGES_COUNT = 56;
 export default function Stamps() {
   return (
     <div>
-      <MiscHeader currentMisc='Stamps' />
+      <MiscHeader currentMisc='Stamps'>
+        <i class="fas fa-stamp misc-icon" />
+      </MiscHeader>
       <MiscTitle
         header={'Stamps'}
         headerJp={'切手'}

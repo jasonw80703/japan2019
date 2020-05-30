@@ -27,6 +27,10 @@ import TokyoTwo from 'components/locations/TokyoTwo.js';
 import Drawings from 'components/misc/Drawings.js';
 import Stamps from 'components/misc/Stamps.js';
 import Hostels from 'components/misc/Hostels.js';
+import Coffee from 'components/misc/Coffee.js';
+import Music from 'components/misc/Music.js';
+import Food from 'components/misc/Food.js';
+import Tips from 'components/misc/Tips.js';
 
 export default function App() {
   return (
@@ -94,6 +98,18 @@ export default function App() {
         </Route>
         <Route path="/hostels">
           <Hostels />
+        </Route>
+        <Route path="/coffee">
+          <Coffee />
+        </Route>
+        <Route path="/music">
+          <Music />
+        </Route>
+        <Route path="/food">
+          <Food />
+        </Route>
+        <Route path="/tips">
+          <Tips />
         </Route>
         <Route path="/">
           <Home />

@@ -74,7 +74,9 @@ function HostelInfo({
 export default function Hostels() {
   return (
     <div>
-      <MiscHeader currentMisc='Hostels' />
+      <MiscHeader currentMisc='Hostels'>
+        <i className="fas fa-house-user misc-icon" />
+      </MiscHeader>
       <MiscTitle
         header={'Hostels'}
         headerJp={'ホステル'}

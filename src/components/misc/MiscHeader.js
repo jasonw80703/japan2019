@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { MISC_OPTIONS } from 'constants/miscOptions';
+import './MiscHeader.css';
 
 function MiscOptionDropdown() {
   return (
@@ -17,11 +18,12 @@ function MiscOptionDropdown() {
   );
 }
 
-export default function MiscHeader({ currentMisc }) {
+export default function MiscHeader({ currentMisc, children }) {
   return (
     <div className="location-header-div">
       <Navbar bg="dark" variant="dark">
         <Navbar.Brand>{currentMisc}</Navbar.Brand>
+        {children}
         <Navbar.Collapse className="justify-content-end">
           <Nav>
             <MiscOptionDropdown />

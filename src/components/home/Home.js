@@ -68,10 +68,10 @@ export default class Home extends Component {
             <Dropdown.Item href="/drawings" key="drawings">Drawings</Dropdown.Item>
             <Dropdown.Item href="/stamps" key="stamps">Stamp Collection</Dropdown.Item>
             <Dropdown.Item href="/hostels" key="hostels">Hostels</Dropdown.Item>
-            <Dropdown.Item>Music</Dropdown.Item>
-            <Dropdown.Item>Coffee Shop Tier List</Dropdown.Item>
-            <Dropdown.Item>Food Pictures</Dropdown.Item>
-            <Dropdown.Item>Japan Travel Tips</Dropdown.Item>
+            <Dropdown.Item href="/music" key="music">Music</Dropdown.Item>
+            <Dropdown.Item href="/coffee" key="coffee">Coffee Shop Tier List</Dropdown.Item>
+            <Dropdown.Item href="/food" key="food">Food Pictures</Dropdown.Item>
+            <Dropdown.Item href="/tips" key="tips">Japan Travel Tips</Dropdown.Item>
           </DropdownButton>
         </div>
         {showModal && (
