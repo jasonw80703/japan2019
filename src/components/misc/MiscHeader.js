@@ -2,6 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import { MISC_OPTIONS } from 'constants/miscOptions';
+
+function MiscOptionDropdown() {
+  return (
+    <NavDropdown alignRight title="Misc">
+      {
+        MISC_OPTIONS.map((option) => (
+          <NavDropdown.Item href={`/${option}`} key={option}>{option}</NavDropdown.Item>
+        ))
+      }
+    </NavDropdown>
+  );
+}
 
 export default function MiscHeader({ currentMisc }) {
   return (
@@ -10,6 +24,7 @@ export default function MiscHeader({ currentMisc }) {
         <Navbar.Brand>{currentMisc}</Navbar.Brand>
         <Navbar.Collapse className="justify-content-end">
           <Nav>
+            <MiscOptionDropdown />
             <Nav.Link href='/' id="home-link">Home</Nav.Link>
           </Nav>
         </Navbar.Collapse>

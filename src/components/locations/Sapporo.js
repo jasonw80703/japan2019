@@ -58,7 +58,7 @@ export default function Sapporo() {
         <TextBlock text={sapporoText.hostel} />
         <Image location={LOCATION['en']} size='xs' source={hostel} />
         <TextBlock text={sapporoText.kalbi} />
-        <Image location={LOCATION['en']} size='sm' source={kalbi} />
+        <Image location={LOCATION['en']} size='xs' source={kalbi} />
 
         <TextHeader header={sapporoText.headers.work} />
         <TextBlock text={sapporoText.work_1} />
