@@ -8,6 +8,7 @@ import {
   Col,
   Nav,
   Carousel,
+  Container,
 } from 'react-bootstrap';
 import foodCities from 'assets/texts/foods.json';
 import lowerCaseRemoveSpaces from 'helpers/lowerCaseRemoveSpaces';
@@ -65,13 +66,22 @@ function LocationFoods({ city, foods }) {
                 ))
               }
               <hr />
-              <p>{food['review']}</p>
               {food['images'] &&
-                <FoodImageCarousel
-                  city={city}
-                  images={food['images']}
-                />
+                <Container>
+                  <Row>
+                    <Col sm={4}>
+                      <p>{food['review']}</p>
+                    </Col>
+                    <Col sm={8}>
+                      <FoodImageCarousel
+                        city={city}
+                        images={food['images']}
+                      />
+                    </Col>
+                  </Row>
+                </Container>
               }
+              {!food['images'] && <p>{food['review']}</p>}
             </div>
           </Tab>
         ))
