@@ -6,7 +6,7 @@ export default function Music() {
   return (
     <div>
       <MiscHeader currentMisc='Music'>
-        <i class="fas fa-headphones misc-icon" />
+        <i className="fas fa-headphones misc-icon" />
       </MiscHeader>
       <MiscTitle
         header={'Music'}

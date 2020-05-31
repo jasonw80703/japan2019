@@ -9,7 +9,7 @@ export default function Drawings() {
   return (
     <div>
       <MiscHeader currentMisc='Drawings'>
-        <i class="fas fa-pencil-alt misc-icon" />
+        <i className="fas fa-pencil-alt misc-icon" />
       </MiscHeader>
       <MiscTitle
         header={'Drawings'}

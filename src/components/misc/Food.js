@@ -6,7 +6,7 @@ export default function Food() {
   return (
     <div>
       <MiscHeader currentMisc='Food Pics'>
-        <i class="fas fa-fish misc-icon" />
+        <i className="fas fa-fish misc-icon" />
       </MiscHeader>
       <MiscTitle
         header={'Food Pics'}

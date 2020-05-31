@@ -6,7 +6,7 @@ export default function Coffee() {
   return (
     <div>
       <MiscHeader currentMisc='Coffee Coffee Coffee'>
-        <i class="fas fa-coffee misc-icon" />
+        <i className="fas fa-coffee misc-icon" />
       </MiscHeader>
       <MiscTitle
         header={'Coffee Shop Tier List'}

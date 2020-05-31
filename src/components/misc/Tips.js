@@ -6,7 +6,7 @@ export default function Tips() {
   return (
     <div>
       <MiscHeader currentMisc='Travel Tips'>
-        <i class="fas fa-hiking misc-icon" />
+        <i className="fas fa-hiking misc-icon" />
       </MiscHeader>
       <MiscTitle
         header={'Travel Tips'}

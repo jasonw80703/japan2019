@@ -9,7 +9,7 @@ export default function Stamps() {
   return (
     <div>
       <MiscHeader currentMisc='Stamps'>
-        <i class="fas fa-stamp misc-icon" />
+        <i className="fas fa-stamp misc-icon" />
       </MiscHeader>
       <MiscTitle
         header={'Stamps'}

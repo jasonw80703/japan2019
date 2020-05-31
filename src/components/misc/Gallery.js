@@ -12,10 +12,27 @@ export default class Gallery extends Component {
       showImageModal: false,
     };
 
+    this.handleKeyPress = this.handleKeyPress.bind(this);
     this.handleToggleImageModal = this.handleToggleImageModal.bind(this);
     this.getImageSource = this.getImageSource.bind(this);
     this.nextImage = this.nextImage.bind(this);
     this.prevImage = this.prevImage.bind(this);
+  }
+
+  componentWillMount() {
+    document.addEventListener('keydown', this.handleKeyPress);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('keydown', this.handleKeyPress);
+  }
+
+  handleKeyPress(e) {
+    if (e.keyCode === 37) {
+      this.prevImage();
+    } else if (e.keyCode === 39) {
+      this.nextImage();
+    }
   }
 
   handleToggleImageModal() {
@@ -41,23 +58,28 @@ export default class Gallery extends Component {
   }
 
   nextImage() {
+    const { imageCount } = this.props;
     const { currentImage } = this.state;
 
-    const newImage = currentImage + 1;
+    if (currentImage < imageCount) {
+      const newImage = currentImage + 1;
 
-    this.setState({
-      currentImage: newImage
-    });
+      this.setState({
+        currentImage: newImage
+      });
+    }
   }
 
   prevImage() {
     const { currentImage } = this.state;
 
-    const newImage = currentImage - 1;
+    if (currentImage > 1) {
+      const newImage = currentImage - 1;
 
-    this.setState({
-      currentImage: newImage
-    });
+      this.setState({
+        currentImage: newImage
+      });
+    }
   }
 
   render() {
