@@ -4,6 +4,6 @@ export const MISC_OPTIONS = [
   'hostels',
   'music',
   'coffee',
-  'food',
+  'foods',
   'tips',
 ]

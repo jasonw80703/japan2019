@@ -15,6 +15,19 @@ import lowerCaseRemoveSpaces from 'helpers/lowerCaseRemoveSpaces';
 import { cleanTokyoTwoFolder } from 'helpers/cleanTokyoTwo';
 import './Foods.css';
 
+function FoodImage({ city, imgName }) {
+  const folder = lowerCaseRemoveSpaces(cleanTokyoTwoFolder(city));
+  const source = require(`assets/images/foods/${folder}/${imgName}.jpg`);
+
+  return (
+    <img
+      src={source}
+      alt={imgName}
+      className='carousel-img'
+    />
+  );
+}
+
 function FoodImageCarousel({ city, images }) {
   return (
     <Carousel
@@ -73,11 +86,14 @@ function LocationFoods({ city, foods }) {
                       <p>{food['review']}</p>
                     </Col>
                     <Col sm={8}>
-                      <FoodImageCarousel
-                        city={city}
-                        images={food['images']}
-                      />
-                    </Col>
+                      {food['images'].length === 1 && <FoodImage city={city} imgName={food['images'][0]} isCarousel={false} />}
+                      {food['images'].length > 1 &&
+                        <FoodImageCarousel
+                          city={city}
+                          images={food['images']}
+                        />
+                      }
+                      </Col>
                   </Row>
                 </Container>
               }
