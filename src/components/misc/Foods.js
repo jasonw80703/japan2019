@@ -86,7 +86,9 @@ function LocationFoods({ city, foods }) {
                       <p>{food['review']}</p>
                     </Col>
                     <Col sm={8}>
-                      {food['images'].length === 1 && <FoodImage city={city} imgName={food['images'][0]} isCarousel={false} />}
+                      {food['images'].length === 1 &&
+                        <FoodImage city={city} imgName={food['images'][0]} isCarousel={false} />
+                      }
                       {food['images'].length > 1 &&
                         <FoodImageCarousel
                           city={city}
