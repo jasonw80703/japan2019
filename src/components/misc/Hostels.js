@@ -10,6 +10,7 @@ import {
 } from 'react-bootstrap';
 import hostels from 'assets/texts/hostels.json';
 import lowerCaseRemoveSpaces from 'helpers/lowerCaseRemoveSpaces';
+import { cleanTokyoTwoFolder } from 'helpers/cleanTokyoTwo';
 import './Hostels.css';
 
 function HostelImageCarousel({
@@ -24,7 +25,7 @@ function HostelImageCarousel({
     >
       {
         images.map((imgName) => {
-          const folder = lowerCaseRemoveSpaces(city);
+          const folder = lowerCaseRemoveSpaces(cleanTokyoTwoFolder(city));
           const source = require(`assets/images/hostels/${folder}/${imgName}.jpg`);
 
           return (
@@ -42,12 +43,10 @@ function HostelImageCarousel({
   )
 }
 
-function HostelInfo({
-  info,
-}) {
+function HostelInfo({ info }) {
   return (
     <div>
-      <h1><span className="fas fa-house-user fa-xs house-icon" />{info.name} ({info.city})</h1>
+      <h1><span className="fas fa-house-user fa-xs house-icon" />{info.name}</h1>
       <p><a href={info.link} target="_blank" rel="noopener noreferrer">{info.link}</a></p>
       {
         [...Array(info.rating)].map((_, i) => (

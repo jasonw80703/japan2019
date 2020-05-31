@@ -70,7 +70,7 @@ export default class Home extends Component {
             <Dropdown.Item href="/hostels" key="hostels">Hostels</Dropdown.Item>
             <Dropdown.Item href="/music" key="music">Music</Dropdown.Item>
             <Dropdown.Item href="/coffee" key="coffee">Coffee Shop Tier List</Dropdown.Item>
-            <Dropdown.Item href="/food" key="food">Food Pictures</Dropdown.Item>
+            <Dropdown.Item href="/foods" key="foods">Food Pictures</Dropdown.Item>
             <Dropdown.Item href="/tips" key="tips">Japan Travel Tips</Dropdown.Item>
           </DropdownButton>
         </div>

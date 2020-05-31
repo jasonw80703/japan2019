@@ -29,7 +29,7 @@ import Stamps from 'components/misc/Stamps.js';
 import Hostels from 'components/misc/Hostels.js';
 import Coffee from 'components/misc/Coffee.js';
 import Music from 'components/misc/Music.js';
-import Food from 'components/misc/Food.js';
+import Foods from 'components/misc/Foods.js';
 import Tips from 'components/misc/Tips.js';
 
 export default function App() {
@@ -105,8 +105,8 @@ export default function App() {
         <Route path="/music">
           <Music />
         </Route>
-        <Route path="/food">
-          <Food />
+        <Route path="/foods">
+          <Foods />
         </Route>
         <Route path="/tips">
           <Tips />

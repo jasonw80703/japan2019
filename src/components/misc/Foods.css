@@ -1,0 +1,17 @@
+#foods-container {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.location-foods-div {
+  margin-top: 2%;
+}
+
+.location-food-address {
+  font-size: 75%;
+  opacity: 50%;
+}
+
+.location-food-restaurant {
+  opacity: 75%;
+}
