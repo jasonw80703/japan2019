@@ -15,3 +15,11 @@
 .location-food-restaurant {
   opacity: 75%;
 }
+
+.nav-tabs > a {
+  color: black;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+  color: maroon;
+}
