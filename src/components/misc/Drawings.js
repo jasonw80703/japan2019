@@ -14,6 +14,7 @@ export default function Drawings() {
       <MiscTitle
         header={'Drawings'}
         headerJp={'図'}
+        description={'Some buildings and other things I drew on the trip.'}
       />
       <Gallery imageCount={DRAWINGS_IMAGES_COUNT} folder='drawings' galleryName='Drawings' />
     </div>

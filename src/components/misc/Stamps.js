@@ -14,6 +14,7 @@ export default function Stamps() {
       <MiscTitle
         header={'Stamps'}
         headerJp={'切手'}
+        description={'Stamps I collected throughout Japan.'}
       />
       <Gallery imageCount={STAMPS_IMAGES_COUNT} folder='stamps' galleryName='Stamps' />
     </div>
