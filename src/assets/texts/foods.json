@@ -41,6 +41,18 @@
           "soupcurry3",
           "soupcurry4"
         ]
+      },
+      {
+        "name": "Konbini Onigiri",
+        "name_jp": "おにぎり",
+        "rating": 5,
+        "restaurant": "7/11",
+        "review": "Konbinis (or convenience stores) are found everywhere throughout Japan. My go-to food throughout my trip (and also in my various trips to Japan before this one) has been rice balls, always found lined up neatly on refrigerated shelves in konbinis. They have various fillings including tuna mayonnaise, fish roe, seasoned pork, pickled plum, and salmon. First timers may have difficulty opening the onigiri properly, so I would highly recommend googling how to do it properly (it's mostly a matter of following the numbers on the packaging). Quick, cheap, delicious and filling - nothing else needs to be said.",
+        "recommend": true,
+        "images": [
+          "onigiri1",
+          "onigiri2"
+        ]
       }
     ]
   },

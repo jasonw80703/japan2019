@@ -63,7 +63,7 @@ export default function LocationFoods({ city, foods }) {
                 {food['restaurant']}
                 {food['website'] && <span><a href={food['website']} target="_blank" rel="noopener noreferrer"> {food['website']}</a></span>}
               </p>
-              <p className='location-food-address'>{food['address']}</p>
+              {food['address'] && <p className='location-food-address'>{food['address']}</p>}
               {
                 [...Array(food['rating'])].map((_, i) => (
                   <span className="fa fa-star checked" key={i} />
