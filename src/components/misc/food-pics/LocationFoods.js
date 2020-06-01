@@ -76,9 +76,9 @@ export default function LocationFoods({ city, foods }) {
               }
               <hr />
               {food['images'] &&
-                <Container>
+                <Container fluid>
                   <Row>
-                    <Col sm={4}>
+                    <Col sm={4} className='first-col'>
                       <p>{food['review']}</p>
                     </Col>
                     <Col sm={8}>
