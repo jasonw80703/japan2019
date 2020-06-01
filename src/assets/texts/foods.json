@@ -26,6 +26,21 @@
           "misoramen2",
           "misoramen3"
         ]
+      },
+      {
+        "name": "Soup Curry",
+        "name_jp": "スープカレー",
+        "rating": 4,
+        "restaurant": "スープカレー奥芝商店 駅前創成寺",
+        "address": "Japan, 〒060-0004 Hokkaido, Sapporo, Chuo Ward, Kita 4 Jonishi, 1 Chome, ホクレンビル B1F",
+        "review": "After a rainy morning in Sapporo, I hid under a building looking for a lunch spot near me. I searched and found that Sapporo is famous for its soup curry, where it actually originated from. I found this store and got there around 1:30pm and there still was a huge line outside of the shop. I waited around half an hour before I was seated inside right in front of where the chefs make the food. The interior is warm and filled with dark wood, giving a nice homey feeling. You can see the chefs cook the curry and prepare everything from scratch. The soup curry was hearty, full of meat and vegetables, and generally very delicious. It had a large meatball, potatoes, carrots, eggplant, spinach, eggs and was served with a bowl of rice. I would highly recommend it if you visit Sapporo!",
+        "recommend": true,
+        "images": [
+          "soupcurry1",
+          "soupcurry2",
+          "soupcurry3",
+          "soupcurry4"
+        ]
       }
     ]
   },

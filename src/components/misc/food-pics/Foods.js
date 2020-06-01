@@ -1,7 +1,7 @@
 import React from 'react';
 import MiscHeader from 'components/misc/MiscHeader';
 import MiscTitle from 'components/misc/MiscTitle';
-import LocationFoods from 'components/misc/LocationFoods';
+import LocationFoods from 'components/misc/food-pics/LocationFoods';
 import {
   Tab,
   Row,
@@ -55,7 +55,8 @@ export default function Foods() {
       </MiscHeader>
       <MiscTitle
         header={'Food Pics'}
-        headerJp={'食物'}
+        headerJp={'食べ物の写真'}
+        description={'A list of the food I enjoyed by city.'}
       />
       <LocationTab />
     </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import RecommendationBadge from 'components/misc/food-pics/RecommendationBadge';
 import {
   Tabs,
   Tab,
@@ -57,7 +58,7 @@ export default function LocationFoods({ city, foods }) {
         foods.map((food, index) => (
           <Tab eventKey={index} title={food['name']} key={index}>
             <div className='location-foods-div'>
-              <h1>{food['name']} <span className='header-jp'>{food['name_jp']}</span></h1>
+              <h1>{food['name']} <span className='header-jp'>{food['name_jp']}</span> {food['recommend'] && <RecommendationBadge />}</h1>
               <p className='location-food-restaurant'>
                 {food['restaurant']}
                 {food['website'] && <span><a href={food['website']} target="_blank" rel="noopener noreferrer"> {food['website']}</a></span>}
