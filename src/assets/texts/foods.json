@@ -60,7 +60,61 @@
   "hakodate": {
     "city": "Hakodate",
     "foods": [
-      
+      {
+        "name": "Maguro Uni Don",
+        "name_jp": "まぐろうに丼",
+        "rating": 3,
+        "restaurant": "Sushi Hakodate",
+        "address": "Japan, 〒040-0063 Hokkaido, Hakodate, Wakamatsucho, 9−14 はこだて朝市どんぶり横丁市場内",
+        "website": "https://www.sushidokoro-hakodate.com/",
+        "review": "Right after my four and a half hour train ride to Hakodate station, I was feeling famished and looked for food near the station. The station was near the water so there was a marketplace with a lot of seafood options. While being overpriced, the Maguro (tuna) and Uni (sea urchin) Don that I ordered at Sushi Hakodate was delightful. Being my first taste of fresh raw fish in Japan this trip, I was very excited and the packed bowl did not disappoint. The uni was decent, but the lean maguro mixed with shoyu and sushi rice really made me feel grateful to have been there at the time.",
+        "images": [
+          "don1",
+          "don2",
+          "don3"
+        ]
+      },
+      {
+        "name": "Shio Ramen",
+        "name_jp": "しおラーメン",
+        "rating": 2,
+        "restaurant": "KITACHI AJISAI SHOKUDO",
+        "address": "29-22 Goryokakucho, Hakodate, Hokkaido 040-0001, Japan",
+        "website": "http://www.ajisai.tv/",
+        "review": "I ordered a bowl of Shio Ramen, the recommended bowl of ramen at Ajisai ramen near Fort Goryokaku. The broth was more clear than flavourful, making me crave my first bowl of ramen in Sapporo. It was a quick bowl of ramen, but I strongly prefer with ramen having a strong and flavourful broth that sticks tight to a pull of al dente noodles, the oil and fat remaining on my lips after I slurp 'em up.",
+        "images": [
+          "shio1"
+        ]
+      },
+      {
+        "name": "Hot Tempura Soba",
+        "name_jp": "天ぷらそば",
+        "rating": 5,
+        "restaurant": "YATARAYA",
+        "address": "1 Chome-28-1 Yunokawacho, Hakodate, Hokkaido 042-0932, Japan",
+        "recommend": true,
+        "review": "Near my hostel Tune Hakodate, this mom and pop shop is a must visit if you're a fan of soba noodles. I remember my first time having fancy soba in Kyoto with Minsu in 2017, and at that time I didn't care for it at all. Over time, I grew to appreciate the simplicity, craft and health benefits of soba noodles. I normally enjoy a nice cold soba with the classic dipping sauce with green onions. At Yataraya, I ordered a hot soba soup with tempura. The soup was extremely flavourful, made of a simple yet elegant shoyu and homemade dashi broth. The tempura was cleanly fried, providing great contrast to the texture of the firm soba noodles. As you can see from the last image, I didn't leave a single drop remaining.",
+        "images": [
+          "soba1",
+          "soba2",
+          "soba3"
+        ]
+      },
+      {
+        "name": "Conveyor Belt Sushi",
+        "name_jp": "回転寿司",
+        "rating": 4,
+        "restaurant": "Kantaro Sushi",
+        "address": "14-4 Ugauracho, Hakodate, Hokkaido 040-0023, Japan",
+        "website": "https://www.hk-r.jp/",
+        "review": "My first of many trips to conveyor belt sushi restaurants was to Kantaro Sushi in Hakodate. I remember walking 40 minutes at night from my hostel to this restaurant near the water due to its high reviews. Conveyor belt sushi is amazing: little to none communication required with staff, no judgment as you stack up the plates, and it's also just plain fun. You could even grab your own beer here and bring it to your seat. The fish quality is pretty good, and I ate a lot of food (and drink) coming to a total of around $35.",
+        "images": [
+          "sushi1",
+          "sushi2",
+          "sushi3",
+          "sushi4"
+        ]
+      }
     ]
   },
   "aomori": {

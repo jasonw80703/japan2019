@@ -24,10 +24,13 @@ export default class Image extends Component {
   render() {
     const { caption, location, source, size } = this.props;
     const { showImageModal } = this.state;
+    
+    const captionClass = caption ? '' : 'no-caption';
+    const imageClass = `${size} pic ${captionClass}`
 
     return (
       <div>
-        <img src={source} className={`${size} pic`} alt='pic' onClick={this.handleToggleImageModal} />
+        <img src={source} className={imageClass} alt='pic' onClick={this.handleToggleImageModal} />
         {caption && <p className='caption'>{caption}</p>}
         <ImageModal
           caption={caption}
