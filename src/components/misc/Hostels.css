@@ -40,3 +40,8 @@
   margin: 0.5%;
   vertical-align: text-bottom;
 }
+
+.hostel-address {
+  font-size: 75%;
+  color: lightslategray;
+}

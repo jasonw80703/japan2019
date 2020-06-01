@@ -49,6 +49,7 @@ function HostelInfo({ info }) {
     <div>
       <h1><span className="fas fa-house-user fa-xs house-icon" />{info.name}</h1>
       <p><a href={info.link} target="_blank" rel="noopener noreferrer">{info.link}</a></p>
+      {info.address && <p className="hostel-address">{info.address}</p>}
       {
         [...Array(info.rating)].map((_, i) => (
           <span className="fa fa-star checked" key={i} />

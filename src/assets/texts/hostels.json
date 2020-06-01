@@ -2,6 +2,7 @@
   "sapporo": {
     "city": "Sapporo",
     "name": "Untapped Hostel",
+    "address": "Kita 18jo Nishi4 1-8, 1, Kita Ward, Sapporo, Hokkaido 001-0018, Japan",
     "link": "http://untappedhostel.com/eng/about.php",
     "rating": 4,
     "images": ["bed", "feet", "garden", "living_room", "outside"],
@@ -10,13 +11,16 @@
   "hakodate": {
     "city": "Hakodate",
     "name": "Tune Hakodate Hostel",
+    "address": "1 Chome-30-1 Yunokawacho, Hakodate, Hokkaido 042-0932, Japan",
     "link": "https://tune-hakodate.com/",
-    "rating": 0,
-    "description": "tbd"
+    "rating": 3,
+    "images": ["bed", "bunk", "common", "common_2", "space"],
+    "description": "Tune Hakodate Hostel is very hip. Advertised as a place for artists (mainly musicians), they have a stage in the store front for music performances. However, when I went there, maybe it was an off season as there were people performing but no one watching. The common area otherwise was very open and nice to work in, and the dorms were clean and comfy. There were plenty of individual showers and washrooms and a kitchen shared by everyone. The staff were nice but not as welcoming as some of the other locations I stayed at. The location is a bit far from the main Hakodate train station. I had to take a local bus that was convenient but may be difficult if you didn't understand any Japanese. The surrounding area had some convenience stores and smaller restaurants, and was walking distance to the water which is nice."
   },
   "aomori": {
     "city": "Aomori",
     "name": "Art Hotel Color Aomori",
+    "address": "",
     "link": "https://www.booking.com/hotel/jp/art-color-aomori.html",
     "rating": 0,
     "description": "tbd"
@@ -24,6 +28,7 @@
   "morioka": {
     "city": "Morioka",
     "name": "UNIZO INN Express",
+    "address": "",
     "link": "https://www.unizo-hotel.co.jp/en/express-morioka/",
     "rating": 0,
     "description": "tbd"
@@ -31,6 +36,7 @@
   "ishinomaki": {
     "city": "Ishinomaki",
     "name": "Active Life -YADO-",
+    "address": "",
     "link": "https://www.agoda.com/en-ca/active-life-yado/hotel/ishinomaki-jp.html?cid=1844104",
     "rating": 0,
     "description": "tbd"
@@ -38,6 +44,7 @@
   "sendai": {
     "city": "Sendai",
     "name": "ORIT Hostel & Cafe Bar Lounge",
+    "address": "",
     "link": "https://orit-sendai.jp/en",
     "rating": 0,
     "description": "tbd"
@@ -45,6 +52,7 @@
   "tokyo": {
     "city": "Tokyo",
     "name": "Unplan Kagurazaka Tokyo",
+    "address": "",
     "link": "https://unplan.jp/kagurazaka",
     "rating": 0,
     "description": "tbd"
@@ -52,6 +60,7 @@
   "yokohama": {
     "city": "Yokohama",
     "name": "Yokohama Central Hostel",
+    "address": "",
     "link": "https://ychostel.com/en/",
     "rating": 0,
     "description": "tbd"
@@ -59,6 +68,7 @@
   "shizuoka": {
     "city": "Shizuoka",
     "name": "Hotel Mystays Shimizu",
+    "address": "",
     "link": "https://www.mystays.com/en-us/hotel-mystays-shimizu-shizuoka/",
     "rating": 0,
     "description": "tbd"
@@ -66,6 +76,7 @@
   "nagoya": {
     "city": "Nagoya",
     "name": "Glocal Nagoya Backpackers Hostel",
+    "address": "",
     "link": "https://www.booking.com/hotel/jp/glocal-nagoya-hostel.html",
     "rating": 0,
     "description": "tbd"
@@ -73,6 +84,7 @@
   "kyoto": {
     "city": "Kyoto",
     "name": "PBP Hostel Kyoto",
+    "address": "",
     "link": "https://pbphostel.com/",
     "rating": 0,
     "description": "tbd"
@@ -80,6 +92,7 @@
   "kobe": {
     "city": "Kobe",
     "name": "Capsule Hotel Kobe Sannomiya",
+    "address": "",
     "link": "https://www.booking.com/hotel/jp/capsule-kobe-sannomiya.html",
     "rating": 0,
     "description": "tbd"
@@ -87,6 +100,7 @@
   "hiroshima": {
     "city": "Hiroshima",
     "name": "Santiago Guesthouse Hiroshima",
+    "address": "",
     "link": "https://santiago-guesthouse-hiroshima-jp.book.direct/en-us",
     "rating": 0,
     "description": "tbd"
@@ -94,6 +108,7 @@
   "busan": {
     "city": "Busan",
     "name": "Best Louis Hamilton Hotel",
+    "address": "",
     "link": "https://www.bestlouishamiltonhaeundae.com/en-us",
     "rating": 0,
     "description": "tbd"
@@ -101,6 +116,7 @@
   "nara": {
     "city": "Nara",
     "name": "Super Hotel Lohas JR Nara Eki",
+    "address": "",
     "link": "https://www.superhoteljapan.com/en/s-hotels/lohasnara/",
     "rating": 0,
     "description": "tbd"
@@ -108,6 +124,7 @@
   "osaka": {
     "city": "Osaka",
     "name": "Airbnb - Dotonbori",
+    "address": "",
     "link": "https://www.airbnb.com/",
     "rating": 0,
     "description": "tbd"
@@ -115,6 +132,7 @@
   "tokyo_two": {
     "city": "Tokyo (Round 2)",
     "name": "Airbnb - Sumida City",
+    "address": "",
     "link": "https://www.airbnb.com/",
     "rating": 0,
     "description": "tbd"
