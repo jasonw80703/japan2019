@@ -22,6 +22,7 @@ function HostelImageCarousel({
       className='carousel-container'
       nextIcon={<span className="fa fa-angle-right fa-3x arrow-icon" />}
       prevIcon={<span className="fa fa-angle-left fa-3x arrow-icon" />}
+      interval={null}
     >
       {
         images.map((imgName) => {
