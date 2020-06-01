@@ -44,7 +44,7 @@ export default class MultiImage extends Component {
     const { showImageModal, modalImage } = this.state;
 
     return (
-      <div>
+      <div className='multi-image-div'>
         <Container>
           <Row noGutters>
             <Col><Image src={img1} className="multi-pic" onClick={() => this.handleOpenModal(img1)} /></Col>
