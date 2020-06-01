@@ -49,7 +49,7 @@ export default function Hakodate() {
       <TextBlock text={hakodateText.jr_1} />
       <TextBlock text={hakodateText.jr_2} />
       <TextBlock text={hakodateText.jr_3} />
-      <ImageSlide images={[station_1, station_2, station_3]}/>
+      <ImageSlide images={[station_1, station_2, station_3]} location={LOCATION['en']} />
 
       <TextHeader header={hakodateText.headers.fort} />
       <TextBlock text={hakodateText.fort} />
