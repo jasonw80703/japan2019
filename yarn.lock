@@ -7850,6 +7850,11 @@ react-overlays@^3.1.2:
     uncontrollable "^7.0.0"
     warning "^4.0.3"
 
+react-preload@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/react-preload/-/react-preload-0.6.0.tgz#aea062ab8ae7e04380a15432681fb08550a0f677"
+  integrity sha512-4umNWO8HwoqhXbWG589m3LRPb1NYtmiVAdc2gpXi4AqF7B2XbgW7p6j9I1OMW89uH/mnQ6iOsnDZLmqeEToeaw==
+
 react-router-dom@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-5.2.0.tgz#9e65a4d0c45e13289e66c7b17c7e175d0ea15662"
