@@ -29,7 +29,7 @@ export default function SanFrancisco() {
       <Page
         location={LOCATION['en']}
         locationJp={LOCATION['jp']}
-        cityFolder={LOCATION['href']}
+        cityFolder={LOCATION['s3_folder']}
         imagesToLoad={LOCATION['images']}
       >
         <Image source={getS3ObjectImagePath('san-francisco/sf1')} caption={captions.sf1} location={LOCATION['en']} />

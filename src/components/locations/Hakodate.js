@@ -33,7 +33,7 @@ export default function Hakodate() {
       <Page
         location={LOCATION['en']}
         locationJp={LOCATION['jp']}
-        cityFolder={LOCATION['href']}
+        cityFolder={LOCATION['s3_folder']}
         imagesToLoad={LOCATION['images']}
       >
         <Image source={getS3ObjectImagePath('hakodate/office')} caption={captions.office} location={LOCATION['en']} />

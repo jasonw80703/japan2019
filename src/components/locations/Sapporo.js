@@ -32,7 +32,7 @@ export default function Sapporo() {
       <Page
         location={LOCATION['en']}
         locationJp={LOCATION['jp']}
-        cityFolder={LOCATION['href']}
+        cityFolder={LOCATION['s3_folder']}
         imagesToLoad={LOCATION['images']}
       >
         <TextBlock text={sapporoText.intro} />
