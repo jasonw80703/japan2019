@@ -42,3 +42,7 @@ Page.propTypes = {
   cityFolder: PropTypes.string.isRequired,
   imagesToLoad: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
+
+Page.defaultProps = {
+  imagesToLoad: [],
+}
