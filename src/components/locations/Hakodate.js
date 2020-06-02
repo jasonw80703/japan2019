@@ -30,33 +30,39 @@ export default function Hakodate() {
         prevLocation={LOCATION['prev_location']}
         nextLocation={LOCATION['next_location']}
       />
-      <Page location={LOCATION['en']} locationJp={LOCATION['jp']}></Page>
-      <Image source={getS3ObjectImagePath('hakodate/office')} caption={captions.office} location={LOCATION['en']} />
-      <TextBlock text={hakodateText.getting_there} />
-      <Image source={getS3ObjectImagePath('hakodate/luggage')} size='xs' location={LOCATION['en']} />
-
-      <TextHeader header={hakodateText.headers.jr} />
-      <TextBlock text={hakodateText.jr_1} />
-      <TextBlock text={hakodateText.jr_2} />
-      <TextBlock text={hakodateText.jr_3} />
-      <ImageSlide
-        images={[
-          getS3ObjectImagePath('hakodate/station_1'),
-          getS3ObjectImagePath('hakodate/station_2'),
-          getS3ObjectImagePath('hakodate/station_3')
-        ]}
+      <Page
         location={LOCATION['en']}
-      />
+        locationJp={LOCATION['jp']}
+        cityFolder={LOCATION['href']}
+        imagesToLoad={LOCATION['images']}
+      >
+        <Image source={getS3ObjectImagePath('hakodate/office')} caption={captions.office} location={LOCATION['en']} />
+        <TextBlock text={hakodateText.getting_there} />
+        <Image source={getS3ObjectImagePath('hakodate/luggage')} size='xs' location={LOCATION['en']} />
 
-      <TextHeader header={hakodateText.headers.fort} />
-      <TextBlock text={hakodateText.fort} />
-      <MultiImage
-        location={LOCATION['en']}
-        img1={getS3ObjectImagePath('hakodate/fort_1')}
-        img2={getS3ObjectImagePath('hakodate/fort_2')}
-        img3={getS3ObjectImagePath('hakodate/fort_3')}
-        img4={getS3ObjectImagePath('hakodate/fort_4')}
-      />
+        <TextHeader header={hakodateText.headers.jr} />
+        <TextBlock text={hakodateText.jr_1} />
+        <TextBlock text={hakodateText.jr_2} />
+        <TextBlock text={hakodateText.jr_3} />
+        <ImageSlide
+          images={[
+            getS3ObjectImagePath('hakodate/station_1'),
+            getS3ObjectImagePath('hakodate/station_2'),
+            getS3ObjectImagePath('hakodate/station_3')
+          ]}
+          location={LOCATION['en']}
+        />
+
+        <TextHeader header={hakodateText.headers.fort} />
+        <TextBlock text={hakodateText.fort} />
+        <MultiImage
+          location={LOCATION['en']}
+          img1={getS3ObjectImagePath('hakodate/fort_1')}
+          img2={getS3ObjectImagePath('hakodate/fort_2')}
+          img3={getS3ObjectImagePath('hakodate/fort_3')}
+          img4={getS3ObjectImagePath('hakodate/fort_4')}
+        />
+      </Page>
     </div>
   )
 }
