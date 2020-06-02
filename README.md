@@ -4,7 +4,7 @@ https://japan-2019.herokuapp.com/
 
 Documenting my solo two month trip to Japan from Oct 2019 - Dec 2019.
 
-![img](/src/assets/images/home/ja1.jpg)
+![img](https://solo-japan-2019.s3-us-west-1.amazonaws.com/home/ja1.jpg)
 
 # Node version
 ```
@@ -24,7 +24,7 @@ yarn test
 
 # Screenshots
 
-![img](/src/assets/images/home/home.jpg)
-![img](/src/assets/images/home/blog.jpg)
-![img](/src/assets/images/home/foods.jpg)
-![img](/src/assets/images/home/hostels.jpg)
+![img](https://solo-japan-2019.s3-us-west-1.amazonaws.com/home/home.jpg)
+![img](https://solo-japan-2019.s3-us-west-1.amazonaws.com/home/blog.jpg)
+![img](https://solo-japan-2019.s3-us-west-1.amazonaws.com/home/foods.jpg)
+![img](https://solo-japan-2019.s3-us-west-1.amazonaws.com/home/hostels.jpg)

@@ -1,4 +1,5 @@
 import React from 'react';
+import { getS3ObjectImagePath } from 'helpers/getS3ObjectPath';
 import RecommendationBadge from 'components/misc/food-pics/RecommendationBadge';
 import {
   Tabs,
@@ -13,7 +14,7 @@ import { cleanTokyoTwoFolder } from 'helpers/cleanTokyoTwo';
 
 function FoodImage({ city, imgName }) {
   const folder = lowerCaseRemoveSpaces(cleanTokyoTwoFolder(city));
-  const source = require(`assets/images/foods/${folder}/${imgName}.jpg`);
+  const source = getS3ObjectImagePath(`foods/${folder}/${imgName}`);
 
   return (
     <img
@@ -35,7 +36,7 @@ function FoodImageCarousel({ city, images }) {
       {
         images.map((imgName) => {
           const folder = lowerCaseRemoveSpaces(cleanTokyoTwoFolder(city));
-          const source = require(`assets/images/foods/${folder}/${imgName}.jpg`);
+          const source = getS3ObjectImagePath(`foods/${folder}/${imgName}`);
 
           return (
             <Carousel.Item key={imgName}>

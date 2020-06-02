@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { getS3ObjectImagePath } from 'helpers/getS3ObjectPath';
 import PropTypes from 'prop-types';
 import Button from 'react-bootstrap/Button';
 import ImageModal from "components/blog/ImageModal";
@@ -14,7 +15,6 @@ export default class Gallery extends Component {
 
     this.handleKeyPress = this.handleKeyPress.bind(this);
     this.handleToggleImageModal = this.handleToggleImageModal.bind(this);
-    this.getImageSource = this.getImageSource.bind(this);
     this.nextImage = this.nextImage.bind(this);
     this.prevImage = this.prevImage.bind(this);
   }
@@ -43,20 +43,6 @@ export default class Gallery extends Component {
     });
   }
 
-  getImageSource(currentImage) {
-    const { folder } = this.props;
-
-    let file;
-    try {
-      // Issue where I cannot pass in full relative pass for string interpolation here
-      file = require(`assets/images/${folder}/${currentImage}.jpg`)
-    } catch (error) {
-      console.log('Missing image');
-      return;
-    }
-    return file;
-  }
-
   nextImage() {
     const { imageCount } = this.props;
     const { currentImage } = this.state;
@@ -83,10 +69,10 @@ export default class Gallery extends Component {
   }
 
   render() {
-    const { galleryName, imageCount } = this.props;
+    const { galleryName, imageCount, folder } = this.props;
     const { currentImage, showImageModal } = this.state;
 
-    const imageSource = this.getImageSource(currentImage);
+    const imageSource = getS3ObjectImagePath(`${folder}/${currentImage}`);
 
     return (
       <div>

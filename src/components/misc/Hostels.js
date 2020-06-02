@@ -1,4 +1,5 @@
 import React from 'react';
+import { getS3ObjectImagePath } from 'helpers/getS3ObjectPath';
 import MiscHeader from 'components/misc/MiscHeader';
 import MiscTitle from 'components/misc/MiscTitle';
 import {
@@ -27,7 +28,7 @@ function HostelImageCarousel({
       {
         images.map((imgName) => {
           const folder = lowerCaseRemoveSpaces(cleanTokyoTwoFolder(city));
-          const source = require(`assets/images/hostels/${folder}/${imgName}.jpg`);
+          const source = getS3ObjectImagePath(`hostels/${folder}/${imgName}`);
 
           return (
             <Carousel.Item key={imgName}>

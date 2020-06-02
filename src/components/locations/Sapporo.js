@@ -1,4 +1,5 @@
 import React from 'react';
+import { getS3ObjectImagePath } from 'helpers/getS3ObjectPath';
 import LocationHeader from 'components/locations/LocationHeader';
 import Page from 'components/blog/Page';
 import Image from 'components/blog/Image';
@@ -6,24 +7,6 @@ import ImageSlide from 'components/blog/ImageSlide';
 import TextBlock from 'components/blog/TextBlock';
 import TextHeader from 'components/blog/TextHeader';
 import { LOCATIONS } from 'constants/locations';
-
-// Images
-import pocketwifi from 'assets/images/sapporo/pocketwifi.jpg';
-import ticket from 'assets/images/sapporo/ticket.jpg';
-import hostel from 'assets/images/sapporo/hostel.jpg';
-import kalbi from 'assets/images/sapporo/kalbi.jpg';
-import street from 'assets/images/sapporo/street.jpg';
-import park from 'assets/images/sapporo/park.jpg';
-import cup from 'assets/images/sapporo/cup.jpg';
-import tower from 'assets/images/sapporo/tower.jpg';
-import pages from 'assets/images/sapporo/pages.jpg';
-import entrance from 'assets/images/sapporo/entrance.jpg';
-import sapp1 from 'assets/images/sapporo/sapp1.jpg';
-import sapp2 from 'assets/images/sapporo/sapp2.jpg';
-import sapp3 from 'assets/images/sapporo/sapp3.jpg';
-import sapp4 from 'assets/images/sapporo/sapp4.jpg';
-import sapp5 from 'assets/images/sapporo/sapp5.jpg';
-import city from 'assets/images/sapporo/city.jpg';
 
 // Map
 import map from 'assets/map/sapporo.jpg';
@@ -49,16 +32,16 @@ export default function Sapporo() {
       <Page location={LOCATION['en']} locationJp={LOCATION['jp']}>
         <TextBlock text={sapporoText.intro} />
         <TextHeader header={sapporoText.headers.airport} />
-        <Image location={LOCATION['en']} size='xs' source={pocketwifi} />
+        <Image location={LOCATION['en']} size='xs' source={getS3ObjectImagePath('sapporo/pocketwifi')} />
         <TextBlock text={sapporoText.airport} />
-        <Image caption={captions.ticket} location={LOCATION['en']} size='xs' source={ticket} />
+        <Image caption={captions.ticket} location={LOCATION['en']} size='xs' source={getS3ObjectImagePath('sapporo/ticket')} />
         <TextBlock text={sapporoText.survey} />
 
         <TextHeader header={sapporoText.headers.hostel} />
         <TextBlock text={sapporoText.hostel} />
-        <Image location={LOCATION['en']} size='xs' source={hostel} />
+        <Image location={LOCATION['en']} size='xs' source={getS3ObjectImagePath('sapporo/hostel')} />
         <TextBlock text={sapporoText.kalbi} />
-        <Image location={LOCATION['en']} size='xs' source={kalbi} />
+        <Image location={LOCATION['en']} size='xs' source={getS3ObjectImagePath('sapporo/kalbi')} />
 
         <TextHeader header={sapporoText.headers.work} />
         <TextBlock text={sapporoText.work_1} />
@@ -67,30 +50,39 @@ export default function Sapporo() {
 
         <TextHeader header={sapporoText.headers.exploring} />
         <TextBlock text={sapporoText.daytwo_1} />
-        <Image caption={captions.street} location={LOCATION['en']} size='md' source={street} />
+        <Image caption={captions.street} location={LOCATION['en']} size='md' source={getS3ObjectImagePath('sapporo/street')} />
         <TextBlock text={sapporoText.daytwo_2} />
         <TextBlock text={sapporoText.daytwo_3} />
 
         <TextHeader header={sapporoText.headers.shiroi_koibito} />
-        <Image location={LOCATION['en']} size='md' source={park} />
+        <Image location={LOCATION['en']} size='md' source={getS3ObjectImagePath('sapporo/park')} />
         <TextBlock text={sapporoText.shiroi_1} />
-        <Image caption={captions.cup} location={LOCATION['en']} size='sm' source={cup} />
+        <Image caption={captions.cup} location={LOCATION['en']} size='sm' source={getS3ObjectImagePath('sapporo/cup')} />
         <TextBlock text={sapporoText.shiroi_2} />
 
         <TextHeader header={sapporoText.headers.clock_tower} />
-        <Image caption={captions.tower} location={LOCATION['en']} size='md' source={tower} />
+        <Image caption={captions.tower} location={LOCATION['en']} size='md' source={getS3ObjectImagePath('sapporo/tower')} />
         <TextBlock text={sapporoText.tower} />
-        <Image caption={captions.pages} location={LOCATION['en']} size='md' source={pages} />
+        <Image caption={captions.pages} location={LOCATION['en']} size='md' source={getS3ObjectImagePath('sapporo/pages')} />
 
         <TextHeader header={sapporoText.headers.beer_factory} />
-        <Image location={LOCATION['en']} size='md' source={entrance} />
+        <Image location={LOCATION['en']} size='md' source={getS3ObjectImagePath('sapporo/entrance')} />
         <TextBlock text={sapporoText.beer_factory_1} />
-        <ImageSlide images={[sapp1, sapp2, sapp3, sapp4, sapp5]} location={LOCATION['en']} />
+        <ImageSlide          
+          images={[
+            getS3ObjectImagePath('sapporo/sapp1'),
+            getS3ObjectImagePath('sapporo/sapp2'),
+            getS3ObjectImagePath('sapporo/sapp3'),
+            getS3ObjectImagePath('sapporo/sapp4'),
+            getS3ObjectImagePath('sapporo/sapp5')
+          ]}
+          location={LOCATION['en']}
+        />
 
         <TextHeader header={sapporoText.headers.mona} />
         <TextBlock text={sapporoText.mona_1} />
         <TextBlock text={sapporoText.mona_2} />
-        <Image caption={captions.city} location={LOCATION['en']} size='lg' source={city} />
+        <Image caption={captions.city} location={LOCATION['en']} size='lg' source={getS3ObjectImagePath('sapporo/city')} />
       </Page>
     </div>
   );
