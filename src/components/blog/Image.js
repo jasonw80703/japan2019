@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import ImageModal from 'components/blog/ImageModal';
+import FetchingImagesSpinner from 'components/blog/FetchingImagesSpinner';
 import './Image.css';
+
+const Preload = require('react-preload').Preload;
 
 export default class Image extends Component {
   constructor(props) {
@@ -29,7 +32,10 @@ export default class Image extends Component {
     const imageClass = `${size} pic ${captionClass}`
 
     return (
-      <div>
+      <Preload
+        loadingIndicator={<FetchingImagesSpinner />}
+        images={[source]}
+      >
         <img src={source} className={imageClass} alt='pic' onClick={this.handleToggleImageModal} />
         {caption && <p className='caption'>{caption}</p>}
         <ImageModal
@@ -39,7 +45,7 @@ export default class Image extends Component {
           modalImage={source}
           showImageModal={showImageModal}
         />
-      </div>
+      </Preload>
     );
   }
 };

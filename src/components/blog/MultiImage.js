@@ -5,7 +5,10 @@ import Image from 'react-bootstrap/Image';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import ImageModal from 'components/blog/ImageModal';
+import FetchingImagesSpinner from 'components/blog/FetchingImagesSpinner';
 import './MultiImage.css';
+
+const Preload = require('react-preload').Preload;
 
 export default class MultiImage extends Component {
   constructor(props) {
@@ -44,25 +47,30 @@ export default class MultiImage extends Component {
     const { showImageModal, modalImage } = this.state;
 
     return (
-      <div className='multi-image-div'>
-        <Container>
-          <Row noGutters>
-            <Col><Image src={img1} className="multi-pic" onClick={() => this.handleOpenModal(img1)} /></Col>
-            <Col><Image src={img2} className="multi-pic" onClick={() => this.handleOpenModal(img2)} /></Col>
-          </Row>
-          <Row noGutters>
-            <Col><Image src={img3} className="multi-pic" onClick={() => this.handleOpenModal(img3)} /></Col>
-            <Col><Image src={img4} className="multi-pic" onClick={() => this.handleOpenModal(img4)} /></Col>
-          </Row>
-        </Container>
-        {caption && <p className='caption'>{caption}</p>}
-        <ImageModal
-          handleCloseModal={this.handleCloseModal}
-          title={location}
-          modalImage={modalImage}
-          showImageModal={showImageModal}
-        />
-      </div>
+      <Preload
+        loadingIndicator={<FetchingImagesSpinner />}
+        images={[img1, img2, img3, img4]}
+      >
+        <div className='multi-image-div'>
+          <Container>
+            <Row noGutters>
+              <Col><Image src={img1} className="multi-pic" onClick={() => this.handleOpenModal(img1)} /></Col>
+              <Col><Image src={img2} className="multi-pic" onClick={() => this.handleOpenModal(img2)} /></Col>
+            </Row>
+            <Row noGutters>
+              <Col><Image src={img3} className="multi-pic" onClick={() => this.handleOpenModal(img3)} /></Col>
+              <Col><Image src={img4} className="multi-pic" onClick={() => this.handleOpenModal(img4)} /></Col>
+            </Row>
+          </Container>
+          {caption && <p className='caption'>{caption}</p>}
+          <ImageModal
+            handleCloseModal={this.handleCloseModal}
+            title={location}
+            modalImage={modalImage}
+            showImageModal={showImageModal}
+          />
+        </div>
+      </Preload>
     );
   }
 };

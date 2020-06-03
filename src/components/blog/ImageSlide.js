@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Carousel from 'react-bootstrap/Carousel';
 import ImageModal from 'components/blog/ImageModal';
+import FetchingImagesSpinner from 'components/blog/FetchingImagesSpinner';
+
+const Preload = require('react-preload').Preload;
 
 export default class ImageSlide extends Component {
   constructor(props) {
@@ -31,7 +34,10 @@ export default class ImageSlide extends Component {
     const { currentImage, showImageModal } = this.state;
 
     return (
-      <div>
+      <Preload
+        loadingIndicator={<FetchingImagesSpinner />}
+        images={images}
+      >
         <Carousel
           className='carousel-container'
           nextIcon={<span className="fa fa-angle-right fa-3x arrow-icon" />}
@@ -57,7 +63,7 @@ export default class ImageSlide extends Component {
           modalImage={currentImage}
           showImageModal={showImageModal}
         />
-      </div>
+      </Preload>
     );
   }
 }

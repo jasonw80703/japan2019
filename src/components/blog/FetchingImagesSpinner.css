@@ -1,6 +1,9 @@
 .loading-spinner-div {
-  margin-top: 5%;
+  margin: 0 auto;
+  padding: 5%;
   text-align: center;
+  border: 1px solid black;
+  width: 50%;
 }
 
 .loading-spinner {
