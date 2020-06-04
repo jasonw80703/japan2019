@@ -62,6 +62,11 @@ export default function Hakodate() {
           img3={getS3ObjectImagePath('hakodate/fort_3')}
           img4={getS3ObjectImagePath('hakodate/fort_4')}
         />
+
+        <TextHeader header={hakodateText.headers.bath} />
+        <TextBlock text={hakodateText.bath} />
+        <Image source={getS3ObjectImagePath('hakodate/bath')} size='xs' location={LOCATION['en']} />
+
       </Page>
     </div>
   )
