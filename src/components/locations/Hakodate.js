@@ -67,6 +67,41 @@ export default function Hakodate() {
         <TextBlock text={hakodateText.bath} />
         <Image source={getS3ObjectImagePath('hakodate/bath')} size='xs' location={LOCATION['en']} />
 
+        <TextHeader header={hakodateText.headers.mountain} />
+        <TextBlock text={hakodateText.mount} />
+        <Image source={getS3ObjectImagePath('hakodate/mount')} location={LOCATION['en']} />
+
+        <TextHeader header={hakodateText.headers.church} />
+        <TextBlock text={hakodateText.church} />
+        <ImageSlide
+          images={[
+            getS3ObjectImagePath('hakodate/orthodox_1'),
+            getS3ObjectImagePath('hakodate/orthodox_2'),
+            getS3ObjectImagePath('hakodate/orthodox_3')
+          ]}
+          location={LOCATION['en']}
+        />
+        <ImageSlide
+          images={[
+            getS3ObjectImagePath('hakodate/catholic_1'),
+            getS3ObjectImagePath('hakodate/catholic_2')
+          ]}
+          location={LOCATION['en']}
+        />
+
+        <TextHeader header={hakodateText.headers.soba} />
+        <TextBlock text={hakodateText.soba} />
+
+        <TextBlock text={hakodateText.conc} />
+        <ImageSlide
+          images={[
+            getS3ObjectImagePath('hakodate/conc_1'),
+            getS3ObjectImagePath('hakodate/conc_2'),
+            getS3ObjectImagePath('hakodate/conc_3'),
+            getS3ObjectImagePath('hakodate/conc_4')
+          ]}
+          location={LOCATION['en']}
+        />
       </Page>
     </div>
   )
