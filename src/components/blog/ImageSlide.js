@@ -21,11 +21,12 @@ export default class ImageSlide extends Component {
     this.handleToggleImageModal = this.handleToggleImageModal.bind(this);
   }
 
-  handleToggleImageModal() {
+  handleToggleImageModal(img) {
     const { showImageModal } = this.state;
 
     this.setState({
       showImageModal: !showImageModal,
+      currentImage: img,
     });
   }
 
@@ -51,7 +52,7 @@ export default class ImageSlide extends Component {
                   src={img}
                   alt={'wow hi there'}
                   className='carousel-img'
-                  onClick={this.handleToggleImageModal}
+                  onClick={() => this.handleToggleImageModal(img)}
                 />
               </Carousel.Item>
             ))
