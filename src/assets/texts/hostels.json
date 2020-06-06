@@ -20,10 +20,11 @@
   "aomori": {
     "city": "Aomori",
     "name": "Art Hotel Color Aomori",
-    "address": "",
+    "address": "2 Chome-5-6 Shinmachi, Aomori, 030-0801, Japan",
     "link": "https://www.booking.com/hotel/jp/art-color-aomori.html",
-    "rating": 0,
-    "description": "tbd"
+    "rating": 3,
+    "images": ["bed", "washroom"],
+    "description": "This was more of a lower tier hotel rather than a hostel. It had more of a traditional front desk and the staff was very kind. The room was a nice change of pace to shared hostel rooms, with my own large bed and washroom. The location is great, found within downtown Aomori and with a good amount of shops and restaurants nearby. It was pretty difficult to find a hostel in Aomori since it's a smaller city with fewer foreigner travellers. The hotel was nothing spectacular but was a worry free and nice location for some quiet and alone time. "
   },
   "morioka": {
     "city": "Morioka",

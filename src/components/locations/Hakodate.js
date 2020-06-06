@@ -69,7 +69,7 @@ export default function Hakodate() {
 
         <TextHeader header={hakodateText.headers.mountain} />
         <TextBlock text={hakodateText.mount} />
-        <Image source={getS3ObjectImagePath('hakodate/mount')} location={LOCATION['en']} />
+        <Image source={getS3ObjectImagePath('hakodate/mount')} size='lg' location={LOCATION['en']} />
 
         <TextHeader header={hakodateText.headers.church} />
         <TextBlock text={hakodateText.church} />
