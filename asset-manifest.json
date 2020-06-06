@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/japan2019/static/css/main.be658e96.chunk.css",
+    "main.js": "/japan2019/static/js/main.8d188907.chunk.js",
+    "main.js.map": "/japan2019/static/js/main.8d188907.chunk.js.map",
+    "runtime-main.js": "/japan2019/static/js/runtime-main.00193138.js",
+    "runtime-main.js.map": "/japan2019/static/js/runtime-main.00193138.js.map",
+    "static/css/2.6ccefa39.chunk.css": "/japan2019/static/css/2.6ccefa39.chunk.css",
+    "static/js/2.230ea114.chunk.js": "/japan2019/static/js/2.230ea114.chunk.js",
+    "static/js/2.230ea114.chunk.js.map": "/japan2019/static/js/2.230ea114.chunk.js.map",
+    "index.html": "/japan2019/index.html",
+    "precache-manifest.2e5b681e9e520bea2a41e8e2d13f5971.js": "/japan2019/precache-manifest.2e5b681e9e520bea2a41e8e2d13f5971.js",
+    "service-worker.js": "/japan2019/service-worker.js",
+    "static/css/2.6ccefa39.chunk.css.map": "/japan2019/static/css/2.6ccefa39.chunk.css.map",
+    "static/css/main.be658e96.chunk.css.map": "/japan2019/static/css/main.be658e96.chunk.css.map",
+    "static/js/2.230ea114.chunk.js.LICENSE.txt": "/japan2019/static/js/2.230ea114.chunk.js.LICENSE.txt",
+    "static/media/all.min.css": "/japan2019/static/media/fa-solid-900.ec763292.svg",
+    "static/media/hakodate.jpg": "/japan2019/static/media/hakodate.eb2546b9.jpg",
+    "static/media/sanfrancisco.jpg": "/japan2019/static/media/sanfrancisco.9820c6f5.jpg",
+    "static/media/sapporo.jpg": "/japan2019/static/media/sapporo.b76fcd81.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.00193138.js",
+    "static/css/2.6ccefa39.chunk.css",
+    "static/js/2.230ea114.chunk.js",
+    "static/css/main.be658e96.chunk.css",
+    "static/js/main.8d188907.chunk.js"
+  ]
+}
