@@ -5,6 +5,7 @@ import Page from 'components/blog/Page';
 import Image from 'components/blog/Image';
 import TextBlock from 'components/blog/TextBlock';
 import TextHeader from 'components/blog/TextHeader';
+import ImageSlide from 'components/blog/ImageSlide';
 import { LOCATIONS } from 'constants/locations';
 
 // Map
@@ -37,7 +38,16 @@ export default function Aomori() {
         <Image source={getS3ObjectImagePath('aomori/daikon')} size='sm' location={LOCATION['en']} caption={captions.daikon} />
         <TextBlock text={aomoriText.explore_2} />
         <Image source={getS3ObjectImagePath('aomori/water')} location={LOCATION['en']} />
-
+        <TextBlock text={aomoriText.explore_3} />
+        <ImageSlide
+          images={[
+            getS3ObjectImagePath('aomori/aspam_1'),
+            getS3ObjectImagePath('aomori/aspam_2'),
+            getS3ObjectImagePath('aomori/aspam_3'),
+            getS3ObjectImagePath('aomori/aspam_4')
+          ]}
+          location={LOCATION['en']}
+        />
       </Page>
     </div>
   )
