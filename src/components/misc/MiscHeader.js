@@ -10,8 +10,8 @@ function MiscOptionDropdown() {
   return (
     <NavDropdown alignRight title="Misc">
       {
-        MISC_OPTIONS.map((option) => (
-          <NavDropdown.Item href={`/${option}`} key={option}>{option}</NavDropdown.Item>
+        Object.keys(MISC_OPTIONS).map((option) => (
+          <NavDropdown.Item href={`/${option}`} key={option}>{MISC_OPTIONS[option]}</NavDropdown.Item>
         ))
       }
     </NavDropdown>
