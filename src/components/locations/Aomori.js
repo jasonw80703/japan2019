@@ -28,9 +28,8 @@ export default function Aomori() {
         nextLocation={LOCATION['next_location']}
       />
       <Page location={LOCATION['en']} locationJp={LOCATION['jp']}>
-        <TextBlock text={aomoriText.getting_there_1} />
-        <Image source={getS3ObjectImagePath('aomori/starbucks')} size='xs' location={LOCATION['en']} />
-        <TextBlock text={aomoriText.getting_there_2} />
+        <TextBlock text={aomoriText.getting_there_1} source={getS3ObjectImagePath('aomori/starbucks')} location={LOCATION['en']} imageOnRight={false} />
+        <TextBlock text={aomoriText.getting_there_2} source={getS3ObjectImagePath('aomori/train')} location={LOCATION['en']} />
       </Page>
     </div>
   )

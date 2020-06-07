@@ -2,3 +2,15 @@
   margin: 1% 10% 1% 10%;
   font-size: 110%;
 }
+
+.text-block-with-image {
+  font-size: 110%;
+}
+
+.image-left {
+  margin-right: 20%;
+}
+
+.image-right {
+  margin-left: 20%;
+}
