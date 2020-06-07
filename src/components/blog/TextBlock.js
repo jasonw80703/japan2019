@@ -15,6 +15,7 @@ export default class TextBlock extends Component {
       source,
       text,
       imageOnRight,
+      size,
     } = this.props;
 
     if (source) {
@@ -26,12 +27,12 @@ export default class TextBlock extends Component {
                 <Col><p className='text-block-with-image image-right'>{text}</p></Col>
               ) :
               (
-                <Col><Image source={source} size='md' location={location} /></Col>
+                <Col><Image source={source} size={size} location={location} /></Col>
               )
             }
             {imageOnRight ?
               (
-                <Col><Image source={source} size='md' location={location} /></Col>
+                <Col><Image source={source} size={size} location={location} /></Col>
               ) :
               (
                 <Col><p className='text-block-with-image image-left'>{text}</p></Col>
@@ -53,8 +54,10 @@ TextBlock.propTypes = {
   source: PropTypes.string,
   location: PropTypes.string,
   imageOnRight: PropTypes.bool,
+  size: PropTypes.string,
 };
 
 TextBlock.defaultProps = {
   imageOnRight: true,
+  size: 'md',
 }
