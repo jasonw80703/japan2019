@@ -11,6 +11,7 @@ import {
 } from 'react-bootstrap';
 import lowerCaseRemoveSpaces from 'helpers/lowerCaseRemoveSpaces';
 import { cleanTokyoTwoFolder } from 'helpers/cleanTokyoTwo';
+import './LocationFoods.css';
 
 function FoodImage({ city, imgName }) {
   const folder = lowerCaseRemoveSpaces(cleanTokyoTwoFolder(city));
@@ -20,7 +21,7 @@ function FoodImage({ city, imgName }) {
     <img
       src={source}
       alt={imgName}
-      className='carousel-img'
+      className='food-img'
     />
   );
 }

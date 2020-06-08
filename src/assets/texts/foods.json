@@ -120,7 +120,51 @@
   "aomori": {
     "city": "Aomori",
     "foods": [
-      
+      {
+        "name": "Yakisoba",
+        "name_jp": "焼きそば",
+        "rating": 2,
+        "restaurant": "Lawson (ローソン)",
+        "address": "2 Chome-8-1 Yasukata, Aomori, 030-0803, Japan",
+        "review": "Arriving around midday in Aomori, not many restaurants were open. Walking around, I stumbled upon a nearby Lawson and decided to grab a late lunch there. I purchased this yakisoba that looked not half bad. It had some veggies in it, coloured nicely in some type of sweet shoyu sauce, and topped with thin slices of bacon and pickled ginger. I bought some snacks and drinks to accompany the meal. The yakisoba was decent for microwaved convenience food and but for sure better than any convenience food in America. I of course wanted to try to eat local specialties and everything Japanese cuisine but in a two month trip, sometimes a quick and fast meal at a konbini was what I craved.",
+        "images": [
+          "yakisoba1",
+          "yakisoba2"
+        ]
+      },
+      {
+        "name": "Steak",
+        "name_jp": "ステーキ",
+        "rating": 3,
+        "restaurant": "Ikinari Steak Aomori Station",
+        "address": "1 Chome-9-18 Shinmachi, Aomori, 030-0801, Japan",
+        "review": "Ikinari Steak is a type of higher quality fast food restaurant found in Japan but also in other cities around the world such as New York City. They specialize in steaks done your way and is made usually very quickly, providing a convenient and meaty meal. The meal comes with some corn, soup and salad, providing nice clean and textural breaks between each bite of meat. I've had it on a previous trip to Japan but wanted to get it at least once this trip and the shop was close to where I stayed, so I tried it out. The steak itself was nice and tender, cooked medium rare as asked. The price is a bit more expensive compared to other fast food or local restaurants, but worth it for a large nourishing meal.",
+        "images": [
+          "steak1"
+        ]
+      },
+      {
+        "name": "Apple Pie",
+        "name_jp": "アップルパイ",
+        "rating": 3,
+        "restaurant": "A-Factory",
+        "address": "1 Chome-4-2 Yanakawa, Aomori, 038-0012, Japan",
+        "review": "Famous for their apples, Aomori's A-Factory is a building with a bunch of smaller stores inside selling apple products. After looking through, I decided on trying a small apple pie. The pie was tart and delicious, and I was happy to enjoy it outside near on the pier, near Mustsu Bay.",
+        "images": [
+          "pie"
+        ]
+      },
+      {
+        "name": "Celery Sticks",
+        "name_jp": "カットセロリ",
+        "rating": 1,
+        "restaurant": "Lawson (ローソン)",
+        "address": "2 Chome-8-1 Yasukata, Aomori, 030-0803, Japan",
+        "review": "It's sometimes hard to find vegetables in meals when eating out all the time in Japan so I craved some greens. However, I felt like a rabbit eating these celery sticks raw, would not recommend.",
+        "images": [
+          "celery"
+        ]
+      }
     ]
   },
   "morioka": {
