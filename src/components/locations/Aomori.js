@@ -48,6 +48,25 @@ export default function Aomori() {
           ]}
           location={LOCATION['en']}
         />
+
+        <TextHeader header={aomoriText.headers.museum} />
+        <Image source={getS3ObjectImagePath('aomori/museum')} location={LOCATION['en']} caption={captions.museum} />
+        <TextBlock text={aomoriText.museum_1} />
+        <Image source={getS3ObjectImagePath('aomori/nebuta_1')} location={LOCATION['en']} />
+        <TextBlock text={aomoriText.museum_2} source={getS3ObjectImagePath('aomori/nebuta_2')} location={LOCATION['en']} />
+        <TextBlock text={aomoriText.museum_3} />
+        <ImageSlide
+          images={[
+            getS3ObjectImagePath('aomori/nebuta_3'),
+            getS3ObjectImagePath('aomori/nebuta_4'),
+            getS3ObjectImagePath('aomori/nebuta_5'),
+            getS3ObjectImagePath('aomori/nebuta_6'),
+            getS3ObjectImagePath('aomori/nebuta_7'),
+            getS3ObjectImagePath('aomori/nebuta_8')
+          ]}
+          location={LOCATION['en']}
+        />
+
       </Page>
     </div>
   )
