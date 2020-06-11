@@ -41,7 +41,13 @@
 }
 
 #misc-dropdown {
+  color: #E98074;
+  background-color: #EAE7DC;
+  border-color: #E98074;
+}
+
+#misc-dropdown:hover {
   color: white;
-  background-color: #8E8D8A;
-  border: none;
+  background-color: #E98074;
+  border-color: #E98074;
 }
