@@ -61,7 +61,7 @@ export default function LocationFoods({ city, foods }) {
         foods.map((food, index) => (
           <Tab eventKey={index} title={food['name']} key={index}>
             <div className='location-foods-div'>
-              <h1>{food['name']} <span className='header-jp'>{food['name_jp']}</span> {food['recommend'] && <RecommendationBadge />}</h1>
+              <h1 className='location-food-name'>{food['name']} <span className='misc-jp'>{food['name_jp']}</span> {food['recommend'] && <RecommendationBadge />}</h1>
               <p className='location-food-restaurant'>
                 {food['restaurant']}
                 {food['website'] && <span><a href={food['website']} target="_blank" rel="noopener noreferrer"> {food['website']}</a></span>}
@@ -82,7 +82,7 @@ export default function LocationFoods({ city, foods }) {
                 <Container fluid>
                   <Row>
                     <Col sm={4} className='first-col'>
-                      <p>{food['review']}</p>
+                      <p className='location-food-desc'>{food['review']}</p>
                     </Col>
                     <Col sm={8}>
                       {food['images'].length === 1 &&
@@ -98,7 +98,7 @@ export default function LocationFoods({ city, foods }) {
                   </Row>
                 </Container>
               }
-              {!food['images'] && <p>{food['review']}</p>}
+              {!food['images'] && <p className='location-food-desc'>{food['review']}</p>}
             </div>
           </Tab>
         ))

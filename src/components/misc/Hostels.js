@@ -15,6 +15,8 @@ import lowerCaseRemoveSpaces from 'helpers/lowerCaseRemoveSpaces';
 import { cleanTokyoTwoFolder } from 'helpers/cleanTokyoTwo';
 import './Hostels.css';
 
+const DEFAULT_ACTIVE_KEY = 'sapporo';
+
 function HostelImageCarousel({
   city,
   images,
@@ -49,8 +51,8 @@ function HostelImageCarousel({
 function HostelInfo({ info }) {
   return (
     <div>
-      <h1><span className="fas fa-house-user fa-xs house-icon" />{info.name}</h1>
-      <p><a href={info.link} target="_blank" rel="noopener noreferrer">{info.link}</a></p>
+      <h1 className="hostel-info-header"><span className="fas fa-house-user fa-xs house-icon" />{info.name}</h1>
+      <p><a href={info.link} className="hostel-info-link" target="_blank" rel="noopener noreferrer">{info.link}</a></p>
       {info.address && <p className="hostel-address">{info.address}</p>}
       {
         [...Array(info.rating)].map((_, i) => (
@@ -63,7 +65,7 @@ function HostelInfo({ info }) {
         ))
       }
       <hr />
-      <p>{info.description}</p>
+      <p className="hostel-info-desc">{info.description}</p>
       {info.images &&
         <HostelImageCarousel
           city={info.city}
@@ -86,10 +88,10 @@ export default function Hostels() {
         description={'A list of the hostels I stayed at by city.'}
       />
       <div id="hostels-container">
-        <Tab.Container defaultActiveKey="sapporo">
+        <Tab.Container defaultActiveKey={DEFAULT_ACTIVE_KEY}>
           <Row>
             <Col sm={3}>
-              <Nav variant="pills" className="flex-column current-pill">
+              <Nav variant="pills" className="flex-column">
                 {
                   Object.keys(hostels).map((location) => (
                     <Nav.Item key={location}>
