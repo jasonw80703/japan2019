@@ -5,3 +5,7 @@
 #home-link {
   color: white;
 }
+
+.current-location-item, .current-location-item:hover {
+  background-color: lightgray;
+}

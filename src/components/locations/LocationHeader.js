@@ -11,13 +11,17 @@ import './LocationHeader.css';
 /**
  * Map locations constant to NavDropdown with an Item for each location
  */
-function LocationNavDropdown() {
+function LocationNavDropdown({ currentLocation }) {
   return (
     <NavDropdown title="Location">
       {
-        Object.values(LOCATIONS).map((location) => (
-          <NavDropdown.Item href={location['href']} key={location['en']}>{location['en']}</NavDropdown.Item>
-        ))
+        Object.values(LOCATIONS).map((location) => {
+          let className = '';
+          if (currentLocation === location['en']) {
+            className = 'current-location-item';
+          }
+          return <NavDropdown.Item href={location['href']} key={location['en']} className={className}>{location['en']}</NavDropdown.Item>;
+        })
       }
     </NavDropdown>
   );
@@ -70,7 +74,7 @@ export default class LocationHeader extends Component {
             <Navbar.Text onClick={this.handleToggleLocationDatesModal}>{dates}</Navbar.Text>
             <Navbar.Collapse className="justify-content-end">
               <Nav>
-                <LocationNavDropdown />
+                <LocationNavDropdown currentLocation={location} />
                 {prevLocation && <Nav.Link href={`/${prevLocation}`}>Prev</Nav.Link>}
                 {nextLocation && <Nav.Link href={`/${nextLocation}`}>Next</Nav.Link>}
                 <Nav.Link href='/' id="home-link">Home</Nav.Link>
