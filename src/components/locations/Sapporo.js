@@ -43,10 +43,14 @@ export default function Sapporo() {
         <TextBlock text={sapporoText.survey} />
 
         <TextHeader header={sapporoText.headers.hostel} />
-        <TextBlock text={sapporoText.hostel} />
-        <Image location={LOCATION['en']} size='xs' source={getS3ObjectImagePath('sapporo/hostel')} />
-        <TextBlock text={sapporoText.kalbi} />
-        <Image location={LOCATION['en']} size='xs' source={getS3ObjectImagePath('sapporo/kalbi')} />
+        <TextBlock
+          text={sapporoText.hostel}
+          source={getS3ObjectImagePath('sapporo/hostel')}
+          location={LOCATION['en']}
+          imageOnRight={false}
+          size='sm'
+        />
+        <TextBlock text={sapporoText.kalbi} source={getS3ObjectImagePath('sapporo/kalbi')} location={LOCATION['en']} />
 
         <TextHeader header={sapporoText.headers.work} />
         <TextBlock text={sapporoText.work_1} />

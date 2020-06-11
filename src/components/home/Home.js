@@ -7,6 +7,7 @@ import {
 } from 'react-bootstrap';
 import Modal from 'react-bootstrap/Modal';
 import { LOCATIONS } from 'constants/locations';
+import { MISC_OPTIONS } from 'constants/miscOptions';
 import './Home.css';
 
 import homeText from 'assets/texts/home.json';
@@ -20,6 +21,21 @@ export function LocationDropdown() {
       {
         Object.values(LOCATIONS).map((location) => (
           <Dropdown.Item href={location['href']} key={location['en']}>{location['en']}</Dropdown.Item>
+        ))
+      }
+    </DropdownButton>
+  );
+};
+
+/**
+ * Map misc options constant to Dropdown with an Item for each location
+ */
+export function MiscDropdown() {
+  return (
+    <DropdownButton id="misc-dropdown" variant="light" title="Misc" size="lg" as={ButtonGroup}>
+      {
+        Object.keys(MISC_OPTIONS).map((option) => (
+          <Dropdown.Item href={`/${option}`} key={option}>{MISC_OPTIONS[option]}</Dropdown.Item>
         ))
       }
     </DropdownButton>
@@ -63,15 +79,7 @@ export default class Home extends Component {
         <div className="home">
           <h1 className="header" onClick={this.handleToggleModal}>{homeText.header}</h1>
           <LocationDropdown />
-          <DropdownButton id="misc-dropdown" variant="light" title="Misc" size="lg" as={ButtonGroup}>
-            <Dropdown.Item href="/drawings" key="drawings">Drawings</Dropdown.Item>
-            <Dropdown.Item href="/stamps" key="stamps">Stamp Collection</Dropdown.Item>
-            <Dropdown.Item href="/hostels" key="hostels">Hostels</Dropdown.Item>
-            <Dropdown.Item href="/music" key="music">Music</Dropdown.Item>
-            <Dropdown.Item href="/coffee" key="coffee">Coffee Shop Tier List</Dropdown.Item>
-            <Dropdown.Item href="/foods" key="foods">Food Pictures</Dropdown.Item>
-            <Dropdown.Item href="/tips" key="tips">Japan Travel Tips</Dropdown.Item>
-          </DropdownButton>
+          <MiscDropdown />
         </div>
         {showModal && (
           <Modal show={showModal} onHide={this.handleToggleModal}>

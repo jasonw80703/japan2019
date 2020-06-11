@@ -1,4 +1,16 @@
 .text-block {
   margin: 1% 10% 1% 10%;
-  font-size: 110%;
+  font-size: 120%;
+}
+
+.text-block-with-image {
+  font-size: 120%;
+}
+
+.image-left {
+  margin-right: 18%;
+}
+
+.image-right {
+  margin-left: 18%;
 }
