@@ -1,11 +1,12 @@
 .text-block {
   margin: 1% 10% 1% 10%;
   font-size: 120%;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .text-block-with-image {
   font-size: 120%;
+  font-weight: 300;
 }
 
 .image-left {
