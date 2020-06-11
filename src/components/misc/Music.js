@@ -1,11 +1,12 @@
 import React from 'react';
 import MiscHeader from 'components/misc/MiscHeader';
 import MiscTitle from 'components/misc/MiscTitle';
+import { MISC_OPTIONS } from 'constants/miscOptions';
 
 export default function Music() {
   return (
     <div>
-      <MiscHeader currentMisc='Music'>
+      <MiscHeader currentMisc={MISC_OPTIONS['music']}>
         <i className="fas fa-headphones misc-icon" />
       </MiscHeader>
       <MiscTitle

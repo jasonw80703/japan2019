@@ -6,6 +6,6 @@
   color: white;
 }
 
-.current-location-item, .current-location-item:hover {
+.current-item, .current-item:hover {
   background-color: lightgray;
 }

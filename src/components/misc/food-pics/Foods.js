@@ -2,6 +2,7 @@ import React from 'react';
 import MiscHeader from 'components/misc/MiscHeader';
 import MiscTitle from 'components/misc/MiscTitle';
 import LocationFoods from 'components/misc/food-pics/LocationFoods';
+import { MISC_OPTIONS } from 'constants/miscOptions';
 import {
   Tab,
   Row,
@@ -50,7 +51,7 @@ function LocationTab() {
 export default function Foods() {
   return (
     <div>
-      <MiscHeader currentMisc='Food Pics'>
+      <MiscHeader currentMisc={MISC_OPTIONS['foods']}>
         <i className="fas fa-fish misc-icon" />
       </MiscHeader>
       <MiscTitle

@@ -18,7 +18,7 @@ function LocationNavDropdown({ currentLocation }) {
         Object.values(LOCATIONS).map((location) => {
           let className = '';
           if (currentLocation === location['en']) {
-            className = 'current-location-item';
+            className = 'current-item';
           }
           return <NavDropdown.Item href={location['href']} key={location['en']} className={className}>{location['en']}</NavDropdown.Item>;
         })

@@ -2,6 +2,7 @@ import React from 'react';
 import { getS3ObjectImagePath } from 'helpers/getS3ObjectPath';
 import MiscHeader from 'components/misc/MiscHeader';
 import MiscTitle from 'components/misc/MiscTitle';
+import { MISC_OPTIONS } from 'constants/miscOptions';
 import {
   Tab,
   Row,
@@ -76,7 +77,7 @@ function HostelInfo({ info }) {
 export default function Hostels() {
   return (
     <div>
-      <MiscHeader currentMisc='Hostels'>
+      <MiscHeader currentMisc={MISC_OPTIONS['hostels']}>
         <i className="fas fa-house-user misc-icon" />
       </MiscHeader>
       <MiscTitle

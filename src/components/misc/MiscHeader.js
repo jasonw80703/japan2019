@@ -6,13 +6,17 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { MISC_OPTIONS } from 'constants/miscOptions';
 import './MiscHeader.css';
 
-function MiscOptionDropdown() {
+function MiscOptionDropdown({ currentMisc }) {
   return (
     <NavDropdown alignRight title="Misc">
       {
-        Object.keys(MISC_OPTIONS).map((option) => (
-          <NavDropdown.Item href={`/${option}`} key={option}>{MISC_OPTIONS[option]}</NavDropdown.Item>
-        ))
+        Object.keys(MISC_OPTIONS).map((option) => {
+          let className = '';
+          if (currentMisc === MISC_OPTIONS[option]) {
+            className = 'current-item'
+          }
+          return <NavDropdown.Item href={`/${option}`} key={option} className={className}>{MISC_OPTIONS[option]}</NavDropdown.Item>;
+        })
       }
     </NavDropdown>
   );
@@ -26,7 +30,7 @@ export default function MiscHeader({ currentMisc, children }) {
         {children}
         <Navbar.Collapse className="justify-content-end">
           <Nav>
-            <MiscOptionDropdown />
+            <MiscOptionDropdown currentMisc={currentMisc} />
             <Nav.Link href='/' id="home-link">Home</Nav.Link>
           </Nav>
         </Navbar.Collapse>
