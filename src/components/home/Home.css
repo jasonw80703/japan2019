@@ -5,6 +5,12 @@
 
 .header {
   font-size: 150px;
+  font-weight: 300;
+  color: #E85A4F;
+}
+
+.year {
+  font-size: 140px;
 }
 
 .lucy {
@@ -28,5 +34,14 @@
 }
 
 #home-location-dropdown {
-  margin-right: 10px;
+  margin-right: 20px;
+  color: white;
+  background-color: #E98074;
+  border: none;
+}
+
+#misc-dropdown {
+  color: white;
+  background-color: #8E8D8A;
+  border: none;
 }

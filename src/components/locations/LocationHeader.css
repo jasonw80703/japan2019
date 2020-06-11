@@ -2,8 +2,16 @@
   margin-bottom: 1.5%;
 }
 
+#navbar-header {
+  background-color: #EAE7DC !important;
+}
+
+#navbar-location {
+  color: #E85A4F;
+}
+
 #home-link {
-  color: white;
+  color: #D8C3A5;
 }
 
 .current-item, .current-item:hover {

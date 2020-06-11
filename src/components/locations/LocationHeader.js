@@ -69,8 +69,8 @@ export default class LocationHeader extends Component {
     return (
       <div>
         <div className="location-header-div">
-          <Navbar bg="dark" variant="dark">
-            <Navbar.Brand onClick={this.handleToggleMapModal}>{location}</Navbar.Brand>
+          <Navbar id="navbar-header">
+            <Navbar.Brand onClick={this.handleToggleMapModal} id="navbar-location">{location}</Navbar.Brand>
             <Navbar.Text onClick={this.handleToggleLocationDatesModal}>{dates}</Navbar.Text>
             <Navbar.Collapse className="justify-content-end">
               <Nav>
