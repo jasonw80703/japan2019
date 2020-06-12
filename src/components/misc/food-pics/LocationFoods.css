@@ -21,10 +21,12 @@
 }
 
 .nav-tabs > a {
-  color: #8E8D8A;
+  color: #E98074;
 }
 
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
-  color: #E85A4F;
-  background-color: #EAE7DC;
+  /* color: #E85A4F;
+  background-color: #EAE7DC; */
+  color: #EAE7DC;
+  background-color: #E98074;
 }
