@@ -82,7 +82,7 @@ export default class Home extends Component {
           <MiscDropdown />
         </div>
         {showModal && (
-          <Modal show={showModal} onHide={this.handleToggleModal}>
+          <Modal show={showModal} onHide={this.handleToggleModal} className='modal-container'>
             <Modal.Header closeButton>
               <Modal.Title>About</Modal.Title>
             </Modal.Header>
