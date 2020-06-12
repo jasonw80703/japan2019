@@ -29,7 +29,7 @@ export default function MiscHeader({ currentMisc, children }) {
         <Navbar.Brand id="navbar-brand">{currentMisc}</Navbar.Brand>
         {children}
         <Navbar.Collapse className="justify-content-end">
-          <Nav>
+          <Nav id="misc-nav">
             <MiscOptionDropdown currentMisc={currentMisc} />
             <Nav.Link href='/' id="home-link">Home</Nav.Link>
           </Nav>
