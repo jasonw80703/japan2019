@@ -17,7 +17,7 @@ import homeText from 'assets/texts/home.json';
  */
 export function LocationDropdown() {
   return (
-    <DropdownButton id="home-location-dropdown" variant="dark" title="Location" size="lg" as={ButtonGroup}>
+    <DropdownButton id="home-location-dropdown" title="Location" size="lg" as={ButtonGroup}>
       {
         Object.values(LOCATIONS).map((location) => (
           <Dropdown.Item href={location['href']} key={location['en']}>{location['en']}</Dropdown.Item>
@@ -32,7 +32,7 @@ export function LocationDropdown() {
  */
 export function MiscDropdown() {
   return (
-    <DropdownButton id="misc-dropdown" variant="light" title="Misc" size="lg" as={ButtonGroup}>
+    <DropdownButton id="misc-dropdown" title="Misc" size="lg" as={ButtonGroup}>
       {
         Object.keys(MISC_OPTIONS).map((option) => (
           <Dropdown.Item href={`/${option}`} key={option}>{MISC_OPTIONS[option]}</Dropdown.Item>
@@ -77,12 +77,12 @@ export default class Home extends Component {
       <div>
         <button type="button" className="lucy" onClick={this.handleToggleLucy}/>
         <div className="home">
-          <h1 className="header" onClick={this.handleToggleModal}>{homeText.header}</h1>
+          <h1 className="header" onClick={this.handleToggleModal}>{homeText.header_1} <span className="year">{homeText.header_2}</span></h1>
           <LocationDropdown />
           <MiscDropdown />
         </div>
         {showModal && (
-          <Modal show={showModal} onHide={this.handleToggleModal}>
+          <Modal show={showModal} onHide={this.handleToggleModal} className='modal-container'>
             <Modal.Header closeButton>
               <Modal.Title>About</Modal.Title>
             </Modal.Header>

@@ -25,11 +25,11 @@ function MiscOptionDropdown({ currentMisc }) {
 export default function MiscHeader({ currentMisc, children }) {
   return (
     <div className="location-header-div">
-      <Navbar bg="dark" variant="dark">
-        <Navbar.Brand>{currentMisc}</Navbar.Brand>
+      <Navbar id="navbar-header">
+        <Navbar.Brand id="navbar-brand">{currentMisc}</Navbar.Brand>
         {children}
         <Navbar.Collapse className="justify-content-end">
-          <Nav>
+          <Nav id="misc-nav">
             <MiscOptionDropdown currentMisc={currentMisc} />
             <Nav.Link href='/' id="home-link">Home</Nav.Link>
           </Nav>

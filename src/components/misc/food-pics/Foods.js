@@ -18,7 +18,7 @@ function LocationTab() {
       <Tab.Container defaultActiveKey="sapporo">
         <Row>
           <Col sm={3}>
-            <Nav variant="pills" className="flex-column current-pill">
+            <Nav variant="pills" className="flex-column">
               {
                 Object.keys(foodCities).map((location) => (
                   <Nav.Item key={location}>

@@ -3,21 +3,18 @@
 }
 
 .main-page-header {
-  text-align: center;
+  color: #E85A4F;
+  margin-left: 5%;
+  font-size: 8vw;
 }
 
 .header-jp {
-  font-size: 50%;
-  color: gray;
-  vertical-align: middle;
+  color: #8E8D8A;
+  margin-left: 5%;
 }
 
-.header-divider {
-  position: relative;
-  margin-top: 0;
-  border: none;
-  height: 3px;
-  width: 40%;
-  background: gray;
-  margin-bottom: 1.5%;
+#page-jumbotron {
+  background-color: #EAE7DC;
+  margin-bottom: 5%;
+  border-bottom: 3px solid white;
 }

@@ -2,3 +2,31 @@
   max-width: 100%;
   max-height: 100%;
 }
+
+.location-food-restaurant {
+  color: #8E8D8A;
+}
+
+.location-foods-div {
+  margin-top: 2%;
+}
+
+.location-food-name {
+  color: #E98074;
+}
+
+.location-food-address {
+  font-size: 75%;
+  color: #D8C3A5;
+}
+
+.nav-tabs > a {
+  color: #E98074;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+  /* color: #E85A4F;
+  background-color: #EAE7DC; */
+  color: #EAE7DC;
+  background-color: #E98074;
+}

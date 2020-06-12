@@ -3,8 +3,26 @@
   margin: 13%;
 }
 
+.home .dropdown-menu {
+  background-color: #E98074;
+}
+
+.home .dropdown-menu a {
+  color: white;
+}
+
+.home .dropdown-menu a:hover {
+  color: #E98074;
+}
+
 .header {
   font-size: 150px;
+  font-weight: 300;
+  color: #E85A4F;
+}
+
+.year {
+  font-size: 140px;
 }
 
 .lucy {
@@ -28,5 +46,20 @@
 }
 
 #home-location-dropdown {
-  margin-right: 10px;
+  margin-right: 20px;
+  color: white;
+  background-color: #E98074;
+  border: none;
+}
+
+#misc-dropdown {
+  color: #E98074;
+  background-color: #EAE7DC;
+  border-color: #E98074;
+}
+
+#misc-dropdown:hover {
+  color: white;
+  background-color: #E98074;
+  border-color: #E98074;
 }

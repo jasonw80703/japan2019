@@ -2,10 +2,26 @@
   margin-bottom: 1.5%;
 }
 
+#navbar-header {
+  background-color: #EAE7DC !important;
+}
+
+#navbar-brand {
+  color: #E85A4F;
+}
+
 #home-link {
-  color: white;
+  color: #E98074;
 }
 
 .current-item, .current-item:hover {
-  background-color: lightgray;
+  background-color: #D8C3A5;
+}
+
+#location-nav .dropdown-menu {
+  background-color: #EAE7DC;
+}
+
+#location-nav .dropdown-menu a:hover {
+  background-color: #D8C3A5;
 }

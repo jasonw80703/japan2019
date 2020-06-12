@@ -1,7 +1,15 @@
 .misc-icon {
-  color: white;
+  color: #D8C3A5;
 }
 
 .navbar-brand {
   margin-right: 0.5rem;
+}
+
+#misc-nav .dropdown-menu {
+  background-color: #EAE7DC;
+}
+
+#misc-nav .dropdown-menu a:hover {
+  background-color: #D8C3A5;
 }

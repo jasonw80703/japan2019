@@ -13,7 +13,7 @@ export default function MapModal({
   foods,
 }) {
   return (
-    <Modal show={showModal} onHide={handleToggleModal} size='lg' className='map-modal'>
+    <Modal show={showModal} onHide={handleToggleModal} size='lg' className='modal-container'>
       <Modal.Header closeButton>
         <Modal.Title>{location}</Modal.Title>
       </Modal.Header>

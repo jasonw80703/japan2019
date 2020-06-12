@@ -3,24 +3,3 @@
   margin-right: 5%;
   margin-bottom: 3%;
 }
-
-.location-foods-div {
-  margin-top: 2%;
-}
-
-.location-food-address {
-  font-size: 75%;
-  color: lightslategray;
-}
-
-.location-food-restaurant {
-  color: gray;
-}
-
-.nav-tabs > a {
-  color: black;
-}
-
-.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
-  color: maroon;
-}

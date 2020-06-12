@@ -11,7 +11,7 @@ export default function LocationDatesModal({
   showModal,
 }) {
   return (
-    <Modal show={showModal} onHide={handleToggleModal} size='md' className='map-modal'>
+    <Modal show={showModal} onHide={handleToggleModal} size='md' className='modal-container'>
       <Modal.Header closeButton>
         <Modal.Title id='dates-modal-title'>Dates</Modal.Title>
       </Modal.Header>

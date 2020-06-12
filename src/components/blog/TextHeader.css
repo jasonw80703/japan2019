@@ -1,6 +1,6 @@
 .text-header {
   text-align: left;
-  color: gray;
+  color: #E98074;
   margin-top: 3%;
   margin-left: 10%;
 }
@@ -11,6 +11,6 @@
   border: none;
   height: 2px;
   width: 80%;
-  background: gray;
+  background: white;
   margin-bottom: 1.5%;
 }

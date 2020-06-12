@@ -9,9 +9,9 @@ export default function MiscTitle({
 }) {
   return (
     <div>
-      <h2 className='misc-title'>{header} <span className='header-jp'>{headerJp}</span></h2>
+      <h2 className='misc-title'>{header} <span className='misc-jp'>{headerJp}</span></h2>
       {description && <p className='misc-description'>{description}</p>}
-      <hr className='hostels-divider'/>
+      <hr className='misc-divider'/>
     </div>
   )
 }

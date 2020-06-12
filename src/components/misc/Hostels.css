@@ -8,7 +8,7 @@
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  background-color: gray;
+  background-color: #E98074;
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -36,6 +36,10 @@
   color: darkgray;
 }
 
+.hostel-info-header {
+  color: #E98074;
+}
+
 .house-icon {
   margin: 0.5%;
   vertical-align: text-bottom;
@@ -43,5 +47,9 @@
 
 .hostel-address {
   font-size: 75%;
-  color: lightslategray;
+  color: #D8C3A5;
+}
+
+.hostel-info-link {
+  color: #8E8D8A;
 }

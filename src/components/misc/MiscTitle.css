@@ -1,10 +1,12 @@
 .misc-title {
   text-align: center;
   margin: 3% 10% 1% 10%;
+  color: #E85A4F;
 }
 
 .misc-description {
   text-align: center;
+  color: #8E8D8A;
 }
 
 .misc-divider {
@@ -13,6 +15,12 @@
   border: none;
   height: 1px;
   width: 90%;
-  background: gray;
+  background: white;
   margin-bottom: 1.5%;
+}
+
+.misc-jp {
+  font-size: 50%;
+  color: #8E8D8A;
+  vertical-align: middle;
 }
