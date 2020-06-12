@@ -11,7 +11,7 @@ export default function ImageModal({
   showImageModal,
 }) {
   return (
-    <Modal show={showImageModal} onHide={handleCloseModal} size='lg' className='map-modal'>
+    <Modal show={showImageModal} onHide={handleCloseModal} size='lg' className='modal-container'>
       <Modal.Header closeButton>
         <Modal.Title>{title}</Modal.Title>
       </Modal.Header>

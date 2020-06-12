@@ -5,3 +5,8 @@
 .modal-caption {
   color: gray;
 }
+
+.modal-container .modal-content {
+  background-color: #EAE7DC;
+  color: #E85A4F;
+}
