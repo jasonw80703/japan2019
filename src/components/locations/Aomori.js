@@ -22,12 +22,9 @@ export default function Aomori() {
   return (
     <div>
       <LocationHeader
-        dates={LOCATION['dates']}
-        location={LOCATION['en']}
+        location={LOCATION}
         map={map}
         mapModalDetails={mapModalDetails}
-        prevLocation={LOCATION['prev_location']}
-        nextLocation={LOCATION['next_location']}
       />
       <Page location={LOCATION}>
         <TextBlock text={aomoriText.getting_there_1} source={getS3ObjectImagePath('aomori/starbucks')} location={LOCATION['en']} imageOnRight={false} />

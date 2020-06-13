@@ -12,9 +12,7 @@ export default function TokyoTwo() {
   return (
     <div>
       <LocationHeader
-        dates={LOCATION['dates']}
-        location={LOCATION['en']}
-        prevLocation={LOCATION['prev_location']}
+        location={LOCATION}
       />
       <Page location={LOCATION}></Page>
     </div>

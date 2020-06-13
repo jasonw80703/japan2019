@@ -58,25 +58,22 @@ export default class LocationHeader extends Component {
   render() {
     const { showLocationDatesModal, showMapModal } = this.state;
     const {
-      dates,
       location,
       map,
       mapModalDetails,
-      prevLocation,
-      nextLocation
     } = this.props;
 
     return (
       <div>
         <div className="location-header-div">
           <Navbar id="navbar-header">
-            <Navbar.Brand onClick={this.handleToggleMapModal} id="navbar-brand">{location}</Navbar.Brand>
-            <Navbar.Text onClick={this.handleToggleLocationDatesModal}>{dates}</Navbar.Text>
+            <Navbar.Brand onClick={this.handleToggleMapModal} id="navbar-brand">{location['en']}</Navbar.Brand>
+            <Navbar.Text onClick={this.handleToggleLocationDatesModal}>{location['dates']}</Navbar.Text>
             <Navbar.Collapse className="justify-content-end">
               <Nav id="location-nav">
-                <LocationNavDropdown currentLocation={location} />
-                {prevLocation && <Nav.Link href={`/${prevLocation}`}>Prev</Nav.Link>}
-                {nextLocation && <Nav.Link href={`/${nextLocation}`}>Next</Nav.Link>}
+                <LocationNavDropdown currentLocation={location['en']} />
+                {location['prev_location'] && <Nav.Link href={`/${location['prev_location']}`}>Prev</Nav.Link>}
+                {location['next_location'] && <Nav.Link href={`/${location['next_location']}`}>Next</Nav.Link>}
                 <Nav.Link href='/' id="home-link">Home</Nav.Link>
               </Nav>
             </Navbar.Collapse>
@@ -85,7 +82,7 @@ export default class LocationHeader extends Component {
         {map && mapModalDetails && (
           <MapModal
             handleToggleModal={this.handleToggleMapModal}
-            location={location}
+            location={location['en']}
             showModal={showMapModal}
             source={map}
             description={mapModalDetails.description}
@@ -103,10 +100,7 @@ export default class LocationHeader extends Component {
 };
 
 LocationHeader.propTypes = {
-  dates: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
+  location: PropTypes.object.isRequired,
   map: PropTypes.node,
   mapModalDetails: PropTypes.object,
-  prevLocation: PropTypes.string,
-  nextLocation: PropTypes.string,
 };

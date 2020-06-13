@@ -23,12 +23,9 @@ export default function Hakodate() {
   return (
     <div>
       <LocationHeader
-        dates={LOCATION['dates']}
-        location={LOCATION['en']}
+        location={LOCATION}
         map={map}
         mapModalDetails={mapModalDetails}
-        prevLocation={LOCATION['prev_location']}
-        nextLocation={LOCATION['next_location']}
       />
       <Page location={LOCATION}>
         <Image source={getS3ObjectImagePath('hakodate/office')} caption={captions.office} location={LOCATION['en']} />

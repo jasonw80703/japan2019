@@ -22,12 +22,9 @@ export default function Sapporo() {
   return (
     <div>
       <LocationHeader
-        dates={LOCATION['dates']}
-        location={LOCATION['en']}
+        location={LOCATION}
         map={map}
         mapModalDetails={mapModalDetails}
-        prevLocation={LOCATION['prev_location']}
-        nextLocation={LOCATION['next_location']}
       />
       <Page location={LOCATION}>
         <TextBlock text={sapporoText.intro} />

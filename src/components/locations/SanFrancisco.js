@@ -20,11 +20,9 @@ export default function SanFrancisco() {
   return (
     <div>
       <LocationHeader
-        dates={LOCATION['dates']}
-        location={LOCATION['en']}
+        location={LOCATION}
         map={map}
         mapModalDetails={mapModalDetails}
-        nextLocation={LOCATION['next_location']}
       />
       <Page location={LOCATION}>
         <Image source={getS3ObjectImagePath('san-francisco/sf1')} caption={captions.sf1} location={LOCATION['en']} />

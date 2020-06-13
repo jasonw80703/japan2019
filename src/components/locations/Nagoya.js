@@ -12,10 +12,7 @@ export default function Nagoya() {
   return (
     <div>
       <LocationHeader
-        dates={LOCATION['dates']}
-        location={LOCATION['en']}
-        prevLocation={LOCATION['prev_location']}
-        nextLocation={LOCATION['next_location']}
+        location={LOCATION}
       />
       <Page location={LOCATION}></Page>
     </div>
