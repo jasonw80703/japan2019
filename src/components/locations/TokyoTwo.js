@@ -16,7 +16,7 @@ export default function TokyoTwo() {
         location={LOCATION['en']}
         prevLocation={LOCATION['prev_location']}
       />
-      <Page location={LOCATION['en']} locationJp={LOCATION['jp']}></Page>
+      <Page location={LOCATION}></Page>
     </div>
   )
 }

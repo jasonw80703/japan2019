@@ -17,7 +17,7 @@ export default function Kyoto() {
         prevLocation={LOCATION['prev_location']}
         nextLocation={LOCATION['next_location']}
       />
-      <Page location={LOCATION['en']} locationJp={LOCATION['jp']}></Page>
+      <Page location={LOCATION}></Page>
     </div>
   )
 }

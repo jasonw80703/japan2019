@@ -29,12 +29,7 @@ export default function Sapporo() {
         prevLocation={LOCATION['prev_location']}
         nextLocation={LOCATION['next_location']}
       />
-      <Page
-        location={LOCATION['en']}
-        locationJp={LOCATION['jp']}
-        cityFolder={LOCATION['s3_folder']}
-        imagesToLoad={LOCATION['images']}
-      >
+      <Page location={LOCATION}>
         <TextBlock text={sapporoText.intro} />
         <TextHeader header={sapporoText.headers.airport} />
         <Image location={LOCATION['en']} size='xs' source={getS3ObjectImagePath('sapporo/pocketwifi')} />

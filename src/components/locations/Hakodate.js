@@ -30,12 +30,7 @@ export default function Hakodate() {
         prevLocation={LOCATION['prev_location']}
         nextLocation={LOCATION['next_location']}
       />
-      <Page
-        location={LOCATION['en']}
-        locationJp={LOCATION['jp']}
-        cityFolder={LOCATION['s3_folder']}
-        imagesToLoad={LOCATION['images']}
-      >
+      <Page location={LOCATION}>
         <Image source={getS3ObjectImagePath('hakodate/office')} caption={captions.office} location={LOCATION['en']} />
         <TextBlock text={hakodateText.getting_there} />
         <Image source={getS3ObjectImagePath('hakodate/luggage')} size='xs' location={LOCATION['en']} />

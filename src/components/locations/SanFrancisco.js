@@ -26,12 +26,7 @@ export default function SanFrancisco() {
         mapModalDetails={mapModalDetails}
         nextLocation={LOCATION['next_location']}
       />
-      <Page
-        location={LOCATION['en']}
-        locationJp={LOCATION['jp']}
-        cityFolder={LOCATION['s3_folder']}
-        imagesToLoad={LOCATION['images']}
-      >
+      <Page location={LOCATION}>
         <Image source={getS3ObjectImagePath('san-francisco/sf1')} caption={captions.sf1} location={LOCATION['en']} />
         <TextBlock text={sanFranciscoText.para_1} />
         <TextBlock text={sanFranciscoText.para_2} />

@@ -29,7 +29,7 @@ export default function Aomori() {
         prevLocation={LOCATION['prev_location']}
         nextLocation={LOCATION['next_location']}
       />
-      <Page location={LOCATION['en']} locationJp={LOCATION['jp']}>
+      <Page location={LOCATION}>
         <TextBlock text={aomoriText.getting_there_1} source={getS3ObjectImagePath('aomori/starbucks')} location={LOCATION['en']} imageOnRight={false} />
         <TextBlock text={aomoriText.getting_there_2} source={getS3ObjectImagePath('aomori/train')} location={LOCATION['en']} />
         
