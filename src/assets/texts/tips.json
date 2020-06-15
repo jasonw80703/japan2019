@@ -1,0 +1,15 @@
+{
+  "tips": [
+    {
+      "title": "Walking around",
+      "description": "wear shoes",
+      "badges": [
+        "Travel"
+      ]
+    },
+    {
+      "title": "Eating in public",
+      "description": "don't"
+    }
+  ]
+}
