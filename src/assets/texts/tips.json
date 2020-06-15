@@ -8,8 +8,19 @@
       ]
     },
     {
-      "title": "Eating in public",
-      "description": "don't"
+      "title": "Eating while walking in public",
+      "description": "don't",
+      "badges": [
+        "Food",
+        "Travel"
+      ]
+    },
+    {
+      "title": "Littering in Japan",
+      "description": "don't",
+      "badges": [
+        "Culture"
+      ]
     }
   ]
 }

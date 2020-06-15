@@ -30,7 +30,7 @@ import Hostels from 'components/misc/Hostels.js';
 import Coffee from 'components/misc/Coffee.js';
 import Music from 'components/misc/Music.js';
 import Foods from 'components/misc/food-pics/Foods.js';
-import Tips from 'components/misc/Tips.js';
+import Tips from 'components/misc/tips/Tips.js';
 
 export default function App() {
   return (
