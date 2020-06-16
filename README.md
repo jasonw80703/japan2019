@@ -28,3 +28,4 @@ yarn test
 ![img](https://solo-japan-2019.s3-us-west-1.amazonaws.com/home/blog.jpg)
 ![img](https://solo-japan-2019.s3-us-west-1.amazonaws.com/home/foods.jpg)
 ![img](https://solo-japan-2019.s3-us-west-1.amazonaws.com/home/hostels.jpg)
+![img](https://solo-japan-2019.s3-us-west-1.amazonaws.com/home/tips.jpg)
