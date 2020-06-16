@@ -6,6 +6,10 @@ import Page from 'components/blog/Page';
 // import TextHeader from 'components/blog/TextHeader';
 import { LOCATIONS } from 'constants/locations';
 
+// Map
+import map from 'assets/map/morioka.jpg';
+import mapModalDetails from 'assets/map/morioka.json';
+
 const LOCATION = LOCATIONS.MORIOKA;
 
 export default function Morioka() {
@@ -13,6 +17,8 @@ export default function Morioka() {
     <div>
       <LocationHeader
         location={LOCATION}
+        map={map}
+        mapModalDetails={mapModalDetails}
       />
       <Page location={LOCATION}></Page>
     </div>
