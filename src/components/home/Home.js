@@ -10,6 +10,8 @@ import { LOCATIONS } from 'constants/locations';
 import { MISC_OPTIONS } from 'constants/miscOptions';
 import './Home.css';
 
+import github from 'assets/images/github.png';
+
 import homeText from 'assets/texts/home.json';
 
 /**
@@ -90,6 +92,11 @@ export default class Home extends Component {
             <Modal.Body>{homeText.modal.about}</Modal.Body>
             <Modal.Body>{homeText.modal.camera}</Modal.Body>
             <Modal.Body>{homeText.modal.howTo}</Modal.Body>
+            <Modal.Footer>
+            <a href='https://github.com/jasonw80703/japan2019' target="_blank" rel="noopener noreferrer">
+              <img src={github} alt='github' />
+            </a>
+            </Modal.Footer>
           </Modal>
         )}
         {showLucy && (
