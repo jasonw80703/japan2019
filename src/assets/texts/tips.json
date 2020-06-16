@@ -1,0 +1,26 @@
+{
+  "tips": [
+    {
+      "title": "Walking around",
+      "description": "wear shoes",
+      "badges": [
+        "Travel"
+      ]
+    },
+    {
+      "title": "Eating while walking in public",
+      "description": "don't",
+      "badges": [
+        "Food",
+        "Travel"
+      ]
+    },
+    {
+      "title": "Littering in Japan",
+      "description": "don't",
+      "badges": [
+        "Culture"
+      ]
+    }
+  ]
+}
