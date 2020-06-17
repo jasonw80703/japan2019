@@ -3,6 +3,8 @@ import { getS3ObjectImagePath } from 'helpers/getS3ObjectPath';
 import LocationHeader from 'components/locations/LocationHeader';
 import Page from 'components/blog/Page';
 import Image from 'components/blog/Image';
+import MultiImage from 'components/blog/MultiImage';
+import ImageSlide from 'components/blog/ImageSlide';
 import TextBlock from 'components/blog/TextBlock';
 import TextHeader from 'components/blog/TextHeader';
 import { LOCATIONS } from 'constants/locations';
@@ -14,8 +16,6 @@ import mapModalDetails from 'assets/map/hakodate.json';
 // Texts
 import hakodateText from 'assets/texts/hakodate.json';
 import captions from 'assets/images/hakodate/captions.json';
-import MultiImage from 'components/blog/MultiImage';
-import ImageSlide from 'components/blog/ImageSlide';
 
 const LOCATION = LOCATIONS.HAKODATE;
 

@@ -64,6 +64,19 @@ export default function Aomori() {
           location={LOCATION['en']}
         />
 
+        <TextBlock text={aomoriText.conc} />
+        <ImageSlide
+          images={[
+            getS3ObjectImagePath('aomori/end_1'),
+            getS3ObjectImagePath('aomori/end_2'),
+            getS3ObjectImagePath('aomori/end_3'),
+            getS3ObjectImagePath('aomori/end_4'),
+            getS3ObjectImagePath('aomori/end_5'),
+            getS3ObjectImagePath('aomori/end_6')
+          ]}
+          location={LOCATION['en']}
+        />
+
       </Page>
     </div>
   )
