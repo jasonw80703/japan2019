@@ -2,7 +2,7 @@ import React from 'react';
 import { getS3ObjectImagePath } from 'helpers/getS3ObjectPath';
 import LocationHeader from 'components/locations/LocationHeader';
 import Page from 'components/blog/Page';
-// import Image from 'components/blog/Image';
+import Image from 'components/blog/Image';
 import ImageSlide from 'components/blog/ImageSlide';
 import TextBlock from 'components/blog/TextBlock';
 import TextHeader from 'components/blog/TextHeader';
@@ -39,6 +39,16 @@ export default function Morioka() {
           ]}
           location={LOCATION['en']}
         />
+
+        <TextHeader header={moriokaText.headers.shrine} />
+        <TextBlock text={moriokaText.shrine_1} />
+        <TextBlock text={moriokaText.shrine_2} />
+
+        <TextHeader header={moriokaText.headers.museum} />
+        <TextBlock text={moriokaText.museum_1} />
+        <Image source={getS3ObjectImagePath('morioka/museum_1')} location={LOCATION['en']} />
+        <TextBlock text={moriokaText.museum_2} />
+        <Image source={getS3ObjectImagePath('morioka/museum_2')} location={LOCATION['en']} />
       </Page>
     </div>
   )
