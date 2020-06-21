@@ -4,33 +4,34 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import Home from 'components/home/Home.js';
-import SanFrancisco from 'components/locations/SanFrancisco.js';
-import Sapporo from 'components/locations/Sapporo.js';
-import Hakodate from 'components/locations/Hakodate.js';
-import Aomori from 'components/locations/Aomori.js';
-import Morioka from 'components/locations/Morioka.js';
-import Ishinomaki from 'components/locations/Ishinomaki.js';
-import Sendai from 'components/locations/Sendai.js';
-import Tokyo from 'components/locations/Tokyo.js';
-import Yokohama from 'components/locations/Yokohama.js';
-import Shizuoka from 'components/locations/Shizuoka.js';
-import Nagoya from 'components/locations/Nagoya.js';
-import Kyoto from 'components/locations/Kyoto.js';
-import Kobe from 'components/locations/Kobe.js';
-import Hiroshima from 'components/locations/Hiroshima.js';
-import Busan from 'components/locations/Busan.js';
-import Nara from 'components/locations/Nara.js';
-import Osaka from 'components/locations/Osaka.js';
-import TokyoTwo from 'components/locations/TokyoTwo.js';
+import Home from 'components/home/Home';
+import SanFrancisco from 'components/locations/SanFrancisco';
+import Sapporo from 'components/locations/Sapporo';
+import Hakodate from 'components/locations/Hakodate';
+import Aomori from 'components/locations/Aomori';
+import Morioka from 'components/locations/Morioka';
+import Ishinomaki from 'components/locations/Ishinomaki';
+import Sendai from 'components/locations/Sendai';
+import Tokyo from 'components/locations/Tokyo';
+import Yokohama from 'components/locations/Yokohama';
+import Shizuoka from 'components/locations/Shizuoka';
+import Nagoya from 'components/locations/Nagoya';
+import Kyoto from 'components/locations/Kyoto';
+import Kobe from 'components/locations/Kobe';
+import Hiroshima from 'components/locations/Hiroshima';
+import Busan from 'components/locations/Busan';
+import Nara from 'components/locations/Nara';
+import Osaka from 'components/locations/Osaka';
+import TokyoTwo from 'components/locations/TokyoTwo';
 
-import Drawings from 'components/misc/Drawings.js';
-import Stamps from 'components/misc/Stamps.js';
-import Hostels from 'components/misc/Hostels.js';
-import Coffee from 'components/misc/Coffee.js';
-import Music from 'components/misc/Music.js';
-import Foods from 'components/misc/food-pics/Foods.js';
-import Tips from 'components/misc/tips/Tips.js';
+import Drawings from 'components/misc/Drawings';
+import Stamps from 'components/misc/Stamps';
+import Hostels from 'components/misc/Hostels';
+import Coffee from 'components/misc/Coffee';
+import Music from 'components/misc/Music';
+import Foods from 'components/misc/food-pics/Foods';
+import Tips from 'components/misc/tips/Tips';
+import StarWars from 'components/misc/StarWars';
 
 export default function App() {
   return (
@@ -110,6 +111,9 @@ export default function App() {
         </Route>
         <Route path="/tips">
           <Tips />
+        </Route>
+        <Route path="/starwars">
+          <StarWars />
         </Route>
         <Route path="/">
           <Home />

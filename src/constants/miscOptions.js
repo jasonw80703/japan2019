@@ -6,4 +6,5 @@ export const MISC_OPTIONS = {
   'coffee': 'Coffee Shop Tier List',
   'foods': 'Food Pictures',
   'tips': 'Japan Travel Tips',
+  'starwars': 'Star Wars Gallery',
 }
