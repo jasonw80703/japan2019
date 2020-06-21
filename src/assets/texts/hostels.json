@@ -22,17 +22,18 @@
     "name": "Art Hotel Color Aomori",
     "address": "2 Chome-5-6 Shinmachi, Aomori, 030-0801, Japan",
     "link": "https://www.booking.com/hotel/jp/art-color-aomori.html",
-    "rating": 3,
+    "rating": 2,
     "images": ["bed", "washroom"],
     "description": "This was more of a lower tier hotel rather than a hostel. It had more of a traditional front desk and the staff was very kind. The room was a nice change of pace to shared hostel rooms, with my own large bed and washroom. The location is great, found within downtown Aomori and with a good amount of shops and restaurants nearby. It was pretty difficult to find a hostel in Aomori since it's a smaller city with fewer foreigner travellers. The hotel was nothing spectacular but was a worry free and nice location for some quiet and alone time. "
   },
   "morioka": {
     "city": "Morioka",
     "name": "UNIZO INN Express",
-    "address": "",
+    "address": "2 Chome-10-25 Moriokaekinishidori, Morioka, Iwate 020-0045, Japan",
     "link": "https://www.unizo-hotel.co.jp/en/express-morioka/",
-    "rating": 0,
-    "description": "tbd"
+    "rating": 2,
+    "images": ["room", "hall"],
+    "description": "UNIZO is a hotel chain common across all of Japan. Similar to Aomori, Morioka is less travelled and was harder to find hostels to stay at. Instead, I found a nicely located UNIZO INN close to the main station, next to Shizukuishi River. There were not many restaurants nearby so I had a lot of meals at the closeby Family Mart convenience food. The room itself was small but comfy, good for one person travelling and requiring a place to stay for a short period of time."
   },
   "ishinomaki": {
     "city": "Ishinomaki",

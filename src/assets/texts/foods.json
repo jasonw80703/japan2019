@@ -135,7 +135,7 @@
       {
         "name": "Steak",
         "name_jp": "ステーキ",
-        "rating": 3,
+        "rating": 2,
         "restaurant": "Ikinari Steak Aomori Station",
         "address": "1 Chome-9-18 Shinmachi, Aomori, 030-0801, Japan",
         "review": "Ikinari Steak is a type of higher quality fast food restaurant found in Japan but also in other cities around the world such as New York City. They specialize in steaks done your way and is made usually very quickly, providing a convenient and meaty meal. The meal comes with some corn, soup and salad, providing nice clean and textural breaks between each bite of meat. I've had it on a previous trip to Japan but wanted to get it at least once this trip and the shop was close to where I stayed, so I tried it out. The steak itself was nice and tender, cooked medium rare as asked. The price is a bit more expensive compared to other fast food or local restaurants, but worth it for a large nourishing meal.",
@@ -146,7 +146,7 @@
       {
         "name": "Apple Pie",
         "name_jp": "アップルパイ",
-        "rating": 3,
+        "rating": 2,
         "restaurant": "A-Factory Souvenir Shop",
         "address": "1 Chome-4-2 Yanakawa, Aomori, 038-0012, Japan",
         "review": "Famous for their apples, Aomori's A-Factory is a building with a bunch of smaller stores inside selling apple products. After looking through, I decided on trying a small apple pie. The pie was tart and delicious, and I was happy to enjoy it outside on the pier, near Mustsu Bay.",
@@ -170,7 +170,28 @@
   "morioka": {
     "city": "Morioka",
     "foods": [
-      
+      {
+        "name": "Shoyu Ramen",
+        "name_jp": "しょうゆラーメン",
+        "rating": 3,
+        "restaurant": "Matoya",
+        "address": "8-11 Moriokaekimaedori, Morioka, Iwate 020-0034, Japan",
+        "review": "I arrived very early in Morioka and stayed near the station, working at a Tully's (a popular coffee shop franchise in Japan). When noon hit, I was craving some food - noodles specifically because I've heard that Morioka is famous for their noodles. I walked the station looking for a noodle shop and there were plenty. Right outside the station, there was a tiny shop selling noodles and some Chinese dishes actually. After stepping in to the shop, I realized how small it actually was. The bar seating did not have room for my backpack and duffel so I had to drop it near the self serve water cooler, worried that it would block incoming or outgoing patrons. Settling down, the menu was completely in Japanese so I orderd the only thing I could understand - some Shoyu Ramen. The owner whipped up the ramen fast, and the result was delicious. Salty soy sauce based broth with thinly sliced pork and some veggies was exactly what I needed to nourish me in preparation for the walk to my hostel.",
+        "images": [
+          "ramen"
+        ]
+      },
+      {
+        "name": "Gyudon",
+        "name_jp": "牛丼",
+        "rating": 1,
+        "restaurant": "Matsuya",
+        "address": "1 Chome-7-5 Odori, Morioka, Iwate 020-0022, Japan",
+        "review": "Matsuya is a gyudon chain restaurant, great for an extremely cheap filling meal with meat, rice and some veggies. Most, if not all, have vending machine order and quick service. They have an English menu as well.",
+        "images": [
+          "gyudon"
+        ]
+      }
     ]
   },
   "ishinomaki": {
