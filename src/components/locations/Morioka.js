@@ -49,6 +49,11 @@ export default function Morioka() {
         <Image source={getS3ObjectImagePath('morioka/museum_1')} location={LOCATION['en']} />
         <TextBlock text={moriokaText.museum_2} />
         <Image source={getS3ObjectImagePath('morioka/museum_2')} location={LOCATION['en']} />
+
+        <TextHeader header={moriokaText.headers.arcade} />
+        <TextBlock text={moriokaText.arcade_1} />
+        <Image source={getS3ObjectImagePath('morioka/arcade')} location={LOCATION['en']} />
+        <TextBlock text={moriokaText.arcade_2} />
       </Page>
     </div>
   )
