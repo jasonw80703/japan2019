@@ -1,7 +1,10 @@
 import React from 'react';
 import MiscHeader from 'components/misc/MiscHeader';
 import MiscTitle from 'components/misc/MiscTitle';
+import Gallery from 'components/misc/Gallery';
 import { MISC_OPTIONS } from 'constants/miscOptions';
+
+const STARWARS_IMAGES_COUNT = 53;
 
 export default function StarWars() {
   return (
@@ -14,6 +17,7 @@ export default function StarWars() {
         headerJp={'スターウォーズ'}
         description={'Images from Tokyo STAR WARS Identities: The Exhibition'}
       />
+      <Gallery imageCount={STARWARS_IMAGES_COUNT} folder='starwars' galleryName='Star Wars' size='lg' />
     </div>
   );
 }

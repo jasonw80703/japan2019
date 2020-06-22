@@ -29,7 +29,7 @@ export default class Image extends Component {
     const { showImageModal } = this.state;
     
     const captionClass = caption ? '' : 'no-caption';
-    const imageClass = `${size} pic ${captionClass}`
+    const imageClass = `${size} pic ${captionClass}`;
 
     return (
       <Preload

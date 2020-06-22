@@ -69,14 +69,16 @@ export default class Gallery extends Component {
   }
 
   render() {
-    const { galleryName, imageCount, folder } = this.props;
+    const { galleryName, imageCount, folder, size } = this.props;
     const { currentImage, showImageModal } = this.state;
 
     const imageSource = getS3ObjectImagePath(`${folder}/${currentImage}`);
 
+    const containerClass = `${size} image-container`;
+
     return (
       <div>
-        <div id='image-container'>
+        <div class={containerClass}>
           {imageSource ?
             <img src={imageSource} alt='pic' className='gallery-image' onClick={this.handleToggleImageModal}/> :
             <p>Image missing!</p>
@@ -97,8 +99,13 @@ export default class Gallery extends Component {
   }
 }
 
+Gallery.defaultProps = {
+  size: 'sm',
+};
+
 Gallery.propTypes = {
   folder: PropTypes.string.isRequired,
   galleryName: PropTypes.string.isRequired,
   imageCount: PropTypes.number.isRequired,
+  size: PropTypes.string,
 };

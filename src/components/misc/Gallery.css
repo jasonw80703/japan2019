@@ -1,10 +1,23 @@
-#image-container {
+.image-container {
   margin: auto;
-  height: 30%;
-  width: 30%;
   border: 1.5px solid black;
   border-radius: 5px;
   padding: 1%;
+}
+
+.sm {
+  height: 30%;
+  width: 30%;
+}
+
+.md {
+  height: 50%;
+  width: 50%;
+}
+
+.lg {
+  height: 70%;
+  width: 70%;
 }
 
 .gallery-image {
