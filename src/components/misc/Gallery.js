@@ -100,7 +100,7 @@ export default class Gallery extends Component {
 }
 
 Gallery.defaultProps = {
-  size: 'sm',
+  size: 'sm-gallery',
 };
 
 Gallery.propTypes = {

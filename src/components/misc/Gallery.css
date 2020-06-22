@@ -5,17 +5,17 @@
   padding: 1%;
 }
 
-.sm {
+.sm-gallery {
   height: 30%;
   width: 30%;
 }
 
-.md {
+.md-gallery {
   height: 50%;
   width: 50%;
 }
 
-.lg {
+.lg-gallery {
   height: 70%;
   width: 70%;
 }

@@ -17,7 +17,7 @@ export default function StarWars() {
         headerJp={'スターウォーズ'}
         description={'Images from Tokyo STAR WARS Identities: The Exhibition'}
       />
-      <Gallery imageCount={STARWARS_IMAGES_COUNT} folder='starwars' galleryName='Star Wars' size='lg' />
+      <Gallery imageCount={STARWARS_IMAGES_COUNT} folder='starwars' galleryName='Star Wars' size='lg-gallery' />
     </div>
   );
 }
