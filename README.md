@@ -1,6 +1,6 @@
 # Japan 2019
 
-https://japan-2019.herokuapp.com/
+https://www.japan2019.blog/
 
 Documenting my solo two month trip to Japan from Oct 2019 - Dec 2019.
 
