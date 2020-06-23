@@ -6,6 +6,10 @@ import Page from 'components/blog/Page';
 // import TextHeader from 'components/blog/TextHeader';
 import { LOCATIONS } from 'constants/locations';
 
+// Map
+import map from 'assets/map/ishinomaki.jpg';
+import mapModalDetails from 'assets/map/ishinomaki.json';
+
 const LOCATION = LOCATIONS.ISHINOMAKI;
 
 export default function Ishinomaki() {
@@ -13,6 +17,8 @@ export default function Ishinomaki() {
     <div>
       <LocationHeader
         location={LOCATION}
+        map={map}
+        mapModalDetails={mapModalDetails}
       />
       <Page location={LOCATION}></Page>
     </div>
