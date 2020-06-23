@@ -10,14 +10,35 @@
   width: 30%;
 }
 
+@media(max-width: 500px) {
+  .sm-gallery {
+    height: 60%;
+    width: 60%;
+  }
+}
+
 .md-gallery {
   height: 50%;
   width: 50%;
 }
 
+@media(max-width: 500px) {
+  .md-gallery {
+    height: 70%;
+    width: 70%;
+  }
+}
+
 .lg-gallery {
   height: 70%;
   width: 70%;
+}
+
+@media(max-width: 500px) {
+  .lg-gallery {
+    height: 90%;
+    width: 90%;
+  }
 }
 
 .gallery-image {
