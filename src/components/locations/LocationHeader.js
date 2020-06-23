@@ -68,7 +68,7 @@ export default class LocationHeader extends Component {
         <div className="location-header-div">
           <Navbar id="navbar-header">
             <Navbar.Brand onClick={this.handleToggleMapModal} id="navbar-brand">{location['en']}</Navbar.Brand>
-            <Navbar.Text onClick={this.handleToggleLocationDatesModal}>{location['dates']}</Navbar.Text>
+            <Navbar.Text onClick={this.handleToggleLocationDatesModal} id="navbar-dates">{location['dates']}</Navbar.Text>
             <Navbar.Collapse className="justify-content-end">
               <Nav id="location-nav">
                 <LocationNavDropdown currentLocation={location['en']} />

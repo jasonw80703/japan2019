@@ -10,6 +10,12 @@
   color: #E85A4F;
 }
 
+@media (max-width: 500px) {
+  #navbar-dates {
+    display: none;
+  }
+}
+
 #home-link {
   color: #E98074;
 }

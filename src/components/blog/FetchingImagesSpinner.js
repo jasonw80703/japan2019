@@ -12,7 +12,8 @@ export default function FetchingImagesSpinner() {
     <div className="loading-spinner-div">
       <Spinner animation="border" className="loading-spinner" />
       <h2 className="loading-text">Fetching Images...</h2>
-      {/* source: https://www.spendlifetraveling.com/40-fun-facts-about-japan/ */}
+      {/* source1: https://www.spendlifetraveling.com/40-fun-facts-about-japan/ */}
+      {/* source2: https://www.factretriever.com/japan-facts */}
       <p><b>Japan Fun Fact:</b> {facts[randInt]}</p>
     </div>
   );

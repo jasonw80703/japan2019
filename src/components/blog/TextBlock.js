@@ -24,18 +24,18 @@ export default class TextBlock extends Component {
           <Row noGutters className="align-items-center">
             {imageOnRight ?
               (
-                <Col><p className='text-block-with-image image-right'>{text}</p></Col>
+                <Col lg='6'><p className='text-block-with-image image-right'>{text}</p></Col>
               ) :
               (
-                <Col><Image source={source} size={size} location={location} /></Col>
+                <Col lg='6'><Image source={source} size={size} location={location} /></Col>
               )
             }
             {imageOnRight ?
               (
-                <Col><Image source={source} size={size} location={location} /></Col>
+                <Col lg='6'><Image source={source} size={size} location={location} /></Col>
               ) :
               (
-                <Col><p className='text-block-with-image image-left'>{text}</p></Col>
+                <Col lg='6'><p className='text-block-with-image image-left'>{text}</p></Col>
               )
             }
           </Row>
