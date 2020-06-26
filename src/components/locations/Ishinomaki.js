@@ -47,6 +47,23 @@ export default function Ishinomaki() {
           ]}
           location={LOCATION['en']}
         />
+        <TextBlock text={ishinomakiText.manga_3} />
+        <ImageSlide
+          images={[
+            getS3ObjectImagePath('ishinomaki/manga_10'),
+            getS3ObjectImagePath('ishinomaki/manga_11'),
+            getS3ObjectImagePath('ishinomaki/manga_12'),
+            getS3ObjectImagePath('ishinomaki/manga_13'),
+            getS3ObjectImagePath('ishinomaki/manga_14'),
+            getS3ObjectImagePath('ishinomaki/manga_15'),
+            getS3ObjectImagePath('ishinomaki/manga_16'),
+            getS3ObjectImagePath('ishinomaki/manga_17'),
+            getS3ObjectImagePath('ishinomaki/manga_18'),
+            getS3ObjectImagePath('ishinomaki/manga_19'),
+            getS3ObjectImagePath('ishinomaki/manga_20')
+          ]}
+          location={LOCATION['en']}
+        />
       </Page>
     </div>
   )
