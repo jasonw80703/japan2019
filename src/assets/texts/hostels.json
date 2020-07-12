@@ -38,10 +38,11 @@
   "ishinomaki": {
     "city": "Ishinomaki",
     "name": "Active Life -YADO-",
-    "address": "",
+    "address": "Hamasonenoichi-47-1 Watanoha, Ishinomaki, Miyagi 986-2135, Japan",
     "link": "https://www.agoda.com/en-ca/active-life-yado/hotel/ishinomaki-jp.html?cid=1844104",
-    "rating": 0,
-    "description": "tbd"
+    "rating": 2,
+    "images": ["bed", "mirror"],
+    "description": "One of the few hostels available in Ishinomaki at the time, this hostel was a 30 minute train ride away from the main station. The hostel is located in a very residential area, in walking distance to the water. Because of this, they advertise for surfers and others that are active. The building itself was interesting architecturally, with only a second floor where the rooms were located. The rooms were small and simple, with two bunk beds, not much walking room in between and one mirror to share. The shared bathroom was next door so I would have to exit my room, lock the door, and then use the washroom. There weren't any other residents there outside of the one employee that seemed to manage the hostel. Overall, this spot was a very simple place with nothing too different or spectacular, but the surrounding immediate environment and beauty of the city made this stay much more comfortable."
   },
   "sendai": {
     "city": "Sendai",

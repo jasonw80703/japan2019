@@ -197,7 +197,29 @@
   "ishinomaki": {
     "city": "Ishinomaki",
     "foods": [
-      
+      {
+        "name": "Chirashi Don Teishoku",
+        "name_jp": "牛丼定食",
+        "rating": 4,
+        "restaurant": "Genki Shokudo",
+        "address": "Japan, 〒986-0822 Miyagi, Ishinomaki, Central, 2 Chome−11−11 元気いちば 2F",
+        "review": "After visiting Ishinomori Manga Musuem, I visited Genki Shokudo, a cafeteria style restaurant located right across the bridge near the manga museum. The restaurant is on the second floor above a grocery store. After taking the stairs up, you'll be greeted with a Japanese and English menu along with images on display, making it very easy to order. I ordered the chirashi don teishoku, a set meal that came with a mix of sliced raw fish on top of a bed of rice, miso soup, and some pickles. Pour some shoyu on top of the chirashi don, and you have yourself a fresh, delicious seafood lunch.",
+        "images": [
+          "chirashi"
+        ]
+      },
+      {
+        "name": "Tonkatsu Teishoku",
+        "name_jp": "とんかつ定食",
+        "rating": 5,
+        "restaurant": "食事処みうら",
+        "address": "1 Chome-8-10 Watanohacho, Ishinomaki, Miyagi 986-2121, Japan",
+        "recommend": true,
+        "review": "Another set meal I thoroughly enjoyed in my stay in Ishinomaki was at a local mom and pop restaurant right outside of Watanoha station. Because of the quaint outside, I didn't realize it was a restaurant until I searched for food one day around the area. I ordered the tonkatsu teishoku largely because that was one of the only things I could read in the fully Japanese menu. I was not disappointed however. The set meal came with a light, crispy pork tonkatsu alongisde rice, miso soup, cabbage salad, potato salad, two varieties of pickles, and some agedashi tofu. The selection of smaller side dishes effectively offset the lightly fried meat in between each bite. To my surprise, I found out after that the restaurant is a ramen restaurant. Either way, I would highly recommend this restaurant if you're nearby Watanoha station!",
+        "images": [
+          "tonkatsu"
+        ]
+      }
     ]
   },
   "sendai": {

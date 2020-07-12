@@ -77,7 +77,7 @@ export default class Home extends Component {
 
     return (
       <div>
-        <button type="button" className="lucy" onClick={this.handleToggleLucy}/>
+        <button type="button" className="hideme" onClick={this.handleToggleLucy}/>
         <div className="home">
           <h1 className="header" onClick={this.handleToggleModal}>{homeText.header_1} <span className="year">{homeText.header_2}</span></h1>
           <LocationDropdown />
