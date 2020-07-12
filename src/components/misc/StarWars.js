@@ -4,7 +4,7 @@ import MiscTitle from 'components/misc/MiscTitle';
 import Gallery from 'components/misc/Gallery';
 import { MISC_OPTIONS } from 'constants/miscOptions';
 
-const STARWARS_IMAGES_COUNT = 53;
+const STARWARS_IMAGES_COUNT = 54;
 
 export default function StarWars() {
   return (
