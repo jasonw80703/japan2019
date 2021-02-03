@@ -50,7 +50,7 @@ function LocationTab() {
 
 export default function Foods() {
   return (
-    <div>
+    <>
       <MiscHeader currentMisc={MISC_OPTIONS['foods']}>
         <i className="fas fa-fish misc-icon" />
       </MiscHeader>
@@ -60,6 +60,6 @@ export default function Foods() {
         description={'A list of the food I enjoyed by city.'}
       />
       <LocationTab />
-    </div>
+    </>
   );
 }

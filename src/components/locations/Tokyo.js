@@ -10,11 +10,11 @@ const LOCATION = LOCATIONS.TOKYO;
 
 export default function Tokyo() {
   return (
-    <div>
+    <>
       <LocationHeader
         location={LOCATION}
       />
       <Page location={LOCATION}></Page>
-    </div>
+    </>
   )
 }

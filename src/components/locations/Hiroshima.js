@@ -10,11 +10,11 @@ const LOCATION = LOCATIONS.HIROSHIMA;
 
 export default function Hiroshima() {
   return (
-    <div>
+    <>
       <LocationHeader
         location={LOCATION}
       />
       <Page location={LOCATION}></Page>
-    </div>
+    </>
   )
 }

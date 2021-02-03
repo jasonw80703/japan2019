@@ -50,7 +50,7 @@ function HostelImageCarousel({
 
 function HostelInfo({ info }) {
   return (
-    <div>
+    <>
       <h1 className="hostel-info-header"><span className="fas fa-house-user fa-xs house-icon" />{info.name}</h1>
       <p><a href={info.link} className="hostel-info-link" target="_blank" rel="noopener noreferrer">{info.link}</a></p>
       {info.address && <p className="hostel-address">{info.address}</p>}
@@ -72,13 +72,13 @@ function HostelInfo({ info }) {
           images={info.images}
         />
       }
-    </div>
+    </>
   );
 }
 
 export default function Hostels() {
   return (
-    <div>
+    <>
       <MiscHeader currentMisc={MISC_OPTIONS['hostels']}>
         <i className="fas fa-house-user misc-icon" />
       </MiscHeader>
@@ -117,6 +117,6 @@ export default function Hostels() {
           </Row>
         </Tab.Container>
       </div>
-    </div>
+    </>
   );
 }

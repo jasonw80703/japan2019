@@ -42,7 +42,7 @@ export default class Ishinomaki extends Component {
     const { showModal } = this.state;
 
     return (
-      <div>
+      <>
         <LocationHeader
           location={LOCATION}
           map={map}
@@ -138,7 +138,7 @@ export default class Ishinomaki extends Component {
             <Modal.Body><ReactImage src={getS3ObjectImagePath('ishinomaki/dfly')} fluid /></Modal.Body>
           </Modal>
         )}
-      </div>
+      </>
     )
   }
 }

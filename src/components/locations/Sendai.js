@@ -10,11 +10,11 @@ const LOCATION = LOCATIONS.SENDAI;
 
 export default function Sendai() {
   return (
-    <div>
+    <>
       <LocationHeader
         location={LOCATION}
       />
       <Page location={LOCATION}></Page>
-    </div>
+    </>
   )
 }

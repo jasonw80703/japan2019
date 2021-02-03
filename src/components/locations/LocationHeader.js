@@ -64,7 +64,7 @@ export default class LocationHeader extends Component {
     } = this.props;
 
     return (
-      <div>
+      <>
         <div className="location-header-div">
           <Navbar id="navbar-header">
             <Navbar.Brand onClick={this.handleToggleMapModal} id="navbar-brand">{location['en']}</Navbar.Brand>
@@ -94,7 +94,7 @@ export default class LocationHeader extends Component {
           handleToggleModal={this.handleToggleLocationDatesModal}
           showModal={showLocationDatesModal}
         />
-      </div>
+      </>
     );
   }
 };

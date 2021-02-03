@@ -15,7 +15,7 @@ export default class Page extends Component {
     } = this.props;
 
     return (
-      <div>
+      <>
         <Jumbotron fluid id="page-jumbotron">
           <Container>
             <h1 className='main-page-header'>{location['en']}</h1>
@@ -27,7 +27,7 @@ export default class Page extends Component {
           {children}
           <ScrollBackToTopArrow />
         </div>
-      </div>
+      </>
     );
   }
 };

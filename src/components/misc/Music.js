@@ -5,7 +5,7 @@ import { MISC_OPTIONS } from 'constants/miscOptions';
 
 export default function Music() {
   return (
-    <div>
+    <>
       <MiscHeader currentMisc={MISC_OPTIONS['music']}>
         <i className="fas fa-headphones misc-icon" />
       </MiscHeader>
@@ -13,6 +13,6 @@ export default function Music() {
         header={'Music'}
         headerJp={'音楽'}
       />
-    </div>
+    </>
   );
 }

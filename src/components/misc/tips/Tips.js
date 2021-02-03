@@ -10,7 +10,7 @@ export default function Tips() {
   const tips = tipsList.tips;
 
   return (
-    <div>
+    <>
       <MiscHeader currentMisc={MISC_OPTIONS['tips']}>
         <i className="fas fa-hiking misc-icon" />
       </MiscHeader>
@@ -19,6 +19,6 @@ export default function Tips() {
         headerJp={'旅行のヒント'}
       />
       <TipsContainer tips={tips} />
-    </div>
+    </>
   );
 }

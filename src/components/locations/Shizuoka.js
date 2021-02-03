@@ -10,11 +10,11 @@ const LOCATION = LOCATIONS.SHIZUOKA;
 
 export default function Shizuoka() {
   return (
-    <div>
+    <>
       <LocationHeader
         location={LOCATION}
       />
       <Page location={LOCATION}></Page>
-    </div>
+    </>
   )
 }

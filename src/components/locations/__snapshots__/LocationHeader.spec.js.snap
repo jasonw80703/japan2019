@@ -1,73 +1,74 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<LocationHeader /> renders as expected 1`] = `
-<div>
-  <div
-    className="location-header-div"
+<div
+  className="location-header-div"
+>
+  <nav
+    className="navbar navbar-expand navbar-light"
+    id="navbar-header"
   >
-    <nav
-      className="navbar navbar-expand navbar-dark bg-dark"
+    <span
+      className="navbar-brand"
+      id="navbar-brand"
+      onClick={[Function]}
     >
-      <span
-        className="navbar-brand"
-        onClick={[Function]}
-      >
-        San Francisco
-      </span>
-      <span
-        className="navbar-text"
-        onClick={[Function]}
-      >
-        Sep 15 - Jun 15
-      </span>
+      San Francisco
+    </span>
+    <span
+      className="navbar-text"
+      id="navbar-dates"
+      onClick={[Function]}
+    >
+      Oct 16
+    </span>
+    <div
+      aria-expanded={null}
+      className="justify-content-end navbar-collapse collapse"
+    >
       <div
-        aria-expanded={null}
-        className="justify-content-end navbar-collapse collapse"
+        className="navbar-nav"
+        id="location-nav"
+        onKeyDown={[Function]}
       >
         <div
-          className="navbar-nav"
+          className="dropdown nav-item"
           onKeyDown={[Function]}
         >
-          <div
-            className="dropdown nav-item"
-            onKeyDown={[Function]}
-          >
-            <a
-              aria-expanded={false}
-              aria-haspopup={true}
-              className="dropdown-toggle nav-link"
-              data-rb-event-key={null}
-              href="#"
-              id="location-dropdown"
-              onClick={[Function]}
-              onKeyDown={[Function]}
-              role="button"
-            >
-              Location
-            </a>
-          </div>
           <a
-            className="nav-link"
-            data-rb-event-key="/Sapporo"
-            href="/Sapporo"
+            aria-expanded={false}
+            aria-haspopup={true}
+            className="dropdown-toggle nav-link"
+            data-rb-event-key={null}
+            href="#"
             onClick={[Function]}
             onKeyDown={[Function]}
+            role="button"
           >
-            Next
-          </a>
-          <a
-            className="nav-link"
-            data-rb-event-key="/"
-            href="/"
-            id="home-link"
-            onClick={[Function]}
-            onKeyDown={[Function]}
-          >
-            Home
+            Location
           </a>
         </div>
+        <a
+          className="nav-link"
+          data-rb-event-key="/sapporo"
+          href="/sapporo"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+        >
+          Next
+        </a>
+        <a
+          className="nav-link"
+          data-rb-event-key="/"
+          href="/"
+          id="home-link"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+        >
+          Home
+        </a>
       </div>
-    </nav>
-  </div>
+    </div>
+  </nav>
 </div>
 `;

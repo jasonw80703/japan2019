@@ -2,14 +2,17 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
 import LocationHeader from 'components/locations/LocationHeader';
+import { LOCATIONS } from 'constants/locations';
+import map from 'assets/map/sanfrancisco.jpg';
+import mapModalDetails from 'assets/map/sanfrancisco.json';
 
 describe('<LocationHeader />', () => {
   let wrapper;
 
   const defaultProps = {
-    dates: 'Sep 15 - Jun 15',
-    location: 'San Francisco',
-    nextLocation: 'Sapporo',
+    location: LOCATIONS.SAN_FRANCISCO,
+    map: map,
+    mapModalDetails: mapModalDetails,
   };
 
   it('renders as expected', () => {

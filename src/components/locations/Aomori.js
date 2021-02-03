@@ -20,7 +20,7 @@ const LOCATION = LOCATIONS.AOMORI;
 
 export default function Aomori() {
   return (
-    <div>
+    <>
       <LocationHeader
         location={LOCATION}
         map={map}
@@ -78,6 +78,6 @@ export default function Aomori() {
         />
 
       </Page>
-    </div>
+    </>
   )
 }

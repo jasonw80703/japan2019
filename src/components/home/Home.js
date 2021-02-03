@@ -76,7 +76,7 @@ export default class Home extends Component {
     }
 
     return (
-      <div>
+      <>
         <div className="home">
           <h1 className="header" onClick={this.handleToggleModal}>{homeText.header_1} <span className="year">{homeText.header_2}</span></h1>
           <LocationDropdown />
@@ -98,7 +98,7 @@ export default class Home extends Component {
             </Modal.Footer>
           </Modal>
         )}
-      </div>
+      </>
     );
   }
 }

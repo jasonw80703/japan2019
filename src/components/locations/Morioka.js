@@ -19,7 +19,7 @@ const LOCATION = LOCATIONS.MORIOKA;
 
 export default function Morioka() {
   return (
-    <div>
+    <>
       <LocationHeader
         location={LOCATION}
         map={map}
@@ -55,6 +55,6 @@ export default function Morioka() {
         <Image source={getS3ObjectImagePath('morioka/arcade')} location={LOCATION['en']} />
         <TextBlock text={moriokaText.arcade_2} />
       </Page>
-    </div>
+    </>
   )
 }

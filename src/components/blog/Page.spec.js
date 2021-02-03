@@ -1,12 +1,12 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Page from 'components/blog/Page';
+import { LOCATIONS } from 'constants/locations';
 
 describe('<Page />', () => {
 
   const defaultProps = {
-    location: 'Test Location',
-    locationJp: 'テストロケーション',
+    location: LOCATIONS.SAN_FRANCISCO,
   };
 
   it('renders as expected', () => {

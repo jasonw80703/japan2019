@@ -10,11 +10,11 @@ const LOCATION = LOCATIONS.NARA;
 
 export default function Nara() {
   return (
-    <div>
+    <>
       <LocationHeader
         location={LOCATION}
       />
       <Page location={LOCATION}></Page>
-    </div>
+    </>
   )
 }

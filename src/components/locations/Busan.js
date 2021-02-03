@@ -10,11 +10,11 @@ const LOCATION = LOCATIONS.BUSAN;
 
 export default function Busan() {
   return (
-    <div>
+    <>
       <LocationHeader
         location={LOCATION}
       />
       <Page location={LOCATION}></Page>
-    </div>
+    </>
   )
 }
