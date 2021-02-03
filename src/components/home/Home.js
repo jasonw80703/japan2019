@@ -48,12 +48,10 @@ export default class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showLucy: false,
       showModal: false,
     };
 
     this.handleToggleModal = this.handleToggleModal.bind(this);
-    this.handleToggleLucy = this.handleToggleLucy.bind(this);
   }
 
   handleToggleModal() {
@@ -64,20 +62,11 @@ export default class Home extends Component {
     });
   }
 
-  handleToggleLucy() {
-    const { showLucy } = this.state;
-
-    this.setState({
-      showLucy: !showLucy,
-    });
-  }
-
   render() {
-    const { showLucy, showModal } = this.state;
+    const { showModal } = this.state;
 
     return (
       <div>
-        <button type="button" className="hideme" onClick={this.handleToggleLucy}/>
         <div className="home">
           <h1 className="header" onClick={this.handleToggleModal}>{homeText.header_1} <span className="year">{homeText.header_2}</span></h1>
           <LocationDropdown />
@@ -98,9 +87,6 @@ export default class Home extends Component {
             </a>
             </Modal.Footer>
           </Modal>
-        )}
-        {showLucy && (
-          <img className="lucy-img" src={getS3ObjectImagePath('home/lucy')} alt="lucy" />
         )}
       </div>
     );

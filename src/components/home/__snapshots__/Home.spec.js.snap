@@ -2,11 +2,6 @@
 
 exports[`<Home /> renders as expected 1`] = `
 <div>
-  <button
-    className="lucy"
-    onClick={[Function]}
-    type="button"
-  />
   <div
     className="home"
   >
@@ -14,7 +9,13 @@ exports[`<Home /> renders as expected 1`] = `
       className="header"
       onClick={[Function]}
     >
-      日本 2019
+      日本
+       
+      <span
+        className="year"
+      >
+        2019
+      </span>
     </h1>
     <div
       className="dropdown btn-group"
@@ -24,9 +25,9 @@ exports[`<Home /> renders as expected 1`] = `
       <button
         aria-expanded={false}
         aria-haspopup={true}
-        className="dropdown-toggle btn btn-dark btn-lg"
+        className="dropdown-toggle btn btn-primary btn-lg"
         disabled={false}
-        id="location-dropdown"
+        id="home-location-dropdown"
         onClick={[Function]}
         type="button"
       >
@@ -41,7 +42,7 @@ exports[`<Home /> renders as expected 1`] = `
       <button
         aria-expanded={false}
         aria-haspopup={true}
-        className="dropdown-toggle btn btn-light btn-lg"
+        className="dropdown-toggle btn btn-primary btn-lg"
         disabled={false}
         id="misc-dropdown"
         onClick={[Function]}
