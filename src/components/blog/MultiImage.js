@@ -7,8 +7,7 @@ import Row from 'react-bootstrap/Row';
 import ImageModal from 'components/blog/ImageModal';
 import FetchingImagesSpinner from 'components/blog/FetchingImagesSpinner';
 import './MultiImage.css';
-
-const Preload = require('react-preload').Preload;
+import { Preload } from 'react-preload';
 
 export default class MultiImage extends Component {
   constructor(props) {

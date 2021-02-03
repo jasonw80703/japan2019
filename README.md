@@ -22,6 +22,9 @@ yarn start
 yarn test
 ```
 
+# Deployment
+Heroku
+
 # Screenshots
 
 ![img](https://solo-japan-2019.s3-us-west-1.amazonaws.com/home/home.jpg)
