@@ -49,9 +49,15 @@ export default class Home extends Component {
     super(props);
     this.state = {
       showModal: false,
+      hasError: false,
     };
 
     this.handleToggleModal = this.handleToggleModal.bind(this);
+  }
+
+  // Error boundary to render fallback if error is thrown
+  static getDerivedStateFromError(error) {
+    return { hasError: true };
   }
 
   handleToggleModal() {
@@ -63,7 +69,11 @@ export default class Home extends Component {
   }
 
   render() {
-    const { showModal } = this.state;
+    const { showModal, hasError } = this.state;
+
+    if (hasError) {
+      return <h1>Something Went Wrong! Please try again later. Sorry!</h1>
+    }
 
     return (
       <div>
