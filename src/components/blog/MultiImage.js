@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
@@ -9,7 +9,7 @@ import FetchingImagesSpinner from 'components/blog/FetchingImagesSpinner';
 import './MultiImage.css';
 import { Preload } from 'react-preload';
 
-export default class MultiImage extends Component {
+export default class MultiImage extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {

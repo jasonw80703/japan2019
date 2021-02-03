@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import ScrollBackToTopArrow from 'components/blog/ScrollBackToTopArrow';
 import {
@@ -7,7 +7,7 @@ import {
  } from 'react-bootstrap/';
 import './Page.css';
 
-export default class Page extends Component {
+export default class Page extends PureComponent {
   render() {
     const {
       children,

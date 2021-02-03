@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import Carousel from 'react-bootstrap/Carousel';
 import ImageModal from 'components/blog/ImageModal';
 import FetchingImagesSpinner from 'components/blog/FetchingImagesSpinner';
 import { Preload } from 'react-preload';
 
-export default class ImageSlide extends Component {
+export default class ImageSlide extends PureComponent {
   constructor(props) {
     super(props);
 

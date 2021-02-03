@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -27,7 +27,7 @@ function LocationNavDropdown({ currentLocation }) {
   );
 }
 
-export default class LocationHeader extends Component {
+export default class LocationHeader extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
