@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 import ImageModal from 'components/blog/ImageModal';
 import FetchingImagesSpinner from 'components/blog/FetchingImagesSpinner';
 import './Image.css';
-
-const Preload = require('react-preload').Preload;
-
+import { Preload } from 'react-preload'; // known bug with react-preload
 export default class Image extends Component {
   constructor(props) {
     super(props);

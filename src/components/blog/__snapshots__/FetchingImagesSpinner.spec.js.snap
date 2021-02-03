@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FetchingImagesSpinner /> should render as expected 1`] = `
+<div
+  className="loading-spinner-div"
+>
+  <div
+    className="loading-spinner spinner-border"
+  />
+  <h2
+    className="loading-text"
+  >
+    Fetching Images...
+  </h2>
+  <p>
+    <b>
+      Japan Fun Fact:
+    </b>
+     
+    Tokyo is the second most expensive city in the world to live in.
+  </p>
+</div>
+`;
