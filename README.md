@@ -48,8 +48,6 @@ Heroku automatic deploys from master to domain.
 ![img](https://solo-japan-2019.s3-us-west-1.amazonaws.com/home/blog_3.jpg)
 ## Miscellaneous Views
 
-<hr>
-
 ### Drawings
 * collection of buildings and other random things I sketched while travelling in Japan
 
