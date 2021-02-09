@@ -18,7 +18,7 @@ const LOCATION = LOCATIONS.SAN_FRANCISCO;
 
 export default function SanFrancisco() {
   return (
-    <div>
+    <>
       <LocationHeader
         location={LOCATION}
         map={map}
@@ -32,6 +32,6 @@ export default function SanFrancisco() {
         <TextBlock text={sanFranciscoText.para_4} />
         <Image source={getS3ObjectImagePath('san-francisco/sf2')} size='xs' caption={captions.sf2} location={LOCATION['en']} />
       </Page>
-    </div>
+    </>
   );
 }

@@ -77,8 +77,8 @@ export default class Gallery extends Component {
     const containerClass = `${size} image-container`;
 
     return (
-      <div>
-        <div class={containerClass}>
+      <>
+        <div className={containerClass}>
           {imageSource ?
             <img src={imageSource} alt='pic' className='gallery-image' onClick={this.handleToggleImageModal}/> :
             <p>Image missing!</p>
@@ -94,7 +94,7 @@ export default class Gallery extends Component {
           modalImage={imageSource}
           showImageModal={showImageModal}
         />
-      </div>
+      </>
     )
   }
 }

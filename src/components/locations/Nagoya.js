@@ -10,11 +10,11 @@ const LOCATION = LOCATIONS.NAGOYA;
 
 export default function Nagoya() {
   return (
-    <div>
+    <>
       <LocationHeader
         location={LOCATION}
       />
       <Page location={LOCATION}></Page>
-    </div>
+    </>
   )
 }

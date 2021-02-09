@@ -10,11 +10,11 @@ const LOCATION = LOCATIONS.YOKOHAMA;
 
 export default function Yokohama() {
   return (
-    <div>
+    <>
       <LocationHeader
         location={LOCATION}
       />
       <Page location={LOCATION}></Page>
-    </div>
+    </>
   )
 }

@@ -42,6 +42,7 @@
 
 .house-icon {
   margin: 0.5%;
+  margin-bottom: 0.75%;
   vertical-align: text-bottom;
 }
 
@@ -52,4 +53,11 @@
 
 .hostel-info-link {
   color: #8E8D8A;
+}
+
+.city-link {
+  font-size: 40%;
+  color: black;
+  vertical-align: middle;
+  margin: 5px;
 }

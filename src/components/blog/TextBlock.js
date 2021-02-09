@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import {
   Container,
@@ -8,7 +8,7 @@ import {
 import Image from 'components/blog/Image';
 import './TextBlock.css';
 
-export default class TextBlock extends Component {
+export default class TextBlock extends PureComponent {
   render() {
     const {
       location,

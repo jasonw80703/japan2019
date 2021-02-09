@@ -10,11 +10,11 @@ const LOCATION = LOCATIONS.TOKYO_TWO;
 
 export default function TokyoTwo() {
   return (
-    <div>
+    <>
       <LocationHeader
         location={LOCATION}
       />
       <Page location={LOCATION}></Page>
-    </div>
+    </>
   )
 }

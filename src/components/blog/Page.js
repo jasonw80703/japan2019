@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import ScrollBackToTopArrow from 'components/blog/ScrollBackToTopArrow';
 import {
@@ -7,7 +7,7 @@ import {
  } from 'react-bootstrap/';
 import './Page.css';
 
-export default class Page extends Component {
+export default class Page extends PureComponent {
   render() {
     const {
       children,
@@ -15,7 +15,7 @@ export default class Page extends Component {
     } = this.props;
 
     return (
-      <div>
+      <>
         <Jumbotron fluid id="page-jumbotron">
           <Container>
             <h1 className='main-page-header'>{location['en']}</h1>
@@ -27,7 +27,7 @@ export default class Page extends Component {
           {children}
           <ScrollBackToTopArrow />
         </div>
-      </div>
+      </>
     );
   }
 };

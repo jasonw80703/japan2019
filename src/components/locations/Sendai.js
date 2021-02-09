@@ -18,7 +18,7 @@ const LOCATION = LOCATIONS.SENDAI;
 
 export default function Sendai() {
   return (
-    <div>
+    <>
       <LocationHeader
         location={LOCATION}
         map={map}
@@ -29,6 +29,6 @@ export default function Sendai() {
         <TextBlock text={sendaiText.intro} />
         <Image source={getS3ObjectImagePath('sendai/aer')} location={LOCATION['en']} />
       </Page>
-    </div>
+    </>
   )
 }

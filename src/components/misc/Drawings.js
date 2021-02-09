@@ -8,7 +8,7 @@ const DRAWINGS_IMAGES_COUNT = 25;
 
 export default function Drawings() {
   return (
-    <div>
+    <>
       <MiscHeader currentMisc={MISC_OPTIONS['drawings']}>
         <i className="fas fa-pencil-alt misc-icon" />
       </MiscHeader>
@@ -18,6 +18,6 @@ export default function Drawings() {
         description={'Some buildings and other things I drew on the trip.'}
       />
       <Gallery imageCount={DRAWINGS_IMAGES_COUNT} folder='drawings' galleryName='Drawings' />
-    </div>
+    </>
   );
 }

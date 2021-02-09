@@ -21,7 +21,7 @@ const LOCATION = LOCATIONS.HAKODATE;
 
 export default function Hakodate() {
   return (
-    <div>
+    <>
       <LocationHeader
         location={LOCATION}
         map={map}
@@ -94,6 +94,6 @@ export default function Hakodate() {
           location={LOCATION['en']}
         />
       </Page>
-    </div>
+    </>
   )
 }

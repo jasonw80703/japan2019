@@ -48,10 +48,15 @@ function HostelImageCarousel({
   )
 }
 
-function HostelInfo({ info }) {
+function HostelInfo({ location, info }) {
+  const cityLink = '/' + lowerCaseRemoveSpaces(location);
+
   return (
-    <div>
-      <h1 className="hostel-info-header"><span className="fas fa-house-user fa-xs house-icon" />{info.name}</h1>
+    <>
+      <h1 className="hostel-info-header">
+        <span className="fas fa-house-user fa-xs house-icon" />{info.name}
+        <a href={cityLink} className='city-link'><i className="fas fa-city"></i></a>
+      </h1>
       <p><a href={info.link} className="hostel-info-link" target="_blank" rel="noopener noreferrer">{info.link}</a></p>
       {info.address && <p className="hostel-address">{info.address}</p>}
       {
@@ -72,13 +77,13 @@ function HostelInfo({ info }) {
           images={info.images}
         />
       }
-    </div>
+    </>
   );
 }
 
 export default function Hostels() {
   return (
-    <div>
+    <>
       <MiscHeader currentMisc={MISC_OPTIONS['hostels']}>
         <i className="fas fa-house-user misc-icon" />
       </MiscHeader>
@@ -107,6 +112,7 @@ export default function Hostels() {
                   Object.keys(hostels).map((location) => (
                     <Tab.Pane eventKey={location} key={location}>
                       <HostelInfo
+                        location={location}
                         info={hostels[location]}
                       />
                     </Tab.Pane>
@@ -117,6 +123,6 @@ export default function Hostels() {
           </Row>
         </Tab.Container>
       </div>
-    </div>
+    </>
   );
 }

@@ -20,12 +20,4 @@ describe('<Home />', () => {
     wrapper.instance().handleToggleModal();
     expect(wrapper.state('showModal')).toEqual(false);
   });
-
-  describe('when handleToggleLucy() is called', () => {
-    wrapper = shallow(<Home />);
-    wrapper.instance().handleToggleLucy();
-    expect(wrapper.state('showLucy')).toEqual(true);
-    wrapper.instance().handleToggleLucy();
-    expect(wrapper.state('showLucy')).toEqual(false);
-  });
 });

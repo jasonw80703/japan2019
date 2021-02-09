@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -27,80 +27,49 @@ function LocationNavDropdown({ currentLocation }) {
   );
 }
 
-export default class LocationHeader extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      showMapModal: false,
-      showLocationDatesModal: false,
-    };
+const LocationHeader = ({ location, map, mapModalDetails }) => {
+  const [showMapModal, handleToggleMapModal] = useState(false);
+  const [showLocationDatesModal, handleToggleLocationDatesModal] = useState(false);
 
-    this.handleToggleMapModal = this.handleToggleMapModal.bind(this);
-    this.handleToggleLocationDatesModal = this.handleToggleLocationDatesModal.bind(this);
-  }
-
-  handleToggleMapModal() {
-    const { showMapModal } = this.state;
-
-    this.setState({
-      showMapModal: !showMapModal,
-    });
-  }
-
-  handleToggleLocationDatesModal() {
-    const { showLocationDatesModal } = this.state;
-
-    this.setState({
-      showLocationDatesModal: !showLocationDatesModal,
-    });
-  }
-
-  render() {
-    const { showLocationDatesModal, showMapModal } = this.state;
-    const {
-      location,
-      map,
-      mapModalDetails,
-    } = this.props;
-
-    return (
-      <div>
-        <div className="location-header-div">
-          <Navbar id="navbar-header">
-            <Navbar.Brand onClick={this.handleToggleMapModal} id="navbar-brand">{location['en']}</Navbar.Brand>
-            <Navbar.Text onClick={this.handleToggleLocationDatesModal} id="navbar-dates">{location['dates']}</Navbar.Text>
-            <Navbar.Collapse className="justify-content-end">
-              <Nav id="location-nav">
-                <LocationNavDropdown currentLocation={location['en']} />
-                {location['prev_location'] && <Nav.Link href={`/${location['prev_location']}`}>Prev</Nav.Link>}
-                {location['next_location'] && <Nav.Link href={`/${location['next_location']}`}>Next</Nav.Link>}
-                <Nav.Link href='/' id="home-link">Home</Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
-          </Navbar>
-        </div>
-        {map && mapModalDetails && (
-          <MapModal
-            handleToggleModal={this.handleToggleMapModal}
-            location={location['en']}
-            showModal={showMapModal}
-            source={map}
-            description={mapModalDetails.description}
-            locations={mapModalDetails.locations}
-            foods={mapModalDetails.foods}
-          />
-        )}
-        <LocationDatesModal
-          handleToggleModal={this.handleToggleLocationDatesModal}
-          showModal={showLocationDatesModal}
-        />
+  return (
+    <>
+      <div className="location-header-div">
+        <Navbar id="navbar-header">
+          <Navbar.Brand onClick={() => handleToggleMapModal(!showMapModal)} id="navbar-brand">{location['en']}</Navbar.Brand>
+          <Navbar.Text onClick={() => handleToggleLocationDatesModal(!showLocationDatesModal)} id="navbar-dates">{location['dates']}</Navbar.Text>
+          <Navbar.Collapse className="justify-content-end">
+            <Nav id="location-nav">
+              <LocationNavDropdown currentLocation={location['en']} />
+              {location['prev_location'] && <Nav.Link href={`/${location['prev_location']}`}>Prev</Nav.Link>}
+              {location['next_location'] && <Nav.Link href={`/${location['next_location']}`}>Next</Nav.Link>}
+              <Nav.Link href='/' id="home-link">Home</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
       </div>
-    );
-  }
-};
+      {map && mapModalDetails && (
+        <MapModal
+          handleToggleModal={() => handleToggleMapModal(!showMapModal)}
+          location={location['en']}
+          showModal={showMapModal}
+          source={map}
+          description={mapModalDetails.description}
+          locations={mapModalDetails.locations}
+          foods={mapModalDetails.foods}
+        />
+      )}
+      <LocationDatesModal
+        handleToggleModal={() => handleToggleLocationDatesModal(!showLocationDatesModal)}
+        showModal={showLocationDatesModal}
+      />
+    </>
+  );
+}
 
 LocationHeader.propTypes = {
   location: PropTypes.object.isRequired,
   map: PropTypes.node,
   mapModalDetails: PropTypes.object,
 };
+
+export default LocationHeader;

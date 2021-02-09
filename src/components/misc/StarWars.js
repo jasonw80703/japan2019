@@ -8,7 +8,7 @@ const STARWARS_IMAGES_COUNT = 54;
 
 export default function StarWars() {
   return (
-    <div>
+    <>
       <MiscHeader currentMisc={MISC_OPTIONS['starwars']}>
         <i className="fab fa-jedi-order misc-icon" />
       </MiscHeader>
@@ -18,6 +18,6 @@ export default function StarWars() {
         description={'Images from Tokyo STAR WARS Identities: The Exhibition'}
       />
       <Gallery imageCount={STARWARS_IMAGES_COUNT} folder='starwars' galleryName='Star Wars' size='lg-gallery' />
-    </div>
+    </>
   );
 }

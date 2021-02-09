@@ -1,55 +1,54 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Home /> renders as expected 1`] = `
-<div>
-  <button
-    className="lucy"
+<div
+  className="home"
+>
+  <h1
+    className="header"
     onClick={[Function]}
-    type="button"
-  />
-  <div
-    className="home"
   >
-    <h1
-      className="header"
+    日本
+     
+    <span
+      className="year"
+    >
+      2019
+    </span>
+  </h1>
+  <div
+    className="dropdown btn-group"
+    onKeyDown={[Function]}
+    role="group"
+  >
+    <button
+      aria-expanded={false}
+      aria-haspopup={true}
+      className="dropdown-toggle btn btn-primary btn-lg"
+      disabled={false}
+      id="home-location-dropdown"
       onClick={[Function]}
+      type="button"
     >
-      日本 2019
-    </h1>
-    <div
-      className="dropdown btn-group"
-      onKeyDown={[Function]}
-      role="group"
+      Location
+    </button>
+  </div>
+  <div
+    className="dropdown btn-group"
+    onKeyDown={[Function]}
+    role="group"
+  >
+    <button
+      aria-expanded={false}
+      aria-haspopup={true}
+      className="dropdown-toggle btn btn-primary btn-lg"
+      disabled={false}
+      id="misc-dropdown"
+      onClick={[Function]}
+      type="button"
     >
-      <button
-        aria-expanded={false}
-        aria-haspopup={true}
-        className="dropdown-toggle btn btn-dark btn-lg"
-        disabled={false}
-        id="location-dropdown"
-        onClick={[Function]}
-        type="button"
-      >
-        Location
-      </button>
-    </div>
-    <div
-      className="dropdown btn-group"
-      onKeyDown={[Function]}
-      role="group"
-    >
-      <button
-        aria-expanded={false}
-        aria-haspopup={true}
-        className="dropdown-toggle btn btn-light btn-lg"
-        disabled={false}
-        id="misc-dropdown"
-        onClick={[Function]}
-        type="button"
-      >
-        Misc
-      </button>
-    </div>
+      Misc
+    </button>
   </div>
 </div>
 `;

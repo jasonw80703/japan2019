@@ -1,22 +1,44 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Page /> renders as expected 1`] = `
-<div
-  className="main-page-div"
->
-  <h1
-    className="main-page-header"
+Array [
+  <div
+    className="jumbotron jumbotron-fluid"
+    id="page-jumbotron"
   >
-    Test Location
-     
-    <span
-      className="header-jp"
+    <div
+      className="container"
     >
-      テストロケーション
-    </span>
-  </h1>
-  <hr
-    className="header-divider"
-  />
-</div>
+      <h1
+        className="main-page-header"
+      >
+        San Francisco
+      </h1>
+      <h3
+        className="header-jp"
+      >
+        サンフランシスコ
+      </h3>
+      <h5
+        className="header-dates"
+      >
+        Oct 16
+      </h5>
+    </div>
+  </div>,
+  <div
+    className="main-page-div"
+  >
+    <span
+      className="fas fa-arrow-circle-up fa-3x scroll-back-btn"
+      onClick={[Function]}
+      style={
+        Object {
+          "display": "none",
+          "height": 40,
+        }
+      }
+    />
+  </div>,
+]
 `;

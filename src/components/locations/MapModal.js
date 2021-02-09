@@ -18,17 +18,17 @@ export default function MapModal({
         <Modal.Title>{location}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <div>
+        <>
           <img src={source} id='map' alt='pic'/>
           {description && <p className='map-text'>{description}</p>}
           {(locations || foods) && (
-            <div>
+            <>
               <h3>Recommendations:</h3>
               {locations && <p className='map-text'><b>Locations: </b>{locations}</p>}
               {foods && <p><b>Foods: </b>{foods}</p>}
-            </div>
+            </>
           )}
-        </div>
+        </>
       </Modal.Body>
     </Modal>
   );

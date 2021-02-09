@@ -1,12 +1,10 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import ImageModal from 'components/blog/ImageModal';
 import FetchingImagesSpinner from 'components/blog/FetchingImagesSpinner';
 import './Image.css';
-
-const Preload = require('react-preload').Preload;
-
-export default class Image extends Component {
+import { Preload } from 'react-preload'; // known bug with react-preload
+export default class Image extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {

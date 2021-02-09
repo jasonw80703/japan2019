@@ -1,12 +1,11 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import Carousel from 'react-bootstrap/Carousel';
 import ImageModal from 'components/blog/ImageModal';
 import FetchingImagesSpinner from 'components/blog/FetchingImagesSpinner';
+import { Preload } from 'react-preload';
 
-const Preload = require('react-preload').Preload;
-
-export default class ImageSlide extends Component {
+export default class ImageSlide extends PureComponent {
   constructor(props) {
     super(props);
 
@@ -40,7 +39,6 @@ export default class ImageSlide extends Component {
         images={images}
       >
         <Carousel
-          className='carousel-container'
           nextIcon={<span className="fa fa-angle-right fa-3x arrow-icon" />}
           prevIcon={<span className="fa fa-angle-left fa-3x arrow-icon" />}
           interval={null}
@@ -50,8 +48,8 @@ export default class ImageSlide extends Component {
               <Carousel.Item key={index}>
                 <img
                   src={img}
-                  alt={'wow hi there'}
-                  className='carousel-img'
+                  alt={''}
+                  className='d-block w-100'
                   onClick={() => this.handleToggleImageModal(img)}
                 />
               </Carousel.Item>

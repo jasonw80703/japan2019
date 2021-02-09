@@ -10,11 +10,11 @@ const LOCATION = LOCATIONS.KOBE;
 
 export default function Kobe() {
   return (
-    <div>
+    <>
       <LocationHeader
         location={LOCATION}
       />
       <Page location={LOCATION}></Page>
-    </div>
+    </>
   )
 }

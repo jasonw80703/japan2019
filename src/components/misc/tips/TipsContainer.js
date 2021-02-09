@@ -91,7 +91,7 @@ export default class Tips extends Component {
       <Container>
         <Row id='filter-row'>
           <Col>
-            <div>
+            <>
               {
                 Object.values(FILTERS).map((filter) => {
                   const badgeClass = filter === currentFilter ? 'active-filter' : '';
@@ -104,7 +104,7 @@ export default class Tips extends Component {
                   );
                 })
               }
-            </div>
+            </>
           </Col>
         </Row>
         <Row>

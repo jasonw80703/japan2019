@@ -10,11 +10,11 @@ const LOCATION = LOCATIONS.OSAKA;
 
 export default function Osaka() {
   return (
-    <div>
+    <>
       <LocationHeader
         location={LOCATION}
       />
       <Page location={LOCATION}></Page>
-    </div>
+    </>
   )
 }

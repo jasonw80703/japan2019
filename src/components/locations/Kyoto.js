@@ -10,11 +10,11 @@ const LOCATION = LOCATIONS.KYOTO;
 
 export default function Kyoto() {
   return (
-    <div>
+    <>
       <LocationHeader
         location={LOCATION}
       />
       <Page location={LOCATION}></Page>
-    </div>
+    </>
   )
 }

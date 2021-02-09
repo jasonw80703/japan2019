@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<TextHeader /> renders as expected 1`] = `
-<div>
+Array [
   <h3
     className="text-header"
   >
     Subsection XYZ
-  </h3>
+  </h3>,
   <hr
     className="text-header-divider"
-  />
-</div>
+  />,
+]
 `;

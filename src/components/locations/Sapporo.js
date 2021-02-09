@@ -20,7 +20,7 @@ const LOCATION = LOCATIONS.SAPPORO;
 
 export default function Sapporo() {
   return (
-    <div>
+    <>
       <LocationHeader
         location={LOCATION}
         map={map}
@@ -85,6 +85,6 @@ export default function Sapporo() {
         <TextBlock text={sapporoText.mona_2} />
         <Image caption={captions.city} location={LOCATION['en']} size='lg' source={getS3ObjectImagePath('sapporo/city')} />
       </Page>
-    </div>
+    </>
   );
 }
