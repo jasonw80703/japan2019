@@ -6,12 +6,6 @@ Documenting my solo two month trip to Japan from Oct 2019 - Dec 2019.
 
 ![img](https://solo-japan-2019.s3-us-west-1.amazonaws.com/home/ja1.jpg)
 
-# Node version
-```
-$ node -v
-v14.2.0
-```
-
 # Local development
 ```
 yarn start
@@ -23,7 +17,7 @@ yarn test
 ```
 
 # Deployment
-Heroku automatic deploys from master to domain.
+Heroku automatic deploys from `master` branch to domain.
 
 # Features and Screenshots
 ## Home
@@ -64,7 +58,7 @@ Heroku automatic deploys from master to domain.
 ![img](https://solo-japan-2019.s3-us-west-1.amazonaws.com/home/hostels.jpg)
 
 ### Music (WIP)
-* some music I found or listened to while travelling in Japan, mainly by Japanese artist
+* some music I found or listened to while travelling in Japan, mainly by Japanese artists
 
 ### Coffee Shop Tier List (WIP)
 * coffee shops I visited, with their website, their address, my review and rating, and some photos
