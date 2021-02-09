@@ -78,7 +78,7 @@ export default class Gallery extends Component {
 
     return (
       <>
-        <div class={containerClass}>
+        <div className={containerClass}>
           {imageSource ?
             <img src={imageSource} alt='pic' className='gallery-image' onClick={this.handleToggleImageModal}/> :
             <p>Image missing!</p>

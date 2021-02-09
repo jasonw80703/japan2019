@@ -55,13 +55,18 @@ function FoodImageCarousel({ city, images }) {
 }
 
 export default function LocationFoods({ city, foods }) {
+  const cityLink = '/' + lowerCaseRemoveSpaces(city);
+
   return (
     <Tabs defaultActiveKey={0}>
       {
         foods.map((food, index) => (
           <Tab eventKey={index} title={food['name']} key={index}>
             <div className='location-foods-div'>
-              <h1 className='location-food-name'>{food['name']} <span className='misc-jp'>{food['name_jp']}</span> {food['recommend'] && <RecommendationBadge />}</h1>
+              <h1 className='location-food-name'>
+                {food['name']} <span className='misc-jp'>{food['name_jp']}</span> {food['recommend'] && <RecommendationBadge />}
+                <a href={cityLink} className='city-link'><i className="fas fa-city"></i></a>
+              </h1>
               <p className='location-food-restaurant'>
                 {food['restaurant']}
                 {food['website'] && <span><a href={food['website']} target="_blank" rel="noopener noreferrer"> {food['website']}</a></span>}

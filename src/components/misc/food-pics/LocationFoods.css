@@ -44,7 +44,12 @@
   background-color: #E98074;
 }
 
-
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   background-color: #E98074;
+}
+
+.city-link {
+  font-size: 40%;
+  color: black;
+  vertical-align: middle;
 }
