@@ -13,7 +13,7 @@ import {
 import hostels from 'assets/texts/hostels.json';
 import lowerCaseRemoveSpaces from 'helpers/lowerCaseRemoveSpaces';
 import { cleanTokyoTwoFolder } from 'helpers/cleanTokyoTwo';
-import './Hostels.css';
+import './Hostels.scss';
 
 const DEFAULT_ACTIVE_KEY = 'sapporo';
 

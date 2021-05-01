@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './ScrollBackToTopArrow.css';
+import './ScrollBackToTopArrow.scss';
 
 export default function ScrollBackToTopArrow() {
   const [showScroll, setShowScroll] = useState(false)
