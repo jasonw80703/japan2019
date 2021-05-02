@@ -1,3 +1,5 @@
+@import '../../assets/styles/colours';
+
 #hostels-container {
   margin-left: 5%;
   margin-right: 5%;
@@ -8,7 +10,7 @@
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  background-color: #E98074;
+  background-color: $light-red;
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -37,7 +39,7 @@
 }
 
 .hostel-info-header {
-  color: #E98074;
+  color: $light-red;
 }
 
 .house-icon {
@@ -48,11 +50,11 @@
 
 .hostel-address {
   font-size: 75%;
-  color: #D8C3A5;
+  color: $beige;
 }
 
 .hostel-info-link {
-  color: #8E8D8A;
+  color: $gray;
 }
 
 .city-link {

@@ -1,0 +1,21 @@
+@import '../../assets/styles/colours';
+
+.modal-img {
+  width: 100%;
+}
+
+.modal-caption {
+  color: gray;
+}
+
+.modal-container .modal-content {
+  background-color: $light-beige;
+
+  .modal-header {
+    color: $red;
+  }
+
+  .modal-body {
+    color: $gray;
+  }
+}

@@ -10,7 +10,7 @@ import {
   Nav,
 } from 'react-bootstrap';
 import foodCities from 'assets/texts/foods.json';
-import './Foods.css';
+import './Foods.scss';
 
 function LocationTab() {
   return (

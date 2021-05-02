@@ -1,0 +1,17 @@
+@import '../../assets/styles/colours';
+
+#misc-nav .dropdown-menu {
+  background-color: $light-beige;
+
+  a:hover {
+    background-color: $beige;
+  }
+}
+
+.misc-icon {
+  color: $beige;
+}
+
+.navbar-brand {
+  margin-right: 0.5rem;
+}

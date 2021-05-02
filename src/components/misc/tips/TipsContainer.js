@@ -8,7 +8,7 @@ import {
   Row,
   useAccordionToggle,
  } from 'react-bootstrap';
- import './TipsContainer.css';
+ import './TipsContainer.scss';
 
 const FILTERS = {
   ALL: 'All',

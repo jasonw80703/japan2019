@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { MISC_OPTIONS } from 'constants/miscOptions';
-import './MiscHeader.css';
+import './MiscHeader.scss';
 
 function MiscOptionDropdown({ currentMisc }) {
   return (

@@ -8,7 +8,7 @@ import {
 import Modal from 'react-bootstrap/Modal';
 import { LOCATIONS } from 'constants/locations';
 import { MISC_OPTIONS } from 'constants/miscOptions';
-import './Home.css';
+import './Home.scss';
 
 import github from 'assets/images/github.png';
 

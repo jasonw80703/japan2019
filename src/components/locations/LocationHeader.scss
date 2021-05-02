@@ -1,0 +1,35 @@
+@import '../../assets/styles/colours';
+
+#navbar-header {
+  background-color: $light-beige !important;
+}
+
+#navbar-brand {
+  color: $red;
+}
+
+@media (max-width: 500px) {
+  #navbar-dates {
+    display: none;
+  }
+}
+
+#home-link {
+  color: $light-red;
+}
+
+.location-header-div {
+  margin-bottom: 1.5%;
+}
+
+.current-item, .current-item:hover {
+  background-color: $beige;
+}
+
+#location-nav .dropdown-menu {
+  background-color: $light-beige;
+
+  a:hover {
+    background-color: $beige;
+  }
+}

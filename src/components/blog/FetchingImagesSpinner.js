@@ -1,6 +1,6 @@
 import React from 'react';
 import Spinner from 'react-bootstrap/Spinner'
-import './FetchingImagesSpinner.css';
+import './FetchingImagesSpinner.scss';
 
 import fun_facts from 'assets/texts/funFacts.json';
 

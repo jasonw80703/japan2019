@@ -4,7 +4,7 @@ import MiscTitle from 'components/misc/MiscTitle';
 import TipsContainer from 'components/misc/tips/TipsContainer';
 import { MISC_OPTIONS } from 'constants/miscOptions';
 import tipsList from 'assets/texts/tips.json';
-import './Tips.css';
+import './Tips.scss';
 
 export default function Tips() {
   const tips = tipsList.tips;

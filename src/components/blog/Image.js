@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import ImageModal from 'components/blog/ImageModal';
 import FetchingImagesSpinner from 'components/blog/FetchingImagesSpinner';
-import './Image.css';
+import './Image.scss';
 import { Preload } from 'react-preload'; // known bug with react-preload
 
 const Image = ({ caption, location, source, size }) => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Modal from 'react-bootstrap/Modal';
-import './ImageModal.css';
+import './ImageModal.scss';
 
 export default function ImageModal({
   caption,

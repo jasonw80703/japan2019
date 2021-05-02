@@ -1,3 +1,5 @@
+@import '../../../assets/styles/colours';
+
 #foods-container {
   margin-left: 5%;
   margin-right: 5%;
@@ -9,7 +11,7 @@
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  background-color: #E98074;
+  background-color: $light-red;
 }
 
 .nav-link:hover, .nav-link:focus {

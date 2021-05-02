@@ -5,7 +5,7 @@ import {
   Container,
   Jumbotron,
  } from 'react-bootstrap/';
-import './Page.css';
+import './Page.scss';
 
 export default class Page extends PureComponent {
   render() {

@@ -1,3 +1,5 @@
+@import '../../assets/styles/colours';
+
 #map {
   width: 100%;
 }
@@ -7,5 +9,5 @@
 }
 
 .recommendations-header {
-  color: #E98074;
+  color: $light-red;
 }

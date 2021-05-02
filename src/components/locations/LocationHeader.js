@@ -6,7 +6,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import MapModal from './MapModal';
 import LocationDatesModal from 'components/locations/LocationDatesModal';
 import { LOCATIONS } from 'constants/locations';
-import './LocationHeader.css';
+import './LocationHeader.scss';
 
 /**
  * Map locations constant to NavDropdown with an Item for each location

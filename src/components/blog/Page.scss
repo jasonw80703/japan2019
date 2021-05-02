@@ -1,0 +1,31 @@
+@import '../../assets/styles/colours';
+
+@mixin header-relative-margin-left {
+  margin-left: 5%;
+}
+
+#page-jumbotron {
+  background-color: $light-beige;
+  margin-bottom: 5%;
+  border-bottom: 3px solid white;
+}
+
+.main-page-div {
+  margin: 0 7% 1% 7%;
+}
+
+.main-page-header {
+  @include header-relative-margin-left;
+  color: $red;
+  font-size: 8vw;
+}
+
+.header-jp {
+  @include header-relative-margin-left;
+  color: $gray;
+}
+
+.header-dates {
+  @include header-relative-margin-left;
+  color: $light-red;
+}

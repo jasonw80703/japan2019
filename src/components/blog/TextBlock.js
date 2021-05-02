@@ -6,7 +6,7 @@ import {
   Row,
 } from 'react-bootstrap';
 import Image from 'components/blog/Image';
-import './TextBlock.css';
+import './TextBlock.scss';
 
 export default class TextBlock extends PureComponent {
   render() {

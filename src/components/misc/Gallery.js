@@ -3,7 +3,7 @@ import { getS3ObjectImagePath } from 'helpers/getS3ObjectPath';
 import PropTypes from 'prop-types';
 import Button from 'react-bootstrap/Button';
 import ImageModal from "components/blog/ImageModal";
-import './Gallery.css';
+import './Gallery.scss';
 
 export default class Gallery extends Component {
   constructor(props) {

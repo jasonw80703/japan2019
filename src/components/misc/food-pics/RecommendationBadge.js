@@ -1,6 +1,6 @@
 import React from 'react';
 import Badge from 'react-bootstrap/Badge';
-import './RecommendationBadge.css';
+import './RecommendationBadge.scss';
 
 export default function RecommendationBadge() {
   return (

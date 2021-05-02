@@ -1,11 +1,4 @@
-/* 
-Colours: (https://visme.co/blog/website-color-schemes/ #19)
-#EAE7DC
-#D8C3A5
-#8E8D8A
-#E98074
-#E85A4F
-*/
+@import 'assets/styles/colours';
 
 body {
   margin: 0;
@@ -14,5 +7,5 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #EAE7DC;
+  background-color: $light-beige;
 }

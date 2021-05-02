@@ -116,7 +116,7 @@ export default class Ishinomaki extends Component {
           <TextBlock text={ishinomakiText.dam_3} />
           <Image source={getS3ObjectImagePath('ishinomaki/dam_2')} location={LOCATION['en']} size='lg' />
         </Page>
-        <button type="button" className="hideme" onClick={this.handleToggleModal}/>
+        <button type="button" style={{ border: 'none' }} onClick={this.handleToggleModal}/>
         {showModal && (
           <Modal show={showModal} onHide={this.handleToggleModal} className='modal-container'>
             <Modal.Header closeButton>

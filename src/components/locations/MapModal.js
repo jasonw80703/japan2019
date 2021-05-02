@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Modal from 'react-bootstrap/Modal';
-import './MapModal.css';
+import './MapModal.scss';
 
 export default function MapModal({
   handleToggleModal,
