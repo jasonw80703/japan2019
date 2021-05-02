@@ -1,25 +1,27 @@
+@import '../../assets/styles/colours';
+
 .main-page-div {
   margin: 0 7% 1% 7%;
 }
 
 .main-page-header {
-  color: #E85A4F;
+  color: $red;
   margin-left: 5%;
   font-size: 8vw;
 }
 
 .header-jp {
-  color: #8E8D8A;
+  color: $gray;
   margin-left: 5%;
 }
 
 #page-jumbotron {
-  background-color: #EAE7DC;
+  background-color: $light-beige;
   margin-bottom: 5%;
   border-bottom: 3px solid white;
 }
 
 .header-dates {
   margin-left: 5%;
-  color: #E98074;
+  color: $light-red;
 }

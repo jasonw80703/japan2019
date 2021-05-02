@@ -1,5 +1,7 @@
+@import '../../assets/styles/colours';
+
 .misc-icon {
-  color: #D8C3A5;
+  color: $beige;
 }
 
 .navbar-brand {
@@ -7,9 +9,9 @@
 }
 
 #misc-nav .dropdown-menu {
-  background-color: #EAE7DC;
+  background-color: $light-beige;
 }
 
 #misc-nav .dropdown-menu a:hover {
-  background-color: #D8C3A5;
+  background-color: $beige;
 }

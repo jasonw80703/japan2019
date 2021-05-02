@@ -1,3 +1,5 @@
+@import '../../assets/styles/colours';
+
 .modal-img {
   width: 100%;
 }
@@ -7,13 +9,13 @@
 }
 
 .modal-container .modal-content {
-  background-color: #EAE7DC;
+  background-color: $light-beige;
 }
 
 .modal-container .modal-content .modal-header {
-  color: #E85A4F;
+  color: $red;
 }
 
 .modal-container .modal-content .modal-body {
-  color: #8E8D8A;
+  color: $gray;
 }

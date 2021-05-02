@@ -1,13 +1,15 @@
+@import '../../assets/styles/colours';
+
 .location-header-div {
   margin-bottom: 1.5%;
 }
 
 #navbar-header {
-  background-color: #EAE7DC !important;
+  background-color: $light-beige !important;
 }
 
 #navbar-brand {
-  color: #E85A4F;
+  color: $red;
 }
 
 @media (max-width: 500px) {
@@ -17,17 +19,17 @@
 }
 
 #home-link {
-  color: #E98074;
+  color: $light-red;
 }
 
 .current-item, .current-item:hover {
-  background-color: #D8C3A5;
+  background-color: $beige;
 }
 
 #location-nav .dropdown-menu {
-  background-color: #EAE7DC;
+  background-color: $light-beige;
 }
 
 #location-nav .dropdown-menu a:hover {
-  background-color: #D8C3A5;
+  background-color: $beige;
 }

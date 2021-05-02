@@ -1,12 +1,14 @@
+@import '../../assets/styles/colours';
+
 .misc-title {
   text-align: center;
   margin: 3% 10% 1% 10%;
-  color: #E85A4F;
+  color: $red;
 }
 
 .misc-description {
   text-align: center;
-  color: #8E8D8A;
+  color: $gray;
 }
 
 .misc-divider {
@@ -21,6 +23,6 @@
 
 .misc-jp {
   font-size: 50%;
-  color: #8E8D8A;
+  color: $gray;
   vertical-align: middle;
 }

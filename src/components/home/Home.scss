@@ -1,10 +1,12 @@
+@import '../../assets/styles/colours';
+
 .home {
   /* text-align: center; */
   margin: 13%;
 }
 
 .home .dropdown-menu {
-  background-color: #E98074;
+  background-color: $light-red;
 }
 
 .home .dropdown-menu a {
@@ -12,13 +14,13 @@
 }
 
 .home .dropdown-menu a:hover {
-  color: #E98074;
+  color: $light-red;
 }
 
 .header {
   font-size: 150px;
   font-weight: 300;
-  color: #E85A4F;
+  color: $red;
 }
 
 .year {
@@ -41,18 +43,18 @@
   margin-left: 30px;
   margin-right: 20px;
   color: white;
-  background-color: #E98074;
+  background-color: $light-red;
   border: none;
 }
 
 #misc-dropdown {
-  color: #E98074;
-  background-color: #EAE7DC;
-  border-color: #E98074;
+  color: $light-red;
+  background-color: $light-beige;
+  border-color: $light-red;
 }
 
 #misc-dropdown:hover {
   color: white;
-  background-color: #E98074;
-  border-color: #E98074;
+  background-color: $light-red;
+  border-color: $light-red;
 }
