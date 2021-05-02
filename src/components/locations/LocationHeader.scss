@@ -1,9 +1,5 @@
 @import '../../assets/styles/colours';
 
-.location-header-div {
-  margin-bottom: 1.5%;
-}
-
 #navbar-header {
   background-color: $light-beige !important;
 }
@@ -22,14 +18,18 @@
   color: $light-red;
 }
 
+.location-header-div {
+  margin-bottom: 1.5%;
+}
+
 .current-item, .current-item:hover {
   background-color: $beige;
 }
 
 #location-nav .dropdown-menu {
   background-color: $light-beige;
-}
 
-#location-nav .dropdown-menu a:hover {
-  background-color: $beige;
+  a:hover {
+    background-color: $beige;
+  }
 }

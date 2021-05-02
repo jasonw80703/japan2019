@@ -10,12 +10,12 @@
 
 .modal-container .modal-content {
   background-color: $light-beige;
-}
 
-.modal-container .modal-content .modal-header {
-  color: $red;
-}
+  .modal-header {
+    color: $red;
+  }
 
-.modal-container .modal-content .modal-body {
-  color: $gray;
+  .modal-body {
+    color: $gray;
+  }
 }

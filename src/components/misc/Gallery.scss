@@ -1,3 +1,8 @@
+@mixin img-size($size) {
+  height: $size;
+  width: $size;
+}
+
 .image-container {
   margin: auto;
   border: 1.5px solid black;
@@ -6,38 +11,32 @@
 }
 
 .sm-gallery {
-  height: 30%;
-  width: 30%;
+  @include img-size(30%);
 }
 
 @media(max-width: 500px) {
   .sm-gallery {
-    height: 60%;
-    width: 60%;
+    @include img-size(60%);
   }
 }
 
 .md-gallery {
-  height: 50%;
-  width: 50%;
+  @include img-size(50%);
 }
 
 @media(max-width: 500px) {
   .md-gallery {
-    height: 70%;
-    width: 70%;
+    @include img-size(70%);
   }
 }
 
 .lg-gallery {
-  height: 70%;
-  width: 70%;
+  @include img-size(70%);
 }
 
 @media(max-width: 500px) {
   .lg-gallery {
-    height: 90%;
-    width: 90%;
+    @include img-size(90%);
   }
 }
 

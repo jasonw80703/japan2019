@@ -1,20 +1,40 @@
 @import '../../assets/styles/colours';
 
+#home-location-dropdown {
+  margin-left: 30px;
+  margin-right: 20px;
+  color: white;
+  background-color: $light-red;
+  border: none;
+}
+
+#misc-dropdown {
+  color: $light-red;
+  background-color: $light-beige;
+  border-color: $light-red;
+}
+
+#misc-dropdown:hover {
+  color: white;
+  background-color: $light-red;
+  border-color: $light-red;
+}
+
 .home {
   /* text-align: center; */
   margin: 13%;
-}
 
-.home .dropdown-menu {
-  background-color: $light-red;
-}
+  .dropdown-menu {
+    background-color: $light-red;
 
-.home .dropdown-menu a {
-  color: white;
-}
+    a {
+      color: white;
+    }
 
-.home .dropdown-menu a:hover {
-  color: $light-red;
+    a:hover {
+      color: $light-red;
+    }
+  }
 }
 
 .header {
@@ -37,24 +57,4 @@
   margin-right: auto;
   max-width: 60%;
   max-height: 60%;
-}
-
-#home-location-dropdown {
-  margin-left: 30px;
-  margin-right: 20px;
-  color: white;
-  background-color: $light-red;
-  border: none;
-}
-
-#misc-dropdown {
-  color: $light-red;
-  background-color: $light-beige;
-  border-color: $light-red;
-}
-
-#misc-dropdown:hover {
-  color: white;
-  background-color: $light-red;
-  border-color: $light-red;
 }

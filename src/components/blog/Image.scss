@@ -1,3 +1,8 @@
+@mixin img-size($size) {
+  max-width: $size;
+  max-height: $size;
+}
+
 .pic {
   display: block;
   margin-left: auto;
@@ -5,23 +10,19 @@
 }
 
 .xs {
-  max-width: 30%;
-  max-height: 30%;
+  @include img-size(30%);
 }
 
 .sm {
-  max-width: 50%;
-  max-height: 50%;
+  @include img-size(50%);
 }
 
 .md {
-  max-width: 75%;
-  max-height: 75%;
+  @include img-size(75%);
 }
 
 .lg {
-  max-width: 100%;
-  max-height: 100%;
+  @include img-size(100%);
 }
 
 .caption {
@@ -29,7 +30,6 @@
   text-align: center;
   margin-bottom: 1.5%;
 }
-
 
 .no-caption {
   margin-bottom: 1.5%;
