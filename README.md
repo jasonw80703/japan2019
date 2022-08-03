@@ -11,10 +11,10 @@ Documenting my solo two month trip to Japan from Oct 2019 - Dec 2019.
 yarn start
 ```
 
-# Run tests
+# Run tests (missing)
 ```
 yarn test
-```
+````
 
 # Deployment
 Heroku automatic deploys from `master` branch to domain.
@@ -80,3 +80,4 @@ Heroku automatic deploys from `master` branch to domain.
 * collection of images from the Tokyo Star Wars Identities: The Exhibition
 
 ![img](https://solo-japan-2019.s3-us-west-1.amazonaws.com/home/star_wars.jpg)
+
